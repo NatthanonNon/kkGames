@@ -2,7 +2,6 @@
 module Display(
 		input wire clk,
 		input [7:0] keyboard,
-		input wire [11:0] sw,
 		output wire Hsync, Vsync,
 		output wire [3:0] vgaRed,vgaGreen,vgaBlue
 		
@@ -65,7 +64,8 @@ module Display(
     Attack attack_screen 
 	(
 	   .clk(clk),
-	   .video_attack_on(video_attack_on), 
+	   .video_attack_on(video_attack_on),
+	   .keyboard(keyboard), 
 	   .x(x), 
 	   .y(y), 
 	   .rgb_out(attack_rgb),

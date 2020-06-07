@@ -3,19 +3,23 @@
 module Attack(
     input clk,
     input wire video_attack_on,
-    input this_state,
     input [7:0] keyboard,
     input wire [9:0] x, y,
     output reg [11:0] rgb_out,
     output reg attack_on
     );
     
-    wire [11:0] frame_rgb, monster_rgb, spirit_rgb, hp_hero_rgb, hp_monster_rgb;
-    wire frame_on, monster_on, spirit_on, hp_monster_on, hp_hero_on;
+    wire [11:0] frame_rgb, monster_rgb, spirit_rgb;
+    wire frame_on, monster_on, spirit_on;
+    
+    wire [11:0]hp_hero_rgb, hp_monster_rgb;
+    wire hp_monster_on, hp_hero_on;
     
     wire [11:0] dodge_rgb, fight_rgb;
-    wire video_dodge_on, video_fight_on;
     wire dodge_on, fight_on;
+    
+    wire video_dodge_on, video_fight_on;
+    
     
     attack_state_machine atk_FSM 
 	(
@@ -42,7 +46,8 @@ module Attack(
     (
         .clk(clk), 
         .video_on(video_attack_on), 
-        .x(x), .y(y), 
+        .x(x), 
+        .y(y), 
         .rgb_out(frame_rgb),
 	    .platforms_on(frame_on)
     );
@@ -94,8 +99,8 @@ module Attack(
 	dodge dodge_screen 
 	(
 	   .clk(clk),
-	   .keyboard(keyboard),
 	   .video_dodge_on(video_dodge_on), 
+	   .keyboard(keyboard),
 	   .x(x), 
 	   .y(y), 
 	   .rgb_out(dodge_rgb),
@@ -105,8 +110,8 @@ module Attack(
     fight fight_screen 
 	(
 	   .clk(clk),
-	   .keyboard(keyboard),
 	   .video_fight_on(video_fight_on), 
+	   .keyboard(keyboard),
 	   .x(x), 
 	   .y(y), 
 	   .rgb_out(fight_rgb),

@@ -3,7 +3,6 @@
 module dodge(
     input clk,
     input wire video_dodge_on,
-    input this_state,
     input [7:0] keyboard,
     input wire [9:0] x, y,
     output reg [11:0] rgb_out,
