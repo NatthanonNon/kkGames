@@ -49,7 +49,7 @@ module flame_monster(
 			 end
 			 
 			 if (x == 639 && y == 479) begin
-			     change = (change+1) %80;
+			     change = (change+1) %65;
 			     if (change == 0) begin
 			         form = (form +1) %3;
 			     end

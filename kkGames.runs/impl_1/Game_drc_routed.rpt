@@ -1,0 +1,56 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sun Jun  7 21:28:47 2020
+| Host         : DESKTOP-E6CPFKC running 64-bit major release  (build 9200)
+| Command      : report_drc -file Game_drc_routed.rpt -pb Game_drc_routed.pb -rpx Game_drc_routed.rpx
+| Design       : Game
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Fully Routed
+------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 4
++----------+----------+-------------------+------------+
+| Rule     | Severity | Description       | Violations |
++----------+----------+-------------------+------------+
+| PDRC-153 | Warning  | Gated clock check | 4          |
++----------+----------+-------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PDRC-153#1 Warning
+Gated clock check  
+Net display/FSM/E[0] is a gated clock net sourced by a combinational pin display/FSM/change_reg[24]_i_2/O, cell display/FSM/change_reg[24]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net display/FSM/video_home_on_reg_i_2_n_0 is a gated clock net sourced by a combinational pin display/FSM/video_home_on_reg_i_2/O, cell display/FSM/video_home_on_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net display/attack_screen/atk_FSM/state_reg[0]_2 is a gated clock net sourced by a combinational pin display/attack_screen/atk_FSM/dodge_on_reg_i_2/O, cell display/attack_screen/atk_FSM/dodge_on_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net display/attack_screen/flame_monster_unit/form_reg[2]_i_2_n_0 is a gated clock net sourced by a combinational pin display/attack_screen/flame_monster_unit/form_reg[2]_i_2/O, cell display/attack_screen/flame_monster_unit/form_reg[2]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+
