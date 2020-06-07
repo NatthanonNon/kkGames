@@ -2,24 +2,26 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sun Jun  7 21:06:00 2020
-# Process ID: 10044
+# Start of session at: Sun Jun  7 21:19:57 2020
+# Process ID: 12528
 # Current directory: C:/Users/Nack/Desktop/SynLab/project/kkGames
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12664 C:\Users\Nack\Desktop\SynLab\project\kkGames\kkGames.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2216 C:\Users\Nack\Desktop\SynLab\project\kkGames\kkGames.xpr
 # Log file: C:/Users/Nack/Desktop/SynLab/project/kkGames/vivado.log
 # Journal file: C:/Users/Nack/Desktop/SynLab/project/kkGames\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.xpr
 update_compile_order -fileset sources_1
-close [ open C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.srcs/sources_1/new/movable_bar.v w ]
-add_files C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.srcs/sources_1/new/movable_bar.v
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
 reset_run synth_1
 launch_runs synth_1 -jobs 8
 wait_on_run synth_1
-reset_run synth_1
-launch_runs synth_1 -jobs 8
-wait_on_run synth_1
-reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1

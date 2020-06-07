@@ -149,16 +149,16 @@ module Attack(
                 rgb_out = hp_monster_rgb;
                 attack_on = 1;
               end       
-          else if(dodge_on)
-              begin
-                rgb_out = dodge_rgb;
-                attack_on = 1;
-              end
           else if(fight_on)
               begin
                 rgb_out = fight_rgb;
                 attack_on = 1;
               end   
+          else if(dodge_on)
+              begin
+                rgb_out = dodge_rgb;
+                attack_on = 1;
+              end
 	      else
                rgb_out = 12'b0;
 		end
