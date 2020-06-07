@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Jun  7 20:58:15 2020
+# Process ID: 11364
+# Current directory: C:/Users/Nack/Desktop/SynLab/project/kkGames
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent76 C:\Users\Nack\Desktop\SynLab\project\kkGames\kkGames.xpr
+# Log file: C:/Users/Nack/Desktop/SynLab/project/kkGames/vivado.log
+# Journal file: C:/Users/Nack/Desktop/SynLab/project/kkGames\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.xpr
+update_compile_order -fileset sources_1

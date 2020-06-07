@@ -8,14 +8,30 @@ module fight(
     output reg [11:0] rgb_out,
     output reg fight_on
     );
+    
+    initial begin
+        fight_on = 1;
+    end
+    
+    wire [11:0] bar_rgb;
+    wire bar_on;
         
-	                      
+	movable_bar movable_bar_1(
+	    .clk(clk),
+	    .keyboard(keyboard),
+	   .video_on(video_fight_on), 
+	   .x(x), 
+	   .y(y),
+	   .rgb_out(bar_rgb),
+	   .bar_on(bar_on)
+	);  
 	
 	always @*
 		begin
 		if (~video_fight_on)
 			rgb_out = 12'b0;
 	    else
-               rgb_out = 12'b0;
+            if ( bar_on ) rgb_out = bar_rgb;
+            else rgb_out = 0;
 		end
 endmodule
