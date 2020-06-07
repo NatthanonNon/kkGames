@@ -34,29 +34,15 @@ read_verilog -library xil_defaultlib {
   C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v
   C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet_rom.v
   C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/dodge.v
-  C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/enter.v
-  C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/enter_rom.v
+  C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/fight_screen.v
   C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/flame_monster.v
   C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/flame_monster_rom.v
   C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/frame.v
   C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/game_state_machine.v
-  C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/game_title.v
-  C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/game_title_rom.v
   C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/heart.v
   C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/heart_rom.v
   C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/home.v
   C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/hp_bar.v
-  C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/jaturit_id_rom.v
-  C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/jaturit_rom.v
-  C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/name.v
-  C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/natthanon_id_rom.v
-  C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/natthanon_rom.v
-  C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/panupong_id_rom.v
-  C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/panupong_rom.v
-  C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/phum_id_rom.v
-  C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/phum_rom.v
-  C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/tolap_id_rom.v
-  C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/tolap_rom.v
   C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/uart_receiver.v
   C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/uart_transmitter.v
   C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/vga_sync.v

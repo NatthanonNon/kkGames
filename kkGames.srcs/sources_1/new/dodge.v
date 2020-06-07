@@ -60,8 +60,8 @@ module dodge(
 	   .bullet_on(bullet_1_on)
     );
     
-    defparam bullet_unit_1.t_l_x = 320;
-	defparam bullet_unit_1.t_l_y = 248;
+    defparam bullet_unit_1.t_l_x = 110;
+	defparam bullet_unit_1.t_l_y = 344;
 	defparam bullet_unit_1.pattern = 0;
 	                      
 	bullet bullet_unit_2 
@@ -78,7 +78,7 @@ module dodge(
     );
     
     defparam bullet_unit_2.t_l_x = 320;
-	defparam bullet_unit_2.t_l_y = 248;
+	defparam bullet_unit_2.t_l_y = 255;
 	defparam bullet_unit_2.pattern = 1;
 	
 	bullet bullet_unit_3 
@@ -94,8 +94,8 @@ module dodge(
 	   .bullet_on(bullet_2_on)
     );
     
-    defparam bullet_unit_3.t_l_x = 100;
-	defparam bullet_unit_3.t_l_y = 250;
+    defparam bullet_unit_3.t_l_x = 320;
+	defparam bullet_unit_3.t_l_y = 344;
 	defparam bullet_unit_3.pattern = 2;
     
             

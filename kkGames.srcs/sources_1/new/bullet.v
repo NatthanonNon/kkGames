@@ -133,57 +133,57 @@ module bullet(
 	                               top_left_x;
 	               end
 	           endcase
-	       end
-	   end
-	
-	always@(posedge clk) begin
-	if (move == 0 && video_on && !is_collision) begin
-	/*
-	   if(heart_x<top_left_x) begin
-	       top_left_x <= top_left_x +1;
-	       
-	       if (heart_y<top_left_y)begin
-	       top_left_y <= top_left_y +1;
-	       end
-	       
-	       else if (heart_y>top_left_y)begin
-	       top_left_y <= top_left_y -1;
-	       end
-	   end
-	   
-	   else if(heart_x>top_left_x) begin
-	       top_left_x <= top_left_x -1;
-	       
-	       if (heart_y<top_left_y)begin
-	       top_left_y <= top_left_y +1;
-	       end
-	       
-	       else if (heart_y>top_left_y)begin
-	       top_left_y <= top_left_y -1;
-	       end
-	   end*/
-	   
-	                
-	  // if (!collision) begin
-	   collision = ((top_left_x >= heart_x) && (top_left_x <= heart_x + 32) && (top_left_y >= heart_y) && (top_left_y <= heart_y + 32)) ? 1 : //ซ้ายบน
+	           
+	           // check collision
+	           collision = ((top_left_x >= heart_x) && (top_left_x <= heart_x + 32) && (top_left_y >= heart_y) && (top_left_y <= heart_y + 32)) ? 1 : //ซ้ายบน
 	               ((bot_right_x >= heart_x) && (bot_right_x <= heart_x + 32) && (top_left_y >= heart_y) && (top_left_y <= heart_y + 32)) ? 1 : //ขวาบน
 	               ((top_left_x >= heart_x) && (top_left_x <= heart_x + 32) && (bot_right_y >= heart_y) && (bot_right_y <= heart_y + 32)) ? 1 : //ซ้ายล่าง
 	               ((bot_right_x >= heart_x) && (bot_right_x <= heart_x + 32) && (bot_right_y >= heart_y) && (bot_right_y <= heart_y + 32)) ? 1 : 
 	               0; //ขวาล่าง
-	  // end
-	end
+	       end
+	   end
 	
-	end
-	
-	
-	
-	
-	/*
-	assign collision = ((top_left_x>=heart_x)&&(top_left_x<=heart_x+32)&&(top_left_y>=heart_y)&&(top_left_y<=heart_y+32)) ? 1 : //ซ้ายบน
-	                   ((bot_right_x>=heart_x)&&(bot_right_x<=heart_x+32)&&(top_left_y>=heart_y)&&(top_left_y<=heart_y+32)) ? 1 : //ขวาบน
-	                   ((top_left_x>=heart_x)&&(top_left_x<=heart_x+32)&&(bot_right_y>=heart_y)&&(bot_right_y<=heart_y+32)) ? 1 : //ซ้ายล่าง
-	                   ((bot_right_x>=heart_x)&&(bot_right_x<=heart_x+32)&&(bot_right_y>=heart_y)&&(bot_right_y<=heart_y+32)) ? 1 : 0; //ขวาล่าง
-	*/                   
+// dont use
+//	always@(posedge clk) 
+//	   begin
+//	       if (move == 0 && video_on && !is_collision) begin
+//            /*
+//               if(heart_x<top_left_x) begin
+//                   top_left_x <= top_left_x +1;
+                   
+//                   if (heart_y<top_left_y)begin
+//                   top_left_y <= top_left_y +1;
+//                   end
+                   
+//                   else if (heart_y>top_left_y)begin
+//                   top_left_y <= top_left_y -1;
+//                   end
+//               end
+               
+//               else if(heart_x>top_left_x) begin
+//                   top_left_x <= top_left_x -1;
+                   
+//                   if (heart_y<top_left_y)begin
+//                   top_left_y <= top_left_y +1;
+//                   end
+                   
+//                   else if (heart_y>top_left_y)begin
+//                   top_left_y <= top_left_y -1;
+//                   end
+//               end*/
+           
+                            
+//              // if (!collision) begin
+               
+//              // end
+//	       end
+//	   end
+//	/*
+//	assign collision = ((top_left_x>=heart_x)&&(top_left_x<=heart_x+32)&&(top_left_y>=heart_y)&&(top_left_y<=heart_y+32)) ? 1 : //ซ้ายบน
+//	                   ((bot_right_x>=heart_x)&&(bot_right_x<=heart_x+32)&&(top_left_y>=heart_y)&&(top_left_y<=heart_y+32)) ? 1 : //ขวาบน
+//	                   ((top_left_x>=heart_x)&&(top_left_x<=heart_x+32)&&(bot_right_y>=heart_y)&&(bot_right_y<=heart_y+32)) ? 1 : //ซ้ายล่าง
+//	                   ((bot_right_x>=heart_x)&&(bot_right_x<=heart_x+32)&&(bot_right_y>=heart_y)&&(bot_right_y<=heart_y+32)) ? 1 : 0; //ขวาล่าง
+//	*/                   
 	
 	always @*
 		begin

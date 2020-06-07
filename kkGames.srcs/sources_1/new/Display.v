@@ -12,9 +12,11 @@ module Display(
 	reg [11:0] rgb_reg, rgb_next;                                 // RGB data register to route out to VGA DAC
 	//wire [9:0] heart_x, heart_y;                                          // vector to route yoshi's x/y location
 	
-	wire [11:0]  heart_rgb,platforms_rgb,monster_rgb, home_rgb,spirit_rgb,dodge_rgb;
+	wire [11:0] heart_rgb, platforms_rgb, monster_rgb, spirit_rgb;
+	wire [11:0] home_rgb, dodge_rgb, fight_rgb;
 	
-	wire heart_on,platforms_on,monster_on, home_on,spirit_on,dodge_on;
+	wire heart_on, platforms_on, monster_on, spirit_on;
+	wire home_on, dodge_on, fight_on;
 	
 	vga_sync vsync_unit 
 	(
@@ -28,7 +30,7 @@ module Display(
     );
     
 	//wire state;
-	wire video_home_on,video_dodge_on;
+	wire video_home_on,video_dodge_on, video_fight_on;
 
 	
 	game_state_machine FSM 
@@ -79,11 +81,11 @@ module Display(
 	(
 	   .clk(clk),
 	   .keyboard(keyboard),
-	   .video_dodge_on(video_dodge_on), 
+	   .video_fight_on(video_fight_on), 
 	   .x(x), 
 	   .y(y), 
-	   .rgb_out(dodge_rgb),
-	   .fight_on(dodge_on)
+	   .rgb_out(fight_rgb),
+	   .fight_on(fight_on)
     );
     
 	always @*
