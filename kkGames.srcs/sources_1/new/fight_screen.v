@@ -2,7 +2,7 @@
 
 module fight(
     input clk,
-    input wire video_dodge_on,
+    input wire video_fight_on,
     input this_state,
     input [7:0] keyboard,
     input wire [9:0] x, y,
@@ -18,7 +18,7 @@ module fight(
     frame frame_unit 
     (
         .clk(clk), 
-        .video_on(video_dodge_on), 
+        .video_on(video_fight_on), 
         .x(x), .y(y), 
         .rgb_out(platforms_rgb),
 	    .platforms_on(platforms_on)
@@ -27,7 +27,7 @@ module fight(
 	flame_monster flame_monster_unit 
 	(
 	   .clk(clk), 
-	   .video_on(video_dodge_on), 
+	   .video_on(video_fight_on), 
 	   .x(x), 
 	   .y(y), 
 	   .rgb_out(monster_rgb),
@@ -38,7 +38,7 @@ module fight(
     (
         .clk(clk),
         .keyboard(keyboard),
-        .video_on(video_dodge_on), 
+        .video_on(video_fight_on), 
         .x(x), 
         .y(y), 
         .rgb_out(heart_rgb),
@@ -50,7 +50,7 @@ module fight(
 	bullet bullet_unit_1 
 	(
 	   .clk(clk), 
-	   .video_on(video_dodge_on), 
+	   .video_on(video_fight_on), 
 	   .x(x), 
 	   .y(y),
 	   .heart_x(heart_x),
@@ -67,7 +67,7 @@ module fight(
 	bullet bullet_unit_2 
 	(
 	   .clk(clk), 
-	   .video_on(video_dodge_on), 
+	   .video_on(video_fight_on), 
 	   .x(x), 
 	   .y(y),
 	   .heart_x(heart_x),
@@ -84,7 +84,7 @@ module fight(
 	bullet bullet_unit_3 
 	(
 	   .clk(clk), 
-	   .video_on(video_dodge_on), 
+	   .video_on(video_fight_on), 
 	   .x(x), 
 	   .y(y),
 	   .heart_x(heart_x),
@@ -103,7 +103,7 @@ module fight(
 	hp_bar hp_bar_unit 
 	(
 	   .clk(clk), 
-	   .video_on(video_dodge_on), 
+	   .video_on(video_fight_on), 
 	   .x(x), 
 	   .y(y),
 	   .collision(is_collision),
@@ -113,33 +113,33 @@ module fight(
 	
 	always @*
 		begin
-		if (~video_dodge_on)
+		if (~video_fight_on)
 			rgb_out = 12'b0;
 			
 		else if(heart_on) begin
                rgb_out = heart_rgb;
-               dodge_on = 1;
+               fight_on = 1;
         end
         
 	    else if(monster_on) begin
                rgb_out = monster_rgb;
-               dodge_on = 1;
+               fight_on = 1;
         end       
 	    else if(platforms_on)begin
                rgb_out = platforms_rgb;
-               dodge_on = 1;
+               fight_on = 1;
         end
         else if(bullet_1_on)begin
                rgb_out = bullet_1_rgb;
-               dodge_on = 1;
+               fight_on = 1;
         end
         else if(bullet_2_on)begin
                rgb_out = bullet_2_rgb;
-               dodge_on = 1;
+               fight_on = 1;
         end
         else if(hp_on)begin
                rgb_out = hp_rgb;
-               dodge_on = 1;
+               fight_on = 1;
         end
 	    else
                rgb_out = 12'b0;

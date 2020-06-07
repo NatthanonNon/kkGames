@@ -83,7 +83,7 @@ module Display(
 	   .x(x), 
 	   .y(y), 
 	   .rgb_out(dodge_rgb),
-	   .dodge_on(dodge_on)
+	   .fight_on(dodge_on)
     );
     
 	always @*
