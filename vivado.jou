@@ -2,24 +2,36 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sun Jun  7 21:06:00 2020
-# Process ID: 10044
-# Current directory: C:/Users/Nack/Desktop/SynLab/project/kkGames
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12664 C:\Users\Nack\Desktop\SynLab\project\kkGames\kkGames.xpr
-# Log file: C:/Users/Nack/Desktop/SynLab/project/kkGames/vivado.log
-# Journal file: C:/Users/Nack/Desktop/SynLab/project/kkGames\vivado.jou
+# Start of session at: Sun Jun  7 23:55:03 2020
+# Process ID: 10168
+# Current directory: C:/Users/non_s/kkGames
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10808 C:\Users\non_s\kkGames\kkGames.xpr
+# Log file: C:/Users/non_s/kkGames/vivado.log
+# Journal file: C:/Users/non_s/kkGames\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.xpr
-update_compile_order -fileset sources_1
-close [ open C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.srcs/sources_1/new/movable_bar.v w ]
-add_files C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.srcs/sources_1/new/movable_bar.v
-update_compile_order -fileset sources_1
+open_project C:/Users/non_s/kkGames/kkGames.xpr
 update_compile_order -fileset sources_1
 reset_run synth_1
-launch_runs synth_1 -jobs 8
-wait_on_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/non_s/kkGames/kkGames.runs/impl_1/Game.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/non_s/kkGames/kkGames.runs/impl_1/Game.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw
+add_files -norecurse {C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/atk_frame_rom.v C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/atk_frame.v}
+update_compile_order -fileset sources_1
 reset_run synth_1
-launch_runs synth_1 -jobs 8
-wait_on_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
 reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1

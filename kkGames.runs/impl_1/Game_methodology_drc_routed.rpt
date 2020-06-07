@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Sun Jun  7 22:07:58 2020
+| Date         : Mon Jun  8 01:56:20 2020
 | Host         : DESKTOP-E6CPFKC running 64-bit major release  (build 9200)
 | Command      : report_methodology -file Game_methodology_drc_routed.rpt -pb Game_methodology_drc_routed.pb -rpx Game_methodology_drc_routed.rpx
 | Design       : Game
@@ -23,14 +23,14 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 182
+             Violations found: 165
 +-----------+----------+--------------------------------------------+------------+
 | Rule      | Severity | Description                                | Violations |
 +-----------+----------+--------------------------------------------+------------+
-| SYNTH-6   | Warning  | Timing of a block RAM might be sub-optimal | 2          |
-| TIMING-16 | Warning  | Large setup violation                      | 126        |
+| SYNTH-6   | Warning  | Timing of a block RAM might be sub-optimal | 4          |
+| TIMING-16 | Warning  | Large setup violation                      | 108        |
 | TIMING-18 | Warning  | Missing input or output delay              | 24         |
-| TIMING-20 | Warning  | Non-clocked latch                          | 30         |
+| TIMING-20 | Warning  | Non-clocked latch                          | 29         |
 +-----------+----------+--------------------------------------------+------------+
 
 2. REPORT DETAILS
@@ -45,634 +45,554 @@ Timing of a block RAM might be sub-optimal
 The timing for the instance display/attack_screen/dodge_screen/sel__0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
+SYNTH-6#3 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance display/attack_screen/flame_monster_unit/sel, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#4 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance sel, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
 TIMING-16#1 Warning
 Large setup violation  
-There is a large setup violation of -10.013 ns between display/attack_screen/dodge_screen/heart_unit/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/heart_unit/move_reg[12]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.008 ns between display/attack_screen/dodge_screen/bullet_unit_3/move_reg[4]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_3/move_reg[17]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#2 Warning
 Large setup violation  
-There is a large setup violation of -10.025 ns between display/attack_screen/fight_screen/movable_bar_1/move_reg[10]/C (clocked by sys_clk_pin) and display/attack_screen/fight_screen/movable_bar_1/move_reg[8]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.009 ns between display/attack_screen/dodge_screen/bullet_unit_3/move_reg[4]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_3/move_reg[14]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#3 Warning
 Large setup violation  
-There is a large setup violation of -10.037 ns between display/attack_screen/dodge_screen/bullet_unit_2/move_reg[5]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_2/move_reg[8]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.022 ns between display/attack_screen/dodge_screen/heart_unit/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/heart_unit/move_reg[9]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#4 Warning
 Large setup violation  
-There is a large setup violation of -10.048 ns between display/attack_screen/fight_screen/movable_bar_1/move_reg[10]/C (clocked by sys_clk_pin) and display/attack_screen/fight_screen/movable_bar_1/move_reg[10]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.024 ns between display/attack_screen/dodge_screen/heart_unit/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/heart_unit/move_reg[23]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#5 Warning
 Large setup violation  
-There is a large setup violation of -10.057 ns between display/attack_screen/dodge_screen/bullet_unit_2/move_reg[5]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_2/move_reg[11]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.046 ns between display/attack_screen/atk_FSM/state_divider_reg[5]/C (clocked by sys_clk_pin) and display/attack_screen/atk_FSM/state_divider_reg[5]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#6 Warning
 Large setup violation  
-There is a large setup violation of -10.060 ns between display/attack_screen/dodge_screen/bullet_unit_1/move_reg[4]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_1/move_reg[23]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.051 ns between display/attack_screen/dodge_screen/heart_unit/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/heart_unit/move_reg[14]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#7 Warning
 Large setup violation  
-There is a large setup violation of -10.061 ns between display/attack_screen/dodge_screen/bullet_unit_1/move_reg[4]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_1/move_reg[16]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.054 ns between display/attack_screen/dodge_screen/heart_unit/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/heart_unit/move_reg[16]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#8 Warning
 Large setup violation  
-There is a large setup violation of -10.063 ns between display/attack_screen/fight_screen/movable_bar_1/move_reg[10]/C (clocked by sys_clk_pin) and display/attack_screen/fight_screen/movable_bar_1/move_reg[7]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.055 ns between display/attack_screen/dodge_screen/heart_unit/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/heart_unit/move_reg[19]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#9 Warning
 Large setup violation  
-There is a large setup violation of -10.067 ns between display/attack_screen/dodge_screen/heart_unit/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/heart_unit/move_reg[9]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.058 ns between display/attack_screen/dodge_screen/bullet_unit_1/move_reg[1]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_1/move_reg[8]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#10 Warning
 Large setup violation  
-There is a large setup violation of -10.071 ns between display/attack_screen/dodge_screen/bullet_unit_1/move_reg[4]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_1/move_reg[19]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.067 ns between display/attack_screen/dodge_screen/bullet_unit_2/move_reg[1]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_2/move_reg[16]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#11 Warning
 Large setup violation  
-There is a large setup violation of -10.080 ns between display/attack_screen/dodge_screen/bullet_unit_1/move_reg[4]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_1/move_reg[21]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.067 ns between display/attack_screen/dodge_screen/bullet_unit_2/move_reg[1]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_2/move_reg[17]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#12 Warning
 Large setup violation  
-There is a large setup violation of -10.090 ns between display/attack_screen/dodge_screen/bullet_unit_2/move_reg[5]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_2/move_reg[14]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.069 ns between display/attack_screen/dodge_screen/bullet_unit_3/move_reg[4]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_3/move_reg[19]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#13 Warning
 Large setup violation  
-There is a large setup violation of -10.094 ns between display/attack_screen/dodge_screen/heart_unit/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/heart_unit/move_reg[11]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.079 ns between display/attack_screen/dodge_screen/bullet_unit_3/move_reg[14]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_3/move_reg[9]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#14 Warning
 Large setup violation  
-There is a large setup violation of -10.097 ns between display/attack_screen/fight_screen/movable_bar_1/move_reg[10]/C (clocked by sys_clk_pin) and display/attack_screen/fight_screen/movable_bar_1/move_reg[15]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.083 ns between display/attack_screen/dodge_screen/heart_unit/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/heart_unit/move_reg[15]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#15 Warning
 Large setup violation  
-There is a large setup violation of -10.101 ns between display/attack_screen/dodge_screen/bullet_unit_2/move_reg[5]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_2/move_reg[19]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.084 ns between display/attack_screen/dodge_screen/bullet_unit_2/move_reg[1]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_2/move_reg[12]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#16 Warning
 Large setup violation  
-There is a large setup violation of -10.108 ns between display/attack_screen/fight_screen/movable_bar_1/move_reg[10]/C (clocked by sys_clk_pin) and display/attack_screen/fight_screen/movable_bar_1/move_reg[9]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.094 ns between display/attack_screen/dodge_screen/bullet_unit_2/move_reg[1]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_2/move_reg[9]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#17 Warning
 Large setup violation  
-There is a large setup violation of -10.118 ns between display/attack_screen/dodge_screen/bullet_unit_2/move_reg[5]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_2/move_reg[9]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.102 ns between display/attack_screen/dodge_screen/bullet_unit_3/move_reg[4]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_3/move_reg[16]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#18 Warning
 Large setup violation  
-There is a large setup violation of -10.121 ns between display/attack_screen/dodge_screen/bullet_unit_2/move_reg[5]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_2/move_reg[13]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.102 ns between display/attack_screen/dodge_screen/bullet_unit_3/move_reg[4]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_3/move_reg[20]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#19 Warning
 Large setup violation  
-There is a large setup violation of -10.128 ns between display/attack_screen/dodge_screen/heart_unit/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/heart_unit/move_reg[16]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.107 ns between display/attack_screen/dodge_screen/bullet_unit_3/move_reg[4]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_3/move_reg[21]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#20 Warning
 Large setup violation  
-There is a large setup violation of -10.132 ns between display/attack_screen/dodge_screen/bullet_unit_3/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_3/move_reg[6]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.109 ns between display/attack_screen/dodge_screen/bullet_unit_1/move_reg[1]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_1/move_reg[11]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#21 Warning
 Large setup violation  
-There is a large setup violation of -10.136 ns between display/attack_screen/dodge_screen/heart_unit/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/heart_unit/move_reg[17]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.110 ns between display/attack_screen/dodge_screen/bullet_unit_1/move_reg[1]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_1/move_reg[7]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#22 Warning
 Large setup violation  
-There is a large setup violation of -10.141 ns between display/attack_screen/dodge_screen/bullet_unit_1/move_reg[4]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_1/move_reg[20]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.116 ns between display/attack_screen/dodge_screen/bullet_unit_3/move_reg[14]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_3/move_reg[10]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#23 Warning
 Large setup violation  
-There is a large setup violation of -10.148 ns between display/attack_screen/dodge_screen/bullet_unit_1/move_reg[4]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_1/move_reg[22]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.118 ns between display/attack_screen/dodge_screen/bullet_unit_2/move_reg[1]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_2/move_reg[11]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#24 Warning
 Large setup violation  
-There is a large setup violation of -10.156 ns between display/attack_screen/dodge_screen/heart_unit/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/heart_unit/move_reg[13]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.118 ns between display/attack_screen/dodge_screen/bullet_unit_3/move_reg[14]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_3/move_reg[12]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#25 Warning
 Large setup violation  
-There is a large setup violation of -10.165 ns between display/attack_screen/dodge_screen/bullet_unit_2/move_reg[5]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_2/move_reg[12]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.131 ns between display/attack_screen/dodge_screen/bullet_unit_2/move_reg[1]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_2/move_reg[15]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#26 Warning
 Large setup violation  
-There is a large setup violation of -10.166 ns between display/attack_screen/dodge_screen/bullet_unit_2/move_reg[5]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_2/move_reg[10]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.150 ns between display/attack_screen/dodge_screen/bullet_unit_3/move_reg[14]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_3/move_reg[13]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#27 Warning
 Large setup violation  
-There is a large setup violation of -10.168 ns between display/attack_screen/dodge_screen/heart_unit/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/heart_unit/move_reg[15]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.161 ns between display/attack_screen/dodge_screen/heart_unit/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/heart_unit/move_reg[10]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#28 Warning
 Large setup violation  
-There is a large setup violation of -10.172 ns between display/attack_screen/fight_screen/movable_bar_1/move_reg[10]/C (clocked by sys_clk_pin) and display/attack_screen/fight_screen/movable_bar_1/move_reg[12]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.166 ns between display/attack_screen/dodge_screen/bullet_unit_3/move_reg[4]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_3/move_reg[18]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#29 Warning
 Large setup violation  
-There is a large setup violation of -10.184 ns between display/attack_screen/dodge_screen/bullet_unit_1/move_reg[4]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_1/move_reg[18]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.167 ns between display/attack_screen/dodge_screen/heart_unit/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/heart_unit/move_reg[20]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#30 Warning
 Large setup violation  
-There is a large setup violation of -10.203 ns between display/attack_screen/dodge_screen/bullet_unit_2/move_reg[5]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_2/move_reg[18]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.177 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[9]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#31 Warning
 Large setup violation  
-There is a large setup violation of -10.216 ns between display/attack_screen/dodge_screen/bullet_unit_2/move_reg[5]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_2/move_reg[20]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.185 ns between display/attack_screen/dodge_screen/bullet_unit_2/move_reg[1]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_2/move_reg[21]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#32 Warning
 Large setup violation  
-There is a large setup violation of -10.217 ns between display/attack_screen/dodge_screen/bullet_unit_2/move_reg[5]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_2/move_reg[21]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.186 ns between display/attack_screen/dodge_screen/heart_unit/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/heart_unit/move_reg[18]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#33 Warning
 Large setup violation  
-There is a large setup violation of -10.232 ns between display/attack_screen/fight_screen/movable_bar_1/move_reg[10]/C (clocked by sys_clk_pin) and display/attack_screen/fight_screen/movable_bar_1/move_reg[13]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.187 ns between display/attack_screen/dodge_screen/bullet_unit_3/move_reg[4]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_3/move_reg[23]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#34 Warning
 Large setup violation  
-There is a large setup violation of -10.234 ns between display/attack_screen/fight_screen/movable_bar_1/move_reg[10]/C (clocked by sys_clk_pin) and display/attack_screen/fight_screen/movable_bar_1/move_reg[17]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.189 ns between display/attack_screen/dodge_screen/bullet_unit_3/move_reg[14]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_3/move_reg[11]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#35 Warning
 Large setup violation  
-There is a large setup violation of -10.248 ns between display/attack_screen/dodge_screen/heart_unit/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/heart_unit/move_reg[20]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.190 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[11]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#36 Warning
 Large setup violation  
-There is a large setup violation of -10.251 ns between display/attack_screen/dodge_screen/heart_unit/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/heart_unit/move_reg[21]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.194 ns between display/attack_screen/dodge_screen/bullet_unit_3/move_reg[14]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_3/move_reg[15]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#37 Warning
 Large setup violation  
-There is a large setup violation of -10.253 ns between display/attack_screen/dodge_screen/bullet_unit_2/move_reg[5]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_2/move_reg[23]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.205 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[13]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#38 Warning
 Large setup violation  
-There is a large setup violation of -10.260 ns between display/attack_screen/dodge_screen/bullet_unit_2/move_reg[5]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_2/move_reg[17]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.215 ns between display/attack_screen/dodge_screen/bullet_unit_2/move_reg[1]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_2/move_reg[19]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#39 Warning
 Large setup violation  
-There is a large setup violation of -10.285 ns between display/attack_screen/dodge_screen/heart_unit/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/heart_unit/move_reg[14]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.227 ns between display/attack_screen/dodge_screen/bullet_unit_2/move_reg[1]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_2/move_reg[14]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#40 Warning
 Large setup violation  
-There is a large setup violation of -10.295 ns between display/attack_screen/dodge_screen/heart_unit/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/heart_unit/move_reg[19]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.229 ns between display/attack_screen/dodge_screen/heart_unit/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/heart_unit/move_reg[21]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#41 Warning
 Large setup violation  
-There is a large setup violation of -10.314 ns between display/attack_screen/dodge_screen/heart_unit/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/heart_unit/move_reg[10]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.234 ns between display/attack_screen/dodge_screen/bullet_unit_3/move_reg[4]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_3/move_reg[22]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#42 Warning
 Large setup violation  
-There is a large setup violation of -10.321 ns between display/attack_screen/fight_screen/movable_bar_1/move_reg[10]/C (clocked by sys_clk_pin) and display/attack_screen/fight_screen/movable_bar_1/move_reg[20]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.235 ns between display/attack_screen/dodge_screen/bullet_unit_2/move_reg[1]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_2/move_reg[10]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#43 Warning
 Large setup violation  
-There is a large setup violation of -10.344 ns between display/attack_screen/fight_screen/movable_bar_1/move_reg[10]/C (clocked by sys_clk_pin) and display/attack_screen/fight_screen/movable_bar_1/move_reg[16]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.279 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[17]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#44 Warning
 Large setup violation  
-There is a large setup violation of -10.347 ns between display/attack_screen/dodge_screen/bullet_unit_3/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_3/move_reg[11]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.296 ns between display/attack_screen/dodge_screen/bullet_unit_2/move_reg[1]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_2/move_reg[18]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#45 Warning
 Large setup violation  
-There is a large setup violation of -10.349 ns between display/attack_screen/fight_screen/movable_bar_1/move_reg[10]/C (clocked by sys_clk_pin) and display/attack_screen/fight_screen/movable_bar_1/move_reg[18]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.310 ns between display/attack_screen/dodge_screen/bullet_unit_1/move_reg[1]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_1/move_reg[9]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#46 Warning
 Large setup violation  
-There is a large setup violation of -10.350 ns between display/attack_screen/dodge_screen/bullet_unit_2/move_reg[5]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_2/move_reg[22]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.316 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[12]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#47 Warning
 Large setup violation  
-There is a large setup violation of -10.353 ns between display/attack_screen/dodge_screen/bullet_unit_2/move_reg[5]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_2/move_reg[16]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.334 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[10]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#48 Warning
 Large setup violation  
-There is a large setup violation of -10.363 ns between display/attack_screen/dodge_screen/heart_unit/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/heart_unit/move_reg[23]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.337 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[15]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#49 Warning
 Large setup violation  
-There is a large setup violation of -10.368 ns between display/attack_screen/dodge_screen/heart_unit/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/heart_unit/move_reg[18]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.346 ns between display/attack_screen/dodge_screen/bullet_unit_1/move_reg[1]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_1/move_reg[15]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#50 Warning
 Large setup violation  
-There is a large setup violation of -10.368 ns between display/attack_screen/fight_screen/movable_bar_1/move_reg[10]/C (clocked by sys_clk_pin) and display/attack_screen/fight_screen/movable_bar_1/move_reg[23]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.352 ns between display/attack_screen/dodge_screen/bullet_unit_2/move_reg[1]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_2/move_reg[23]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#51 Warning
 Large setup violation  
-There is a large setup violation of -10.370 ns between display/attack_screen/fight_screen/movable_bar_1/move_reg[10]/C (clocked by sys_clk_pin) and display/attack_screen/fight_screen/movable_bar_1/move_reg[19]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.355 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[16]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#52 Warning
 Large setup violation  
-There is a large setup violation of -10.377 ns between display/attack_screen/dodge_screen/bullet_unit_3/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_3/move_reg[7]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.355 ns between display/attack_screen/atk_FSM/state_divider_reg[5]/C (clocked by sys_clk_pin) and display/attack_screen/atk_FSM/state_divider_reg[6]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#53 Warning
 Large setup violation  
-There is a large setup violation of -10.380 ns between display/attack_screen/fight_screen/movable_bar_1/move_reg[10]/C (clocked by sys_clk_pin) and display/attack_screen/fight_screen/movable_bar_1/move_reg[14]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.360 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[31]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#54 Warning
 Large setup violation  
-There is a large setup violation of -10.382 ns between display/attack_screen/dodge_screen/bullet_unit_3/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_3/move_reg[16]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.371 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[14]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#55 Warning
 Large setup violation  
-There is a large setup violation of -10.394 ns between display/attack_screen/dodge_screen/bullet_unit_3/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_3/move_reg[8]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.375 ns between display/attack_screen/dodge_screen/bullet_unit_2/move_reg[1]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_2/move_reg[20]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#56 Warning
 Large setup violation  
-There is a large setup violation of -10.401 ns between display/attack_screen/fight_screen/movable_bar_1/move_reg[10]/C (clocked by sys_clk_pin) and display/attack_screen/fight_screen/movable_bar_1/move_reg[21]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.389 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[18]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#57 Warning
 Large setup violation  
-There is a large setup violation of -10.408 ns between display/attack_screen/dodge_screen/bullet_unit_3/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_3/move_reg[17]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.395 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[21]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#58 Warning
 Large setup violation  
-There is a large setup violation of -10.413 ns between display/attack_screen/dodge_screen/bullet_unit_3/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_3/move_reg[10]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.401 ns between display/attack_screen/dodge_screen/bullet_unit_1/move_reg[1]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_1/move_reg[13]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#59 Warning
 Large setup violation  
-There is a large setup violation of -10.440 ns between display/attack_screen/fight_screen/movable_bar_1/move_reg[10]/C (clocked by sys_clk_pin) and display/attack_screen/fight_screen/movable_bar_1/move_reg[22]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.407 ns between display/attack_screen/atk_FSM/state_divider_reg[5]/C (clocked by sys_clk_pin) and display/attack_screen/atk_FSM/state_divider_reg[12]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#60 Warning
 Large setup violation  
-There is a large setup violation of -10.447 ns between display/attack_screen/dodge_screen/bullet_unit_3/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_3/move_reg[15]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.410 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[20]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#61 Warning
 Large setup violation  
-There is a large setup violation of -10.476 ns between display/attack_screen/dodge_screen/bullet_unit_3/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_3/move_reg[13]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.416 ns between display/attack_screen/dodge_screen/bullet_unit_1/move_reg[1]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_1/move_reg[17]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#62 Warning
 Large setup violation  
-There is a large setup violation of -10.489 ns between display/attack_screen/dodge_screen/bullet_unit_3/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_3/move_reg[12]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.432 ns between display/attack_screen/dodge_screen/bullet_unit_1/move_reg[1]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_1/move_reg[10]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#63 Warning
 Large setup violation  
-There is a large setup violation of -10.509 ns between display/attack_screen/dodge_screen/bullet_unit_3/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_3/move_reg[20]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.445 ns between display/attack_screen/atk_FSM/state_divider_reg[5]/C (clocked by sys_clk_pin) and display/attack_screen/atk_FSM/state_divider_reg[8]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#64 Warning
 Large setup violation  
-There is a large setup violation of -10.514 ns between display/attack_screen/dodge_screen/bullet_unit_3/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_3/move_reg[14]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.451 ns between display/attack_screen/atk_FSM/state_divider_reg[5]/C (clocked by sys_clk_pin) and display/attack_screen/atk_FSM/state_divider_reg[11]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#65 Warning
 Large setup violation  
-There is a large setup violation of -10.530 ns between display/attack_screen/dodge_screen/bullet_unit_3/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_3/move_reg[18]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.453 ns between display/attack_screen/atk_FSM/state_divider_reg[5]/C (clocked by sys_clk_pin) and display/attack_screen/atk_FSM/state_divider_reg[15]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#66 Warning
 Large setup violation  
-There is a large setup violation of -10.530 ns between display/attack_screen/dodge_screen/bullet_unit_3/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_3/move_reg[19]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.459 ns between display/attack_screen/atk_FSM/state_divider_reg[5]/C (clocked by sys_clk_pin) and display/attack_screen/atk_FSM/state_divider_reg[7]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#67 Warning
 Large setup violation  
-There is a large setup violation of -10.533 ns between display/attack_screen/dodge_screen/bullet_unit_3/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_3/move_reg[23]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.461 ns between display/attack_screen/atk_FSM/state_divider_reg[5]/C (clocked by sys_clk_pin) and display/attack_screen/atk_FSM/state_divider_reg[19]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#68 Warning
 Large setup violation  
-There is a large setup violation of -10.606 ns between display/attack_screen/dodge_screen/bullet_unit_3/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_3/move_reg[9]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.464 ns between display/attack_screen/dodge_screen/bullet_unit_1/move_reg[1]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_1/move_reg[12]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#69 Warning
 Large setup violation  
-There is a large setup violation of -10.626 ns between display/attack_screen/dodge_screen/bullet_unit_3/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_3/move_reg[22]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.465 ns between display/attack_screen/dodge_screen/bullet_unit_2/move_reg[1]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_2/move_reg[22]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#70 Warning
 Large setup violation  
-There is a large setup violation of -10.700 ns between display/attack_screen/dodge_screen/bullet_unit_3/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_3/move_reg[21]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.482 ns between display/attack_screen/dodge_screen/bullet_unit_1/move_reg[1]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_1/move_reg[19]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#71 Warning
 Large setup violation  
-There is a large setup violation of -9.052 ns between display/attack_screen/atk_FSM/state_divider_reg[4]/C (clocked by sys_clk_pin) and display/attack_screen/atk_FSM/state_divider_reg[5]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.507 ns between display/attack_screen/atk_FSM/state_divider_reg[5]/C (clocked by sys_clk_pin) and display/attack_screen/atk_FSM/state_divider_reg[16]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#72 Warning
 Large setup violation  
-There is a large setup violation of -9.138 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[5]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.516 ns between display/attack_screen/dodge_screen/bullet_unit_1/move_reg[1]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_1/move_reg[23]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#73 Warning
 Large setup violation  
-There is a large setup violation of -9.331 ns between display/attack_screen/atk_FSM/state_divider_reg[4]/C (clocked by sys_clk_pin) and display/attack_screen/atk_FSM/state_divider_reg[6]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.520 ns between display/attack_screen/dodge_screen/bullet_unit_1/move_reg[1]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_1/move_reg[18]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#74 Warning
 Large setup violation  
-There is a large setup violation of -9.351 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[8]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.522 ns between display/attack_screen/dodge_screen/bullet_unit_1/move_reg[1]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_1/move_reg[20]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#75 Warning
 Large setup violation  
-There is a large setup violation of -9.380 ns between display/attack_screen/atk_FSM/state_divider_reg[4]/C (clocked by sys_clk_pin) and display/attack_screen/atk_FSM/state_divider_reg[8]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.525 ns between display/attack_screen/atk_FSM/state_divider_reg[5]/C (clocked by sys_clk_pin) and display/attack_screen/atk_FSM/state_divider_reg[13]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#76 Warning
 Large setup violation  
-There is a large setup violation of -9.455 ns between display/attack_screen/atk_FSM/state_divider_reg[0]/C (clocked by sys_clk_pin) and display/attack_screen/atk_FSM/state_divider_reg[7]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.526 ns between display/attack_screen/dodge_screen/bullet_unit_1/move_reg[1]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_1/move_reg[16]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#77 Warning
 Large setup violation  
-There is a large setup violation of -9.458 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[7]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.530 ns between display/attack_screen/dodge_screen/bullet_unit_1/move_reg[1]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_1/move_reg[14]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#78 Warning
 Large setup violation  
-There is a large setup violation of -9.467 ns between display/attack_screen/dodge_screen/bullet_unit_1/move_reg[4]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_1/move_reg[6]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.535 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[19]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#79 Warning
 Large setup violation  
-There is a large setup violation of -9.473 ns between display/attack_screen/dodge_screen/heart_unit/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/heart_unit/move_reg[5]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.546 ns between display/attack_screen/atk_FSM/state_divider_reg[5]/C (clocked by sys_clk_pin) and display/attack_screen/atk_FSM/state_divider_reg[31]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#80 Warning
 Large setup violation  
-There is a large setup violation of -9.488 ns between display/attack_screen/atk_FSM/state_divider_reg[4]/C (clocked by sys_clk_pin) and display/attack_screen/atk_FSM/state_divider_reg[9]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.552 ns between display/attack_screen/atk_FSM/state_divider_reg[5]/C (clocked by sys_clk_pin) and display/attack_screen/atk_FSM/state_divider_reg[9]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#81 Warning
 Large setup violation  
-There is a large setup violation of -9.504 ns between display/attack_screen/atk_FSM/state_divider_reg[4]/C (clocked by sys_clk_pin) and display/attack_screen/atk_FSM/state_divider_reg[11]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.577 ns between display/attack_screen/atk_FSM/state_divider_reg[5]/C (clocked by sys_clk_pin) and display/attack_screen/atk_FSM/state_divider_reg[14]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#82 Warning
 Large setup violation  
-There is a large setup violation of -9.511 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[6]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.578 ns between display/attack_screen/dodge_screen/bullet_unit_1/move_reg[1]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_1/move_reg[21]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#83 Warning
 Large setup violation  
-There is a large setup violation of -9.535 ns between display/attack_screen/atk_FSM/state_divider_reg[4]/C (clocked by sys_clk_pin) and display/attack_screen/atk_FSM/state_divider_reg[12]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.588 ns between display/attack_screen/atk_FSM/state_divider_reg[5]/C (clocked by sys_clk_pin) and display/attack_screen/atk_FSM/state_divider_reg[17]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#84 Warning
 Large setup violation  
-There is a large setup violation of -9.600 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[16]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.592 ns between display/attack_screen/atk_FSM/state_divider_reg[5]/C (clocked by sys_clk_pin) and display/attack_screen/atk_FSM/state_divider_reg[10]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#85 Warning
 Large setup violation  
-There is a large setup violation of -9.616 ns between display/attack_screen/dodge_screen/bullet_unit_1/move_reg[4]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_1/move_reg[8]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.632 ns between display/attack_screen/atk_FSM/state_divider_reg[5]/C (clocked by sys_clk_pin) and display/attack_screen/atk_FSM/state_divider_reg[20]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#86 Warning
 Large setup violation  
-There is a large setup violation of -9.633 ns between display/attack_screen/atk_FSM/state_divider_reg[4]/C (clocked by sys_clk_pin) and display/attack_screen/atk_FSM/state_divider_reg[13]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.662 ns between display/attack_screen/atk_FSM/state_divider_reg[5]/C (clocked by sys_clk_pin) and display/attack_screen/atk_FSM/state_divider_reg[18]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#87 Warning
 Large setup violation  
-There is a large setup violation of -9.648 ns between display/attack_screen/atk_FSM/state_divider_reg[4]/C (clocked by sys_clk_pin) and display/attack_screen/atk_FSM/state_divider_reg[10]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.680 ns between display/attack_screen/atk_FSM/state_divider_reg[5]/C (clocked by sys_clk_pin) and display/attack_screen/atk_FSM/state_divider_reg[21]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#88 Warning
 Large setup violation  
-There is a large setup violation of -9.649 ns between display/attack_screen/atk_FSM/state_divider_reg[4]/C (clocked by sys_clk_pin) and display/attack_screen/atk_FSM/state_divider_reg[16]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.815 ns between display/attack_screen/dodge_screen/bullet_unit_1/move_reg[1]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_1/move_reg[22]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#89 Warning
 Large setup violation  
-There is a large setup violation of -9.663 ns between display/attack_screen/atk_FSM/state_divider_reg[4]/C (clocked by sys_clk_pin) and display/attack_screen/atk_FSM/state_divider_reg[15]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -9.439 ns between display/attack_screen/dodge_screen/heart_unit/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/heart_unit/move_reg[5]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#90 Warning
 Large setup violation  
-There is a large setup violation of -9.674 ns between display/attack_screen/dodge_screen/bullet_unit_1/move_reg[4]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_1/move_reg[7]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -9.573 ns between display/attack_screen/dodge_screen/bullet_unit_2/move_reg[3]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_2/move_reg[6]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#91 Warning
 Large setup violation  
-There is a large setup violation of -9.681 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[12]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -9.578 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[5]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#92 Warning
 Large setup violation  
-There is a large setup violation of -9.700 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[13]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -9.618 ns between display/attack_screen/dodge_screen/heart_unit/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/heart_unit/move_reg[6]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#93 Warning
 Large setup violation  
-There is a large setup violation of -9.703 ns between display/attack_screen/atk_FSM/state_divider_reg[4]/C (clocked by sys_clk_pin) and display/attack_screen/atk_FSM/state_divider_reg[20]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -9.684 ns between display/attack_screen/dodge_screen/bullet_unit_2/move_reg[1]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_2/move_reg[7]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#94 Warning
 Large setup violation  
-There is a large setup violation of -9.713 ns between display/attack_screen/dodge_screen/bullet_unit_1/move_reg[4]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_1/move_reg[11]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -9.713 ns between display/attack_screen/dodge_screen/heart_unit/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/heart_unit/move_reg[8]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#95 Warning
 Large setup violation  
-There is a large setup violation of -9.714 ns between display/attack_screen/fight_screen/movable_bar_1/move_reg[10]/C (clocked by sys_clk_pin) and display/attack_screen/fight_screen/movable_bar_1/move_reg[6]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -9.716 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[6]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#96 Warning
 Large setup violation  
-There is a large setup violation of -9.737 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[20]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -9.729 ns between display/attack_screen/dodge_screen/heart_unit/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/heart_unit/move_reg[7]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#97 Warning
 Large setup violation  
-There is a large setup violation of -9.738 ns between display/attack_screen/atk_FSM/state_divider_reg[4]/C (clocked by sys_clk_pin) and display/attack_screen/atk_FSM/state_divider_reg[31]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -9.803 ns between display/attack_screen/dodge_screen/bullet_unit_2/move_reg[1]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_2/move_reg[8]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#98 Warning
 Large setup violation  
-There is a large setup violation of -9.740 ns between display/attack_screen/dodge_screen/bullet_unit_1/move_reg[4]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_1/move_reg[9]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -9.825 ns between display/attack_screen/dodge_screen/bullet_unit_3/move_reg[14]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_3/move_reg[6]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#99 Warning
 Large setup violation  
-There is a large setup violation of -9.746 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[14]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -9.862 ns between display/attack_screen/dodge_screen/heart_unit/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/heart_unit/move_reg[11]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#100 Warning
 Large setup violation  
-There is a large setup violation of -9.751 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[17]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -9.867 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[7]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#101 Warning
 Large setup violation  
-There is a large setup violation of -9.761 ns between display/attack_screen/atk_FSM/state_divider_reg[4]/C (clocked by sys_clk_pin) and display/attack_screen/atk_FSM/state_divider_reg[14]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -9.893 ns between display/attack_screen/dodge_screen/bullet_unit_1/move_reg[1]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_1/move_reg[6]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#102 Warning
 Large setup violation  
-There is a large setup violation of -9.764 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[11]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -9.896 ns between display/attack_screen/dodge_screen/bullet_unit_3/move_reg[14]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_3/move_reg[8]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#103 Warning
 Large setup violation  
-There is a large setup violation of -9.781 ns between display/attack_screen/atk_FSM/state_divider_reg[4]/C (clocked by sys_clk_pin) and display/attack_screen/atk_FSM/state_divider_reg[18]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -9.927 ns between display/attack_screen/dodge_screen/heart_unit/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/heart_unit/move_reg[13]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#104 Warning
 Large setup violation  
-There is a large setup violation of -9.783 ns between display/attack_screen/dodge_screen/bullet_unit_2/move_reg[5]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_2/move_reg[6]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -9.930 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[8]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#105 Warning
 Large setup violation  
-There is a large setup violation of -9.785 ns between display/attack_screen/atk_FSM/state_divider_reg[4]/C (clocked by sys_clk_pin) and display/attack_screen/atk_FSM/state_divider_reg[21]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -9.932 ns between display/attack_screen/dodge_screen/heart_unit/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/heart_unit/move_reg[17]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#106 Warning
 Large setup violation  
-There is a large setup violation of -9.815 ns between display/attack_screen/dodge_screen/bullet_unit_1/move_reg[4]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_1/move_reg[10]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -9.937 ns between display/attack_screen/dodge_screen/heart_unit/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/heart_unit/move_reg[12]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#107 Warning
 Large setup violation  
-There is a large setup violation of -9.818 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[9]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -9.960 ns between display/attack_screen/dodge_screen/bullet_unit_2/move_reg[1]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_2/move_reg[13]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#108 Warning
 Large setup violation  
-There is a large setup violation of -9.825 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[10]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#109 Warning
-Large setup violation  
-There is a large setup violation of -9.826 ns between display/attack_screen/dodge_screen/bullet_unit_1/move_reg[4]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_1/move_reg[15]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#110 Warning
-Large setup violation  
-There is a large setup violation of -9.829 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[15]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#111 Warning
-Large setup violation  
-There is a large setup violation of -9.830 ns between display/attack_screen/atk_FSM/state_divider_reg[4]/C (clocked by sys_clk_pin) and display/attack_screen/atk_FSM/state_divider_reg[19]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#112 Warning
-Large setup violation  
-There is a large setup violation of -9.837 ns between display/attack_screen/dodge_screen/heart_unit/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/heart_unit/move_reg[8]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#113 Warning
-Large setup violation  
-There is a large setup violation of -9.838 ns between display/attack_screen/dodge_screen/bullet_unit_1/move_reg[4]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_1/move_reg[12]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#114 Warning
-Large setup violation  
-There is a large setup violation of -9.842 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[21]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#115 Warning
-Large setup violation  
-There is a large setup violation of -9.853 ns between display/attack_screen/dodge_screen/bullet_unit_1/move_reg[4]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_1/move_reg[13]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#116 Warning
-Large setup violation  
-There is a large setup violation of -9.862 ns between display/attack_screen/atk_FSM/state_divider_reg[4]/C (clocked by sys_clk_pin) and display/attack_screen/atk_FSM/state_divider_reg[17]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#117 Warning
-Large setup violation  
-There is a large setup violation of -9.887 ns between display/attack_screen/dodge_screen/heart_unit/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/heart_unit/move_reg[7]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#118 Warning
-Large setup violation  
-There is a large setup violation of -9.890 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[19]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#119 Warning
-Large setup violation  
-There is a large setup violation of -9.894 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[31]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#120 Warning
-Large setup violation  
-There is a large setup violation of -9.910 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[18]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#121 Warning
-Large setup violation  
-There is a large setup violation of -9.928 ns between display/attack_screen/dodge_screen/bullet_unit_1/move_reg[4]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_1/move_reg[14]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#122 Warning
-Large setup violation  
-There is a large setup violation of -9.940 ns between display/attack_screen/dodge_screen/heart_unit/move_reg[2]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/heart_unit/move_reg[6]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#123 Warning
-Large setup violation  
-There is a large setup violation of -9.955 ns between display/attack_screen/fight_screen/movable_bar_1/move_reg[10]/C (clocked by sys_clk_pin) and display/attack_screen/fight_screen/movable_bar_1/move_reg[11]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#124 Warning
-Large setup violation  
-There is a large setup violation of -9.963 ns between display/attack_screen/dodge_screen/bullet_unit_2/move_reg[5]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_2/move_reg[7]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#125 Warning
-Large setup violation  
-There is a large setup violation of -9.966 ns between display/attack_screen/dodge_screen/bullet_unit_1/move_reg[4]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_1/move_reg[17]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#126 Warning
-Large setup violation  
-There is a large setup violation of -9.988 ns between display/attack_screen/dodge_screen/bullet_unit_2/move_reg[5]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_2/move_reg[15]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -9.984 ns between display/attack_screen/dodge_screen/bullet_unit_3/move_reg[14]/C (clocked by sys_clk_pin) and display/attack_screen/dodge_screen/bullet_unit_3/move_reg[7]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-18#1 Warning
@@ -827,120 +747,115 @@ Related violations: <none>
 
 TIMING-20#7 Warning
 Non-clocked latch  
-The latch display/attack_screen/fight_screen/fight_on_reg cannot be properly analyzed as its control pin display/attack_screen/fight_screen/fight_on_reg/G is not reached by a timing clock
+The latch display/attack_screen/flame_monster_unit/change_reg[0] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/change_reg[0]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#8 Warning
 Non-clocked latch  
-The latch display/attack_screen/flame_monster_unit/change_reg[0] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/change_reg[0]/G is not reached by a timing clock
+The latch display/attack_screen/flame_monster_unit/change_reg[1] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/change_reg[1]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#9 Warning
 Non-clocked latch  
-The latch display/attack_screen/flame_monster_unit/change_reg[1] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/change_reg[1]/G is not reached by a timing clock
+The latch display/attack_screen/flame_monster_unit/change_reg[24] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/change_reg[24]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#10 Warning
 Non-clocked latch  
-The latch display/attack_screen/flame_monster_unit/change_reg[24] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/change_reg[24]/G is not reached by a timing clock
+The latch display/attack_screen/flame_monster_unit/change_reg[2] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/change_reg[2]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#11 Warning
 Non-clocked latch  
-The latch display/attack_screen/flame_monster_unit/change_reg[2] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/change_reg[2]/G is not reached by a timing clock
+The latch display/attack_screen/flame_monster_unit/change_reg[3] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/change_reg[3]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#12 Warning
 Non-clocked latch  
-The latch display/attack_screen/flame_monster_unit/change_reg[3] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/change_reg[3]/G is not reached by a timing clock
+The latch display/attack_screen/flame_monster_unit/change_reg[4] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/change_reg[4]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#13 Warning
 Non-clocked latch  
-The latch display/attack_screen/flame_monster_unit/change_reg[4] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/change_reg[4]/G is not reached by a timing clock
+The latch display/attack_screen/flame_monster_unit/change_reg[5] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/change_reg[5]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#14 Warning
 Non-clocked latch  
-The latch display/attack_screen/flame_monster_unit/change_reg[5] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/change_reg[5]/G is not reached by a timing clock
+The latch display/attack_screen/flame_monster_unit/change_reg[6] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/change_reg[6]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#15 Warning
 Non-clocked latch  
-The latch display/attack_screen/flame_monster_unit/change_reg[6] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/change_reg[6]/G is not reached by a timing clock
+The latch display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[0] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[0]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#16 Warning
 Non-clocked latch  
-The latch display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[0] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[0]/G is not reached by a timing clock
+The latch display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[10] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[10]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#17 Warning
 Non-clocked latch  
-The latch display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[10] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[10]/G is not reached by a timing clock
+The latch display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[11] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[11]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#18 Warning
 Non-clocked latch  
-The latch display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[11] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[11]/G is not reached by a timing clock
+The latch display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[1] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[1]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#19 Warning
 Non-clocked latch  
-The latch display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[1] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[1]/G is not reached by a timing clock
+The latch display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[2] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[2]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#20 Warning
 Non-clocked latch  
-The latch display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[2] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[2]/G is not reached by a timing clock
+The latch display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[3] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[3]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#21 Warning
 Non-clocked latch  
-The latch display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[3] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[3]/G is not reached by a timing clock
+The latch display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[4] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[4]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#22 Warning
 Non-clocked latch  
-The latch display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[4] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[4]/G is not reached by a timing clock
+The latch display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[5] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[5]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#23 Warning
 Non-clocked latch  
-The latch display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[5] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[5]/G is not reached by a timing clock
+The latch display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[6] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[6]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#24 Warning
 Non-clocked latch  
-The latch display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[6] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[6]/G is not reached by a timing clock
+The latch display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[7] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[7]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#25 Warning
 Non-clocked latch  
-The latch display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[7] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[7]/G is not reached by a timing clock
+The latch display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[8] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[8]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#26 Warning
 Non-clocked latch  
-The latch display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[8] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[8]/G is not reached by a timing clock
+The latch display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[9] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[9]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#27 Warning
 Non-clocked latch  
-The latch display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[9] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[9]/G is not reached by a timing clock
+The latch display/attack_screen/flame_monster_unit/form_reg[0] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/form_reg[0]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#28 Warning
 Non-clocked latch  
-The latch display/attack_screen/flame_monster_unit/form_reg[0] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/form_reg[0]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#29 Warning
-Non-clocked latch  
 The latch display/attack_screen/flame_monster_unit/form_reg[1] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/form_reg[1]/G is not reached by a timing clock
 Related violations: <none>
 
-TIMING-20#30 Warning
+TIMING-20#29 Warning
 Non-clocked latch  
 The latch display/attack_screen/flame_monster_unit/form_reg[2] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/form_reg[2]/G is not reached by a timing clock
 Related violations: <none>
