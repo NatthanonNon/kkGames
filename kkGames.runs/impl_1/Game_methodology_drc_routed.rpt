@@ -1,0 +1,372 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sun Jun  7 19:17:07 2020
+| Host         : DESKTOP-E6CPFKC running 64-bit major release  (build 9200)
+| Command      : report_methodology -file Game_methodology_drc_routed.rpt -pb Game_methodology_drc_routed.pb -rpx Game_methodology_drc_routed.rpx
+| Design       : Game
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 67
++-----------+----------+-------------------------------+------------+
+| Rule      | Severity | Description                   | Violations |
++-----------+----------+-------------------------------+------------+
+| TIMING-16 | Warning  | Large setup violation         | 18         |
+| TIMING-18 | Warning  | Missing input or output delay | 24         |
+| TIMING-20 | Warning  | Non-clocked latch             | 25         |
++-----------+----------+-------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -8.997 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[5]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -9.186 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[6]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -9.536 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[7]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#4 Warning
+Large setup violation  
+There is a large setup violation of -9.590 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[8]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#5 Warning
+Large setup violation  
+There is a large setup violation of -9.610 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[12]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#6 Warning
+Large setup violation  
+There is a large setup violation of -9.626 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[13]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#7 Warning
+Large setup violation  
+There is a large setup violation of -9.664 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[9]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#8 Warning
+Large setup violation  
+There is a large setup violation of -9.671 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[11]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#9 Warning
+Large setup violation  
+There is a large setup violation of -9.728 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[31]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#10 Warning
+Large setup violation  
+There is a large setup violation of -9.729 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[16]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#11 Warning
+Large setup violation  
+There is a large setup violation of -9.742 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[10]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#12 Warning
+Large setup violation  
+There is a large setup violation of -9.744 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[17]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#13 Warning
+Large setup violation  
+There is a large setup violation of -9.751 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[15]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#14 Warning
+Large setup violation  
+There is a large setup violation of -9.847 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[20]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#15 Warning
+Large setup violation  
+There is a large setup violation of -9.848 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[19]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#16 Warning
+Large setup violation  
+There is a large setup violation of -9.856 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[21]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#17 Warning
+Large setup violation  
+There is a large setup violation of -9.882 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[14]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#18 Warning
+Large setup violation  
+There is a large setup violation of -9.996 ns between display/FSM/state_divider_reg[2]/C (clocked by sys_clk_pin) and display/FSM/state_divider_reg[18]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on RsRx relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An output delay is missing on Hsync relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An output delay is missing on RsTx relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An output delay is missing on Vsync relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An output delay is missing on led[0] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An output delay is missing on led[1] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An output delay is missing on led[2] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An output delay is missing on led[3] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An output delay is missing on led[4] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An output delay is missing on led[5] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An output delay is missing on led[6] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An output delay is missing on led[7] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An output delay is missing on vgaBlue[0] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An output delay is missing on vgaBlue[1] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An output delay is missing on vgaBlue[2] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#16 Warning
+Missing input or output delay  
+An output delay is missing on vgaBlue[3] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#17 Warning
+Missing input or output delay  
+An output delay is missing on vgaGreen[0] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#18 Warning
+Missing input or output delay  
+An output delay is missing on vgaGreen[1] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#19 Warning
+Missing input or output delay  
+An output delay is missing on vgaGreen[2] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#20 Warning
+Missing input or output delay  
+An output delay is missing on vgaGreen[3] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#21 Warning
+Missing input or output delay  
+An output delay is missing on vgaRed[0] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#22 Warning
+Missing input or output delay  
+An output delay is missing on vgaRed[1] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#23 Warning
+Missing input or output delay  
+An output delay is missing on vgaRed[2] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#24 Warning
+Missing input or output delay  
+An output delay is missing on vgaRed[3] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch display/FSM/video_attack_on_reg cannot be properly analyzed as its control pin display/FSM/video_attack_on_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch display/FSM/video_home_on_reg cannot be properly analyzed as its control pin display/FSM/video_home_on_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch display/attack_screen/flame_monster_unit/change_reg[0] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/change_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch display/attack_screen/flame_monster_unit/change_reg[1] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/change_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch display/attack_screen/flame_monster_unit/change_reg[25] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/change_reg[25]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch display/attack_screen/flame_monster_unit/change_reg[2] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/change_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch display/attack_screen/flame_monster_unit/change_reg[3] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/change_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch display/attack_screen/flame_monster_unit/change_reg[4] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/change_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch display/attack_screen/flame_monster_unit/change_reg[5] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/change_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch display/attack_screen/flame_monster_unit/change_reg[6] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/change_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[0] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[10] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[11] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[1] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[2] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#16 Warning
+Non-clocked latch  
+The latch display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[3] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#17 Warning
+Non-clocked latch  
+The latch display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[4] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#18 Warning
+Non-clocked latch  
+The latch display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[5] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#19 Warning
+Non-clocked latch  
+The latch display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[6] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#20 Warning
+Non-clocked latch  
+The latch display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[7] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#21 Warning
+Non-clocked latch  
+The latch display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[8] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#22 Warning
+Non-clocked latch  
+The latch display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[9] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/flame_monster/color_data_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#23 Warning
+Non-clocked latch  
+The latch display/attack_screen/flame_monster_unit/form_reg[0] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/form_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#24 Warning
+Non-clocked latch  
+The latch display/attack_screen/flame_monster_unit/form_reg[1] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/form_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#25 Warning
+Non-clocked latch  
+The latch display/attack_screen/flame_monster_unit/form_reg[2] cannot be properly analyzed as its control pin display/attack_screen/flame_monster_unit/form_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+

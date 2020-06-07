@@ -17,6 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -30,7 +31,9 @@ set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
 set_property ip_output_repo c:/Users/non_s/kkGames/kkGames.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
+  C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/Attack.v
   C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/Display.v
+  C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/attack_state_machine.v
   C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v
   C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet_rom.v
   C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/dodge.v

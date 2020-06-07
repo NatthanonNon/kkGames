@@ -38,9 +38,12 @@ module hp_bar(
 	reg [11:0] green_screen = 12'b011011011110;
 	
 	parameter top_left_x = 90;
-	parameter top_left_y = 460;
-	parameter bot_right_x = top_left_x + 120;
-	parameter bot_right_y = top_left_y + 10;
+	parameter top_left_y = 450;
+	parameter bot_right_x = top_left_x + 6*(max_hp);
+	parameter bot_right_y = top_left_y + 7;
+	
+	// flag to check whether hero(0) or moster(1) 
+	parameter color = 0;
 	
 	always@(posedge collision) begin
 	       current_hp = (current_hp - 1 <= 0)? 0 : current_hp - 1;
@@ -60,11 +63,13 @@ module hp_bar(
 		          col = x-top_left_x;*/
 		          if( x < bot_right_x - 6*(max_hp-current_hp)) begin
 		              hp_on = 1;
-				      rgb_out = 12'b000011110000;
+		              //current hp
+				      rgb_out = (color == 0) ? 12'b000011110000 : 12'b111010001000;
 				    end
 				  else if( x >= bot_right_x - 6*(max_hp-current_hp)) begin
 		              hp_on = 1;
-				      rgb_out = 12'b111100000000;
+		              //dealing hp
+				      rgb_out = (color == 0) ? 12'b111100000000 : 12'b111010111100;
 				    end
 				  
 			 end

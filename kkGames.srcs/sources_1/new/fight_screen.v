@@ -9,138 +9,13 @@ module fight(
     output reg [11:0] rgb_out,
     output reg fight_on
     );
-    wire [11:0]  heart_rgb,platforms_rgb,monster_rgb, home_rgb,spirit_rgb,bullet_1_rgb,bullet_2_rgb,hp_rgb;
-    wire heart_on,platforms_on,monster_on, home_on,spirit_on,bullet_1_on,bullet_2_on,hp_on;
-    
-    wire [9:0] heart_x,heart_y;
-    wire collision_1,collision_2;
-    
-    frame frame_unit 
-    (
-        .clk(clk), 
-        .video_on(video_fight_on), 
-        .x(x), .y(y), 
-        .rgb_out(platforms_rgb),
-	    .platforms_on(platforms_on)
-    );
+        
 	                      
-	flame_monster flame_monster_unit 
-	(
-	   .clk(clk), 
-	   .video_on(video_fight_on), 
-	   .x(x), 
-	   .y(y), 
-	   .rgb_out(monster_rgb),
-	   .monster_on(monster_on)
-    );
-	                      
-    heart heart_unit 
-    (
-        .clk(clk),
-        .keyboard(keyboard),
-        .video_on(video_fight_on), 
-        .x(x), 
-        .y(y), 
-        .rgb_out(heart_rgb),
-        .heart_on(heart_on),
-        .heart_x(heart_x),
-        .heart_y(heart_y)
-    );
-	                      
-	bullet bullet_unit_1 
-	(
-	   .clk(clk), 
-	   .video_on(video_fight_on), 
-	   .x(x), 
-	   .y(y),
-	   .heart_x(heart_x),
-	   .heart_y(heart_y),
-	   .rgb_out(bullet_1_rgb),
-	   .collision(collision_1),
-	   .bullet_on(bullet_1_on)
-    );
-    
-    defparam bullet_unit_1.t_l_x = 320;
-	defparam bullet_unit_1.t_l_y = 248;
-	defparam bullet_unit_1.pattern = 0;
-	                      
-	bullet bullet_unit_2 
-	(
-	   .clk(clk), 
-	   .video_on(video_fight_on), 
-	   .x(x), 
-	   .y(y),
-	   .heart_x(heart_x),
-	   .heart_y(heart_y),
-	   .rgb_out(bullet_2_rgb),
-	   .collision(collision_2),
-	   .bullet_on(bullet_2_on)
-    );
-    
-    defparam bullet_unit_2.t_l_x = 320;
-	defparam bullet_unit_2.t_l_y = 248;
-	defparam bullet_unit_2.pattern = 1;
-	
-	bullet bullet_unit_3 
-	(
-	   .clk(clk), 
-	   .video_on(video_fight_on), 
-	   .x(x), 
-	   .y(y),
-	   .heart_x(heart_x),
-	   .heart_y(heart_y),
-	   .rgb_out(bullet_2_rgb),
-	   .collision(collision_2),
-	   .bullet_on(bullet_2_on)
-    );
-    
-    defparam bullet_unit_3.t_l_x = 100;
-	defparam bullet_unit_3.t_l_y = 250;
-	defparam bullet_unit_3.pattern = 2;
-    
-            
-	wire is_collision =  collision_1 | collision_2;
-	hp_bar hp_bar_unit 
-	(
-	   .clk(clk), 
-	   .video_on(video_fight_on), 
-	   .x(x), 
-	   .y(y),
-	   .collision(is_collision),
-	   .rgb_out(hp_rgb),
-	   .hp_on(hp_on)
-    );
 	
 	always @*
 		begin
 		if (~video_fight_on)
 			rgb_out = 12'b0;
-			
-		else if(heart_on) begin
-               rgb_out = heart_rgb;
-               fight_on = 1;
-        end
-        
-	    else if(monster_on) begin
-               rgb_out = monster_rgb;
-               fight_on = 1;
-        end       
-	    else if(platforms_on)begin
-               rgb_out = platforms_rgb;
-               fight_on = 1;
-        end
-        else if(bullet_1_on)begin
-               rgb_out = bullet_1_rgb;
-               fight_on = 1;
-        end
-        else if(bullet_2_on)begin
-               rgb_out = bullet_2_rgb;
-               fight_on = 1;
-        end
-        else if(hp_on)begin
-               rgb_out = hp_rgb;
-               fight_on = 1;
-        end
 	    else
                rgb_out = 12'b0;
 		end

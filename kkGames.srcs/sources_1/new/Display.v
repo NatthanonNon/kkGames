@@ -12,11 +12,10 @@ module Display(
 	reg [11:0] rgb_reg, rgb_next;                                 // RGB data register to route out to VGA DAC
 	//wire [9:0] heart_x, heart_y;                                          // vector to route yoshi's x/y location
 	
-	wire [11:0] heart_rgb, platforms_rgb, monster_rgb, spirit_rgb;
-	wire [11:0] home_rgb, dodge_rgb, fight_rgb;
-	
-	wire heart_on, platforms_on, monster_on, spirit_on;
-	wire home_on, dodge_on, fight_on;
+	wire [11:0] home_rgb, attack_rgb;
+	wire home_on, attack_on;
+	//wire state;
+	wire video_home_on, video_attack_on;
 	
 	vga_sync vsync_unit 
 	(
@@ -28,19 +27,16 @@ module Display(
        .x(x), 
        .y(y)
     );
-    
-	//wire state;
-	wire video_home_on,video_dodge_on, video_fight_on;
-
+   
 	
 	game_state_machine FSM 
 	(
 	   .clk(clk),
 	   .keyboard(keyboard), 
 	   .home_on(home_on),
-	   .dodge_on(dodge_on),
+	   .attack_on(attack_on),
 	   .video_home_on(video_home_on),
-	   .video_dodge_on(video_dodge_on)
+	   .video_attack_on(video_attack_on)
     );
 	
 
@@ -66,27 +62,16 @@ module Display(
 	   .home_on(home_on)
     );
     
-	dodge dodge_screen 
+    Attack attack_screen 
 	(
 	   .clk(clk),
-	   .keyboard(keyboard),
-	   .video_dodge_on(video_dodge_on), 
+	   .video_attack_on(video_attack_on), 
 	   .x(x), 
 	   .y(y), 
-	   .rgb_out(dodge_rgb),
-	   .dodge_on(dodge_on)
+	   .rgb_out(attack_rgb),
+	   .attack_on(attack_on)
     );
-    
-    fight fight_screen 
-	(
-	   .clk(clk),
-	   .keyboard(keyboard),
-	   .video_fight_on(video_fight_on), 
-	   .x(x), 
-	   .y(y), 
-	   .rgb_out(fight_rgb),
-	   .fight_on(fight_on)
-    );
+	
     
 	always @*
 		begin
@@ -124,8 +109,8 @@ module Display(
 	        else if(platforms_on)
                 	rgb_next = platforms_rgb;*/
              
-            else if (video_dodge_on)
-	               rgb_next = dodge_rgb;
+            else if (video_attack_on)
+	               rgb_next = attack_rgb;
 	       else
                 	rgb_next = 12'b0;
          end

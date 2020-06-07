@@ -3,9 +3,9 @@
 module game_state_machine(
         input clk, 
         input [7:0]keyboard,
-        input home_on,dodge_on,
+        input home_on, attack_on,
         //input enter_fight_state,
-        output reg video_home_on,video_dodge_on //output [1:0] state
+        output reg video_home_on,video_attack_on //output [1:0] state
     );
     integer state = 0;
     integer state_divider = 0;
@@ -37,11 +37,11 @@ module game_state_machine(
 	case (state)
 	   0: begin 
 	       video_home_on = 1; 
-	       video_dodge_on =0; 
+	       video_attack_on =0; 
 	       end
 	   1:begin 
 	       video_home_on = 0; 
-	       video_dodge_on =1; 
+	       video_attack_on =1; 
 	       end
 	
 	endcase
