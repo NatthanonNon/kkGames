@@ -2,9 +2,15 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+<<<<<<< HEAD
 # Start of session at: Sun Jun  7 21:41:50 2020
 # Process ID: 2380
 # Current directory: C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.runs/impl_1
+=======
+# Start of session at: Sun Jun  7 22:03:48 2020
+# Process ID: 12772
+# Current directory: C:/Users/non_s/kkGames/kkGames.runs/impl_1
+>>>>>>> b8a85f05bfebfecc7385f309f9b938739814135c
 # Command line: vivado.exe -log Game.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Game.tcl -notrace
 # Log file: C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.runs/impl_1/Game.vdi
 # Journal file: C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.runs/impl_1\vivado.jou

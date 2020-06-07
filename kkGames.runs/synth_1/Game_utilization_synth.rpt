@@ -1,8 +1,13 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+<<<<<<< HEAD
 | Date         : Sun Jun  7 21:39:34 2020
 | Host         : DESKTOP-4Q5DVQS running 64-bit major release  (build 9200)
+=======
+| Date         : Sun Jun  7 22:03:35 2020
+| Host         : DESKTOP-E6CPFKC running 64-bit major release  (build 9200)
+>>>>>>> b8a85f05bfebfecc7385f309f9b938739814135c
 | Command      : report_utilization -file Game_utilization_synth.rpt -pb Game_utilization_synth.pb
 | Design       : Game
 | Device       : 7a35tcpg236-1
@@ -30,6 +35,7 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
+<<<<<<< HEAD
 | Slice LUTs*             | 2882 |     0 |     20800 | 13.86 |
 |   LUT as Logic          | 2882 |     0 |     20800 | 13.86 |
 |   LUT as Memory         |    0 |     0 |      9600 |  0.00 |
@@ -38,6 +44,16 @@ Table of Contents
 |   Register as Latch     |   25 |     0 |     41600 |  0.06 |
 | F7 Muxes                |  208 |     0 |     16300 |  1.28 |
 | F8 Muxes                |   57 |     0 |      8150 |  0.70 |
+=======
+| Slice LUTs*             | 4738 |     0 |     20800 | 22.78 |
+|   LUT as Logic          | 4738 |     0 |     20800 | 22.78 |
+|   LUT as Memory         |    0 |     0 |      9600 |  0.00 |
+| Slice Registers         |  439 |     0 |     41600 |  1.06 |
+|   Register as Flip Flop |  409 |     0 |     41600 |  0.98 |
+|   Register as Latch     |   30 |     0 |     41600 |  0.07 |
+| F7 Muxes                |  218 |     0 |     16300 |  1.34 |
+| F8 Muxes                |   56 |     0 |      8150 |  0.69 |
+>>>>>>> b8a85f05bfebfecc7385f309f9b938739814135c
 +-------------------------+------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
 
@@ -55,9 +71,15 @@ Table of Contents
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
+<<<<<<< HEAD
 | 25    |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
 | 222   |          Yes |       Reset |            - |
+=======
+| 30    |          Yes |           - |        Reset |
+| 0     |          Yes |         Set |            - |
+| 409   |          Yes |       Reset |            - |
+>>>>>>> b8a85f05bfebfecc7385f309f9b938739814135c
 +-------+--------------+-------------+--------------+
 
 
@@ -150,6 +172,7 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
+<<<<<<< HEAD
 | LUT6     | 1381 |                 LUT |
 | LUT5     |  503 |                 LUT |
 | LUT3     |  493 |                 LUT |
@@ -161,6 +184,19 @@ Table of Contents
 | MUXF7    |  208 |               MuxFx |
 | MUXF8    |   57 |               MuxFx |
 | LDCE     |   25 |        Flop & Latch |
+=======
+| LUT6     | 2010 |                 LUT |
+| LUT3     |  912 |                 LUT |
+| LUT5     |  849 |                 LUT |
+| CARRY4   |  781 |          CarryLogic |
+| LUT4     |  615 |                 LUT |
+| LUT1     |  522 |                 LUT |
+| LUT2     |  499 |                 LUT |
+| FDRE     |  409 |        Flop & Latch |
+| MUXF7    |  218 |               MuxFx |
+| MUXF8    |   56 |               MuxFx |
+| LDCE     |   30 |        Flop & Latch |
+>>>>>>> b8a85f05bfebfecc7385f309f9b938739814135c
 | OBUF     |   23 |                  IO |
 | IBUF     |    2 |                  IO |
 | RAMB18E1 |    1 |        Block Memory |

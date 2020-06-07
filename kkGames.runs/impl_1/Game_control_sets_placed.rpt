@@ -1,8 +1,13 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+<<<<<<< HEAD
 | Date         : Sun Jun  7 21:40:42 2020
 | Host         : DESKTOP-4Q5DVQS running 64-bit major release  (build 9200)
+=======
+| Date         : Sun Jun  7 22:05:48 2020
+| Host         : DESKTOP-E6CPFKC running 64-bit major release  (build 9200)
+>>>>>>> b8a85f05bfebfecc7385f309f9b938739814135c
 | Command      : report_control_sets -verbose -file Game_control_sets_placed.rpt
 | Design       : Game
 | Device       : xc7a35t
@@ -23,8 +28,13 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
+<<<<<<< HEAD
 | Number of unique control sets                            |    23 |
 | Unused register locations in slices containing registers |   119 |
+=======
+| Number of unique control sets                            |    33 |
+| Unused register locations in slices containing registers |   175 |
+>>>>>>> b8a85f05bfebfecc7385f309f9b938739814135c
 +----------------------------------------------------------+-------+
 
 
@@ -34,13 +44,21 @@ Table of Contents
 +--------+--------------+
 | Fanout | Control Sets |
 +--------+--------------+
+<<<<<<< HEAD
 |      1 |            9 |
+=======
+|      1 |           14 |
+>>>>>>> b8a85f05bfebfecc7385f309f9b938739814135c
 |      2 |            1 |
 |      3 |            1 |
 |      4 |            1 |
 |      5 |            1 |
 |      8 |            1 |
+<<<<<<< HEAD
 |     10 |            3 |
+=======
+|     10 |            7 |
+>>>>>>> b8a85f05bfebfecc7385f309f9b938739814135c
 |     12 |            2 |
 |     14 |            2 |
 |    16+ |            2 |
@@ -53,10 +71,17 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
+<<<<<<< HEAD
 | No           | No                    | No                     |             115 |           72 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |              38 |           14 |
 | Yes          | No                    | No                     |              48 |           26 |
+=======
+| No           | No                    | No                     |             220 |          116 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              45 |           23 |
+| Yes          | No                    | No                     |             128 |           57 |
+>>>>>>> b8a85f05bfebfecc7385f309f9b938739814135c
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |              40 |           14 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
@@ -65,6 +90,7 @@ Table of Contents
 4. Detailed Control Set Information
 -----------------------------------
 
+<<<<<<< HEAD
 +---------------------------------------------------------------+-------------------------------------------------------+-----------------------------------------+------------------+----------------+
 |                          Clock Signal                         |                     Enable Signal                     |             Set/Reset Signal            | Slice Load Count | Bel Load Count |
 +---------------------------------------------------------------+-------------------------------------------------------+-----------------------------------------+------------------+----------------+
@@ -92,5 +118,44 @@ Table of Contents
 |  clk_IBUF_BUFG                                                |                                                       | display/vsync_unit/h_count_reg_reg[9]_4 |               14 |             38 |
 |  clk_IBUF_BUFG                                                |                                                       |                                         |               61 |             90 |
 +---------------------------------------------------------------+-------------------------------------------------------+-----------------------------------------+------------------+----------------+
+=======
++---------------------------------------------------------------------+---------------------------------------------------------------------------+------------------------------------------+------------------+----------------+
+|                             Clock Signal                            |                               Enable Signal                               |             Set/Reset Signal             | Slice Load Count | Bel Load Count |
++---------------------------------------------------------------------+---------------------------------------------------------------------------+------------------------------------------+------------------+----------------+
+|  display/attack_screen/dodge_screen/bullet_unit_1/collision_reg_n_0 |                                                                           |                                          |                1 |              1 |
+|  display/attack_screen/atk_FSM/state_reg[0]_1                       |                                                                           |                                          |                1 |              1 |
+|  display/attack_screen/dodge_screen/bullet_unit_2/collision_reg_n_0 |                                                                           |                                          |                1 |              1 |
+|  display/attack_screen/dodge_screen/bullet_unit_3/collision_reg_n_0 |                                                                           |                                          |                1 |              1 |
+|  display/attack_screen/fight_screen/movable_bar_1/rgb_out_reg[0]_1  |                                                                           |                                          |                1 |              1 |
+|  clk_IBUF_BUFG                                                      | uart_receiver/data[7]_i_1_n_0                                             |                                          |                1 |              1 |
+|  clk_IBUF_BUFG                                                      | uart_receiver/data[5]_i_1_n_0                                             |                                          |                1 |              1 |
+|  clk_IBUF_BUFG                                                      | uart_transmitter/tx6_out                                                  |                                          |                1 |              1 |
+|  clk_IBUF_BUFG                                                      | uart_receiver/data[0]_i_1_n_0                                             |                                          |                1 |              1 |
+|  clk_IBUF_BUFG                                                      | uart_receiver/data[1]_i_1_n_0                                             |                                          |                1 |              1 |
+|  clk_IBUF_BUFG                                                      | uart_receiver/data[2]_i_1_n_0                                             |                                          |                1 |              1 |
+|  clk_IBUF_BUFG                                                      | uart_receiver/data[4]_i_1_n_0                                             |                                          |                1 |              1 |
+|  clk_IBUF_BUFG                                                      | uart_receiver/data[6]_i_1_n_0                                             |                                          |                1 |              1 |
+|  clk_IBUF_BUFG                                                      | uart_receiver/data[3]_i_1_n_0                                             |                                          |                1 |              1 |
+|  display/FSM/video_home_on_reg_i_2_n_0                              |                                                                           |                                          |                1 |              2 |
+|  display/attack_screen/flame_monster_unit/form_reg[2]_i_2_n_0       |                                                                           |                                          |                1 |              3 |
+|  clk_IBUF_BUFG                                                      | uart_receiver/state_0                                                     |                                          |                1 |              4 |
+|  clk_IBUF_BUFG                                                      | uart_receiver/E[0]                                                        |                                          |                2 |              5 |
+|  display/FSM/E[0]                                                   |                                                                           |                                          |                3 |              8 |
+|  clk_IBUF_BUFG                                                      | display/attack_screen/dodge_screen/bullet_unit_1/sel__1                   |                                          |                4 |             10 |
+|  clk_IBUF_BUFG                                                      | display/attack_screen/dodge_screen/bullet_unit_2/top_left_y[9]_i_1__0_n_0 |                                          |                4 |             10 |
+|  clk_IBUF_BUFG                                                      | display/attack_screen/dodge_screen/bullet_unit_3/top_left_x[9]_i_1__1_n_0 |                                          |                4 |             10 |
+|  clk_IBUF_BUFG                                                      | display/attack_screen/dodge_screen/bullet_unit_3/top_left_y[9]_i_1__1_n_0 |                                          |                6 |             10 |
+|  clk_IBUF_BUFG                                                      | display/vsync_unit/E[0]                                                   |                                          |                4 |             10 |
+|  clk_IBUF_BUFG                                                      | display/vsync_unit/v_count_reg0                                           |                                          |                4 |             10 |
+|  clk_IBUF_BUFG                                                      | display/attack_screen/fight_screen/movable_bar_1/E[0]                     |                                          |                4 |             10 |
+|  display/attack_screen/flame_monster_unit/sel_n_15                  |                                                                           |                                          |                4 |             12 |
+|  clk_IBUF_BUFG                                                      | display/vsync_unit/E[0]                                                   | display/vsync_unit/SR[0]                 |                6 |             12 |
+|  clk_IBUF_BUFG                                                      | uart_receiver/count[0]_i_1__0_n_0                                         | uart_receiver/state_0                    |                4 |             14 |
+|  clk_IBUF_BUFG                                                      | uart_transmitter/idle1                                                    | uart_transmitter/count[0]_i_1_n_0        |                4 |             14 |
+|  clk_IBUF_BUFG                                                      | display/attack_screen/dodge_screen/heart_unit/top_left_y0                 |                                          |               15 |             40 |
+|  clk_IBUF_BUFG                                                      |                                                                           | display/vsync_unit/h_count_reg_reg[9]_11 |               23 |             45 |
+|  clk_IBUF_BUFG                                                      |                                                                           |                                          |              102 |            190 |
++---------------------------------------------------------------------+---------------------------------------------------------------------------+------------------------------------------+------------------+----------------+
+>>>>>>> b8a85f05bfebfecc7385f309f9b938739814135c
 
 

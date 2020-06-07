@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1591540778">
+=======
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1591542006">
+>>>>>>> b8a85f05bfebfecc7385f309f9b938739814135c
   <File Type="BITSTR-BMM" Name="Game_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="Game_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="Game_timing_summary_init.rpt"/>

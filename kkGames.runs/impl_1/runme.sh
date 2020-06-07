@@ -24,7 +24,11 @@ else
 fi
 export LD_LIBRARY_PATH
 
+<<<<<<< HEAD
 HD_PWD='C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.runs/impl_1'
+=======
+HD_PWD='C:/Users/non_s/kkGames/kkGames.runs/impl_1'
+>>>>>>> b8a85f05bfebfecc7385f309f9b938739814135c
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,7 +45,11 @@ EAStep()
 }
 
 # pre-commands:
+<<<<<<< HEAD
 /bin/touch .write_bitstream.begin.rst
+=======
+/bin/touch .init_design.begin.rst
+>>>>>>> b8a85f05bfebfecc7385f309f9b938739814135c
 EAStep vivado -log Game.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source Game.tcl -notrace
 
 
