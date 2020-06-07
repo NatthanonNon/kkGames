@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/non_s/kkGames/kkGames.runs/synth_1'
+HD_PWD='C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
