@@ -23,14 +23,6 @@ module fight(
         .rgb_out(platforms_rgb),
 	    .platforms_on(platforms_on)
     );
-    
-    atk_frame atk_frame_unit
-    (
-        .clk(clk), 
-        .video_on(video_fight_on), 
-        .x(x), .y(y), 
-        .rgb_out(platforms_rgb)
-    );
 	                      
 	flame_monster flame_monster_unit 
 	(
