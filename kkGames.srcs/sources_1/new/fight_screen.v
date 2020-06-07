@@ -1,13 +1,13 @@
 `timescale 1ns / 1ps
 
-module dodge(
+module fight(
     input clk,
     input wire video_dodge_on,
     input this_state,
     input [7:0] keyboard,
     input wire [9:0] x, y,
     output reg [11:0] rgb_out,
-    output reg dodge_on
+    output reg fight_on
     );
     wire [11:0]  heart_rgb,platforms_rgb,monster_rgb, home_rgb,spirit_rgb,bullet_1_rgb,bullet_2_rgb,hp_rgb;
     wire heart_on,platforms_on,monster_on, home_on,spirit_on,bullet_1_on,bullet_2_on,hp_on;

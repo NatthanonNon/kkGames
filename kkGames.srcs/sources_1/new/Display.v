@@ -75,6 +75,17 @@ module Display(
 	   .dodge_on(dodge_on)
     );
     
+    fight fight_screen 
+	(
+	   .clk(clk),
+	   .keyboard(keyboard),
+	   .video_dodge_on(video_dodge_on), 
+	   .x(x), 
+	   .y(y), 
+	   .rgb_out(dodge_rgb),
+	   .dodge_on(dodge_on)
+    );
+    
 	always @*
 		begin
         	if (~video_on)
