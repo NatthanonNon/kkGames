@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Jun  7 21:19:57 2020
+# Process ID: 12528
+# Current directory: C:/Users/Nack/Desktop/SynLab/project/kkGames
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2216 C:\Users\Nack\Desktop\SynLab\project\kkGames\kkGames.xpr
+# Log file: C:/Users/Nack/Desktop/SynLab/project/kkGames/vivado.log
+# Journal file: C:/Users/Nack/Desktop/SynLab/project/kkGames\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 732.840 ; gain = 117.223
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 8
+[Sun Jun  7 21:20:36 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Sun Jun  7 21:23:29 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun Jun  7 21:26:19 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Sun Jun  7 21:37:04 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Sun Jun  7 21:39:38 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun Jun  7 21:41:38 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jun  7 21:58:18 2020...
