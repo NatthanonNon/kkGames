@@ -24,7 +24,8 @@ module atk_frame(
         input wire clk,                   // input clock signal for synchronous ROMs
         input wire video_on,               // input from vga_sync signaling when video signal is on
         input wire [9:0] x, y,             // current pixel coordinates from vga_sync circuit
-        output reg [11:0] rgb_out         // output rgb signal for current pixel
+        output reg [11:0] rgb_out,         // output rgb signal for current pixel
+        output reg atk_frame_on
     );
     
     reg [10:0] row ;
