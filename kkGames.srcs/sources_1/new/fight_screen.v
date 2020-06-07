@@ -47,9 +47,10 @@ module fight(
         .heart_y(heart_y)
     );
 	                      
-	bullet bullet_unit_1 
+	movable_bar movable_bar_1 
 	(
-	   .clk(clk), 
+	   .clk(clk),
+	   .keyboard(keyboard),
 	   .video_on(video_fight_on), 
 	   .x(x), 
 	   .y(y),
@@ -60,56 +61,56 @@ module fight(
 	   .bullet_on(bullet_1_on)
     );
     
-    defparam bullet_unit_1.t_l_x = 320;
-	defparam bullet_unit_1.t_l_y = 248;
-	defparam bullet_unit_1.pattern = 0;
+    defparam movable_bar_1.t_l_x = 320;
+	defparam movable_bar_1.t_l_y = 248;
+	defparam movable_bar_1.pattern = 0;
 	                      
-	bullet bullet_unit_2 
-	(
-	   .clk(clk), 
-	   .video_on(video_fight_on), 
-	   .x(x), 
-	   .y(y),
-	   .heart_x(heart_x),
-	   .heart_y(heart_y),
-	   .rgb_out(bullet_2_rgb),
-	   .collision(collision_2),
-	   .bullet_on(bullet_2_on)
-    );
+//	bullet bullet_unit_2 
+//	(
+//	   .clk(clk), 
+//	   .video_on(video_fight_on), 
+//	   .x(x), 
+//	   .y(y),
+//	   .heart_x(heart_x),
+//	   .heart_y(heart_y),
+//	   .rgb_out(bullet_2_rgb),
+//	   .collision(collision_2),
+//	   .bullet_on(bullet_2_on)
+//    );
     
-    defparam bullet_unit_2.t_l_x = 320;
-	defparam bullet_unit_2.t_l_y = 248;
-	defparam bullet_unit_2.pattern = 1;
+//    defparam bullet_unit_2.t_l_x = 320;
+//	defparam bullet_unit_2.t_l_y = 248;
+//	defparam bullet_unit_2.pattern = 1;
 	
-	bullet bullet_unit_3 
-	(
-	   .clk(clk), 
-	   .video_on(video_fight_on), 
-	   .x(x), 
-	   .y(y),
-	   .heart_x(heart_x),
-	   .heart_y(heart_y),
-	   .rgb_out(bullet_2_rgb),
-	   .collision(collision_2),
-	   .bullet_on(bullet_2_on)
-    );
+//	bullet bullet_unit_3 
+//	(
+//	   .clk(clk), 
+//	   .video_on(video_fight_on), 
+//	   .x(x), 
+//	   .y(y),
+//	   .heart_x(heart_x),
+//	   .heart_y(heart_y),
+//	   .rgb_out(bullet_3_rgb),
+//	   .collision(collision_2),
+//	   .bullet_on(bullet_2_on)
+//    );
     
-    defparam bullet_unit_3.t_l_x = 100;
-	defparam bullet_unit_3.t_l_y = 250;
-	defparam bullet_unit_3.pattern = 2;
+//    defparam bullet_unit_3.t_l_x = 100;
+//	defparam bullet_unit_3.t_l_y = 250;
+//	defparam bullet_unit_3.pattern = 2;
     
             
-	wire is_collision =  collision_1 | collision_2;
-	hp_bar hp_bar_unit 
-	(
-	   .clk(clk), 
-	   .video_on(video_fight_on), 
-	   .x(x), 
-	   .y(y),
-	   .collision(is_collision),
-	   .rgb_out(hp_rgb),
-	   .hp_on(hp_on)
-    );
+//	wire is_collision =  collision_1 | collision_2;
+//	hp_bar hp_bar_unit 
+//	(
+//	   .clk(clk), 
+//	   .video_on(video_fight_on), 
+//	   .x(x), 
+//	   .y(y),
+//	   .collision(is_collision),
+//	   .rgb_out(hp_rgb),
+//	   .hp_on(hp_on)
+//    );
 	
 	always @*
 		begin

@@ -1,0 +1,751 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 12780
+License: Customer
+
+Current time: 	Sun Jun 07 15:43:41 ICT 2020
+Time zone: 	Indochina Time (Asia/Bangkok)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 120
+Available screens: 1
+Available disk space: 240 GB
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Nack
+User home directory: C:/Users/Nack
+User working directory: C:/Users/Nack/Desktop/SynLab/project/kkGames
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.3
+RDI_DATADIR: C:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/Nack/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/Nack/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/Nack/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Nack/Desktop/SynLab/project/kkGames/vivado.log
+Vivado journal file location: 	C:/Users/Nack/Desktop/SynLab/project/kkGames/vivado.jou
+Engine tmp dir: 	C:/Users/Nack/Desktop/SynLab/project/kkGames/.Xil/Vivado-12780-DESKTOP-4Q5DVQS
+
+Xilinx Environment Variables
+----------------------------
+VK_SDK_PATH: C:\VulkanSDK\1.1.126.0
+VULKAN_SDK: C:\VulkanSDK\1.1.126.0
+XILINX: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.3
+XILINX_SDK: C:/Xilinx/SDK/2018.3
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 627 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Nack\Desktop\SynLab\project\kkGames\kkGames.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/non_s/kkGames' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 86 MB (+87265kb) [00:00:10]
+// [Engine Memory]: 663 MB (+543549kb) [00:00:10]
+// [GUI Memory]: 97 MB (+7547kb) [00:00:10]
+// WARNING: HEventQueue.dispatchEvent() is taking  3084 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 663 MB. GUI used memory: 51 MB. Current time: 6/7/20, 3:43:45 PM ICT
+// Tcl Message: open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 693.543 ; gain = 79.805 
+// Project name: kkGames; location: C:/Users/Nack/Desktop/SynLab/project/kkGames; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bx (cp)
+// [GUI Memory]: 110 MB (+8402kb) [00:00:17]
+// Tcl Message: update_compile_order -fileset sources_1 
+// RDIResource.RDIViews_PROPERTIES: Properties: close view
+// Elapsed time: 24 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game (Game.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game (Game.v)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// [Engine Memory]: 698 MB (+1627kb) [00:00:38]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game (Game.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game (Game.v)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game (Game.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game (Game.v)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game (Game.v), display : Display (Display.v)]", 4, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game (Game.v), display : Display (Display.v)]", 4, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game (Game.v), display : Display (Display.v), fight_screen : fight (fight_screen.v)]", 9, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game (Game.v), display : Display (Display.v), fight_screen : fight (fight_screen.v)]", 9, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 723 MB. GUI used memory: 54 MB. Current time: 6/7/20, 3:44:18 PM ICT
+selectCodeEditor("fight_screen.v", 512, 219); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game (Game.v), display : Display (Display.v), fight_screen : fight (fight_screen.v), bullet_unit_1 : bullet (bullet.v)]", 13, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game (Game.v), display : Display (Display.v), fight_screen : fight (fight_screen.v), bullet_unit_1 : bullet (bullet.v)]", 13, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 41 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game (Game.v), display : Display (Display.v), fight_screen : fight (fight_screen.v), bullet_unit_1 : bullet (bullet.v)]", 13); // B (D, cp)
+// Elapsed time: 110 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game (Game.v), display : Display (Display.v), fight_screen : fight (fight_screen.v), flame_monster_unit : flame_monster (flame_monster.v)]", 11, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game (Game.v), display : Display (Display.v), fight_screen : fight (fight_screen.v)]", 9, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game (Game.v), display : Display (Display.v), fight_screen : fight (fight_screen.v)]", 9, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game (Game.v), display : Display (Display.v), fight_screen : fight (fight_screen.v)]", 9); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game (Game.v), display : Display (Display.v), fight_screen : fight (fight_screen.v), bullet_unit_1 : bullet (bullet.v)]", 13, true); // B (D, cp) - Node
+// Elapsed time: 31 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game (Game.v), display : Display (Display.v), fight_screen : fight (fight_screen.v), bullet_unit_1 : bullet (bullet.v)]", 13, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game (Game.v), display : Display (Display.v), fight_screen : fight (fight_screen.v), bullet_unit_1 : bullet (bullet.v)]", 13, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("bullet.v", 646, 239); // cl (w, cp)
+// Elapsed time: 18 seconds
+selectCodeEditor("bullet.v", 207, 393); // cl (w, cp)
+// Elapsed time: 105 seconds
+selectCodeEditor("bullet.v", 68, 384); // cl (w, cp)
+// Elapsed time: 94 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game (Game.v), display : Display (Display.v), dodge_screen : dodge (dodge.v)]", 8); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game (Game.v), display : Display (Display.v), dodge_screen : dodge (dodge.v)]", 8); // B (D, cp)
+selectCodeEditor("bullet.v", 563, 187); // cl (w, cp)
+// Elapsed time: 23 seconds
+selectCodeEditor("bullet.v", 111, 222); // cl (w, cp)
+selectCodeEditor("bullet.v", 578, 220); // cl (w, cp)
+// Elapsed time: 31 seconds
+selectCodeEditor("bullet.v", 150, 256); // cl (w, cp)
+// Elapsed time: 243 seconds
+selectCodeEditor("bullet.v", 449, 191); // cl (w, cp)
+// Elapsed time: 99 seconds
+selectCodeEditor("bullet.v", 262, 280); // cl (w, cp)
+selectCodeEditor("bullet.v", 248, 248); // cl (w, cp)
+selectCodeEditor("bullet.v", 266, 266); // cl (w, cp)
+selectCodeEditor("bullet.v", 266, 266, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 106 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (cp):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.RunRun_TASK_ALREADY_RUNNING_WOULD_YOU_LIKE_OK", "OK"); // JButton (C, I)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bx (cp):  Starting Design Runs : addNotify
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Jun  7 16:00:03 2020] Launched synth_1... Run output will be captured here: C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 6 seconds
+dismissDialog("Starting Design Runs"); // bx (cp)
+selectCodeEditor("bullet.v", 386, 302); // cl (w, cp)
+selectCodeEditor("bullet.v", 653, 311); // cl (w, cp)
+// Elapsed time: 68 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game (Game.v), display : Display (Display.v), fight_screen : fight (fight_screen.v)]", 9, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game (Game.v), display : Display (Display.v), fight_screen : fight (fight_screen.v)]", 9, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 31 seconds
+selectCodeEditor("fight_screen.v", 639, 238); // cl (w, cp)
+selectCodeEditor("fight_screen.v", 872, 682); // cl (w, cp)
+selectCodeEditor("fight_screen.v", 525, 576); // cl (w, cp)
+// Elapsed time: 72 seconds
+selectCodeEditor("fight_screen.v", 191, 145); // cl (w, cp)
+selectCodeEditor("fight_screen.v", 191, 145, false, false, false, false, true); // cl (w, cp) - Double Click
+// TclEventType: RUN_COMPLETED
+// ah (cp): Synthesis Completed: addNotify
+// Elapsed time: 10 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Synthesis Completed"); // ah (cp)
+selectCodeEditor("fight_screen.v", 316, 409); // cl (w, cp)
+// Elapsed time: 26 seconds
+selectCodeEditor("fight_screen.v", 339, 375); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game (Game.v), display : Display (Display.v), fight_screen : fight (fight_screen.v)]", 9, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game (Game.v), display : Display (Display.v), fight_screen : fight (fight_screen.v)]", 9, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game (Game.v), display : Display (Display.v), fight_screen : fight (fight_screen.v), heart_unit : heart (heart.v)]", 12, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game (Game.v), display : Display (Display.v), fight_screen : fight (fight_screen.v), heart_unit : heart (heart.v)]", 12, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("heart.v", 282, 91); // cl (w, cp)
+typeControlKey((HResource) null, "heart.v", 'c'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bullet.v", 4); // k (j, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game (Game.v), display : Display (Display.v), fight_screen : fight (fight_screen.v), bullet_unit_1 : bullet (bullet.v)]", 14, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game (Game.v), display : Display (Display.v), fight_screen : fight (fight_screen.v), bullet_unit_1 : bullet (bullet.v)]", 14, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game (Game.v), display : Display (Display.v), fight_screen : fight (fight_screen.v), bullet_unit_1 : bullet (bullet.v)]", 14, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game (Game.v), display : Display (Display.v), fight_screen : fight (fight_screen.v), bullet_unit_1 : bullet (bullet.v)]", 14, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("bullet.v", 751, 543); // cl (w, cp)
+// Elapsed time: 70 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+// HMemoryUtils.trashcanNow. Engine heap size: 748 MB. GUI used memory: 58 MB. Current time: 6/7/20, 4:05:38 PM ICT
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "movable_bar"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 15 seconds
+// [Engine Memory]: 748 MB (+16273kb) [00:22:17]
+dismissDialog("Add Sources"); // c (cp)
+// Tcl Message: close [ open C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.srcs/sources_1/new/movable_bar.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.srcs/sources_1/new/movable_bar.v 
+// [GUI Memory]: 117 MB (+1888kb) [00:22:17]
+// I (cp): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (C, J)
+dismissDialog("Define Module"); // I (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("bullet.v", 441, 419); // cl (w, cp)
+typeControlKey((HResource) null, "bullet.v", 'c'); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, movable_bar (movable_bar.v)]", 27, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, movable_bar (movable_bar.v)]", 27, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, movable_bar (movable_bar.v)]", 27, false); // B (D, cp)
+selectCodeEditor("movable_bar.v", 510, 329); // cl (w, cp)
+typeControlKey((HResource) null, "movable_bar.v", 'v'); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 87, 475); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 87, 475, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("movable_bar.v", 251, 367); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 286, 110); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "heart.v", 5); // k (j, cp)
+typeControlKey((HResource) null, "heart.v", 'c'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "movable_bar.v", 6); // k (j, cp)
+selectCodeEditor("movable_bar.v", 203, 109); // cl (w, cp)
+typeControlKey((HResource) null, "movable_bar.v", 'v'); // cl (w, cp)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("movable_bar.v", 838, 108); // cl (w, cp)
+typeControlKey((HResource) null, "movable_bar.v", 'v'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "heart.v", 5); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "movable_bar.v", 6); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "heart.v", 5); // k (j, cp)
+selectCodeEditor("heart.v", 226, 103); // cl (w, cp)
+selectCodeEditor("heart.v", 226, 103, false, false, false, false, true); // cl (w, cp) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "movable_bar.v", 6); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "heart.v", 5); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "movable_bar.v", 6); // k (j, cp)
+// Elapsed time: 24 seconds
+selectCodeEditor("movable_bar.v", 427, 292); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 585, 188); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 33 seconds
+selectCodeEditor("movable_bar.v", 1072, 250); // cl (w, cp)
+// Elapsed time: 23 seconds
+selectCodeEditor("movable_bar.v", 147, 118); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 147, 118, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 19 seconds
+selectCodeEditor("movable_bar.v", 149, 378); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 149, 378, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("movable_bar.v", 156, 363); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 156, 363, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 28 seconds
+selectCodeEditor("movable_bar.v", 292, 120); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "heart.v", 5); // k (j, cp)
+selectCodeEditor("heart.v", 247, 156); // cl (w, cp)
+selectCodeEditor("heart.v", 236, 138); // cl (w, cp)
+selectCodeEditor("heart.v", 93, 636); // cl (w, cp)
+selectCodeEditor("heart.v", 93, 622); // cl (w, cp)
+selectCodeEditor("heart.v", 93, 643); // cl (w, cp)
+typeControlKey((HResource) null, "heart.v", 'c'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "movable_bar.v", 6); // k (j, cp)
+selectCodeEditor("movable_bar.v", 242, 54); // cl (w, cp)
+typeControlKey((HResource) null, "movable_bar.v", 'v'); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 266, 556); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 335, 83); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectCodeEditor("movable_bar.v", 1054, 226); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 552, 155); // cl (w, cp)
+// Elapsed time: 19 seconds
+selectCodeEditor("movable_bar.v", 417, 166); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 61, 98); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 61, 98, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("movable_bar.v", 135, 154); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "heart.v", 5); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "movable_bar.v", 6); // k (j, cp)
+selectCodeEditor("movable_bar.v", 184, 535); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 344, 494); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 283, 513); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 205, 578); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 100, 172); // cl (w, cp)
+typeControlKey((HResource) null, "movable_bar.v", 'v'); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("movable_bar.v", 403, 305); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 169, 163); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 169, 163, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("movable_bar.v", 174, 456); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 148, 161); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 264, 179); // cl (w, cp)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("movable_bar.v", 151, 154); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 267, 211); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 407, 183); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 780, 179); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 188, 457); // cl (w, cp)
+// Elapsed time: 14 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 45 seconds
+selectCodeEditor("movable_bar.v", 1059, 264); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 682, 315); // cl (w, cp)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 31 seconds
+selectCodeEditor("movable_bar.v", 455, 258); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 150, 495); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 250, 356); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 156, 489); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 174, 468); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 212, 160); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 189, 153); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 189, 153, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("movable_bar.v", 189, 153); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 250, 114); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 176, 157); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 176, 157, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("movable_bar.v", 447, 178); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 814, 177); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 212, 176); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 604, 161); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 525, 126); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 130, 143); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 123, 136); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 123, 136, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("movable_bar.v", 98, 228); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 98, 228, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("movable_bar.v", 22, 242); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 59, 216); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 287, 94); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("movable_bar.v", 191, 223); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 152, 144); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 313, 302); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 423, 192); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 453, 196); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 495, 167); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("movable_bar.v", 475, 303); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("movable_bar.v", 691, 344); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectCodeEditor("movable_bar.v", 677, 308); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 635, 323); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bullet.v", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fight_screen.v", 3); // k (j, cp)
+selectCodeEditor("fight_screen.v", 61, 268); // cl (w, cp)
+selectCodeEditor("fight_screen.v", 61, 268, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("fight_screen.v", 228, 263); // cl (w, cp)
+selectCodeEditor("fight_screen.v", 228, 263, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("fight_screen.v", 277, 58); // cl (w, cp)
+typeControlKey((HResource) null, "fight_screen.v", 'c'); // cl (w, cp)
+selectCodeEditor("fight_screen.v", 183, 302); // cl (w, cp)
+typeControlKey((HResource) null, "fight_screen.v", 'v'); // cl (w, cp)
+selectCodeEditor("fight_screen.v", 407, 266); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 10 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game (Game.v), display : Display (Display.v), fight_screen : fight (fight_screen.v), heart_unit : heart (heart.v)]", 12); // B (D, cp)
+selectCodeEditor("fight_screen.v", 864, 360); // cl (w, cp)
+selectCodeEditor("fight_screen.v", 163, 183); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "movable_bar.v", 6); // k (j, cp)
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (cp):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// Tcl Message: [Sun Jun  7 16:16:24 2020] Launched synth_1... Run output will be captured here: C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (cp)
+// TclEventType: RUN_FAILED
+// ah (cp): Synthesis Failed: addNotify
+// Elapsed time: 21 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fight_screen.v", 3); // k (j, cp)
+selectCodeEditor("fight_screen.v", 214, 81); // cl (w, cp)
+selectCodeEditor("fight_screen.v", 214, 81, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "fight_screen.v", 'c'); // cl (w, cp)
+typeControlKey((HResource) null, "fight_screen.v", 'c'); // cl (w, cp)
+selectCodeEditor("fight_screen.v", 173, 253); // cl (w, cp)
+selectCodeEditor("fight_screen.v", 188, 245); // cl (w, cp)
+selectCodeEditor("fight_screen.v", 188, 245, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "fight_screen.v", 'v'); // cl (w, cp)
+selectCodeEditor("fight_screen.v", 199, 265); // cl (w, cp)
+selectCodeEditor("fight_screen.v", 199, 265, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "fight_screen.v", 'v'); // cl (w, cp)
+selectCodeEditor("fight_screen.v", 198, 284); // cl (w, cp)
+selectCodeEditor("fight_screen.v", 198, 284, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "fight_screen.v", 'v'); // cl (w, cp)
+selectCodeEditor("fight_screen.v", 447, 284); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "movable_bar.v", 6); // k (j, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (cp):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// Tcl Message: [Sun Jun  7 16:17:15 2020] Launched synth_1... Run output will be captured here: C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// ah (cp): Synthesis Completed: addNotify
+// Elapsed time: 226 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bx (cp):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Jun  7 16:21:03 2020] Launched impl_1... Run output will be captured here: C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (cp)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// ah (cp): Implementation Failed: addNotify
+// Elapsed time: 68 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net display/FSM/bullet_2_rgb[0] has multiple drivers: display/FSM/rgb_reg[0]_i_6/O, and display/dodge_screen/rgb_reg[0]_i_5/O.. ]", 7, true); // ah (Q, cp) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net display/FSM/bullet_2_rgb[0] has multiple drivers: display/FSM/rgb_reg[0]_i_6/O, and display/dodge_screen/rgb_reg[0]_i_5/O.. , [DRC MDRV-1] Multiple Driver Nets: Net display/FSM/bullet_2_rgb[5] has multiple drivers: display/FSM/rgb_reg[5]_i_6/O, and display/dodge_screen/rgb_reg[5]_i_5/O.. ]", 12, false, false, false, false, false, true); // ah (Q, cp) - Double Click
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fight_screen.v", 3); // k (j, cp)
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 22887 ms. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 35020 ms. Increasing delay to 105060 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 10574 ms. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5634 ms. Increasing delay to 5000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 4053 ms. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5532 ms. Increasing delay to 7000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 12160 ms. Increasing delay to 8000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 8082 ms. Increasing delay to 9000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 4546 ms. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5850 ms. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 9710 ms. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 10112 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1084 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 10116 ms. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7700 ms. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 11660 ms. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 10461 ms. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 17 ms. Decreasing delay to 2017 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 754 MB. GUI used memory: 56 MB. Current time: 6/7/20, 4:35:39 PM ICT
+// Elapsed time: 1105 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net display/FSM/bullet_2_rgb[0] has multiple drivers: display/FSM/rgb_reg[0]_i_6/O, and display/dodge_screen/rgb_reg[0]_i_5/O.. , [DRC MDRV-1] Multiple Driver Nets: Net display/dodge_screen/bullet_unit_3/collision_2 has multiple drivers: display/dodge_screen/bullet_unit_2/collision_reg/Q, and display/dodge_screen/bullet_unit_3/collision_reg/Q.. ]", 20, false); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net display/FSM/bullet_2_rgb[0] has multiple drivers: display/FSM/rgb_reg[0]_i_6/O, and display/dodge_screen/rgb_reg[0]_i_5/O.. , [DRC MDRV-1] Multiple Driver Nets: Net display/dodge_screen/bullet_unit_3/collision_2 has multiple drivers: display/dodge_screen/bullet_unit_2/collision_reg/Q, and display/dodge_screen/bullet_unit_3/collision_reg/Q.. ]", 20, false, false, false, false, false, true); // ah (Q, cp) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net display/FSM/bullet_2_rgb[0] has multiple drivers: display/FSM/rgb_reg[0]_i_6/O, and display/dodge_screen/rgb_reg[0]_i_5/O.. , [DRC MDRV-1] Multiple Driver Nets: Net display/dodge_screen/bullet_unit_3/collision_2 has multiple drivers: display/dodge_screen/bullet_unit_2/collision_reg/Q, and display/dodge_screen/bullet_unit_3/collision_reg/Q.. ]", 20, false); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net display/FSM/bullet_2_rgb[0] has multiple drivers: display/FSM/rgb_reg[0]_i_6/O, and display/dodge_screen/rgb_reg[0]_i_5/O.. , [DRC MDRV-1] Multiple Driver Nets: Net display/dodge_screen/bullet_unit_3/collision_2 has multiple drivers: display/dodge_screen/bullet_unit_2/collision_reg/Q, and display/dodge_screen/bullet_unit_3/collision_reg/Q.. ]", 20, false); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net display/FSM/bullet_2_rgb[0] has multiple drivers: display/FSM/rgb_reg[0]_i_6/O, and display/dodge_screen/rgb_reg[0]_i_5/O.. , [DRC MDRV-1] Multiple Driver Nets: Net display/dodge_screen/bullet_unit_3/collision_2 has multiple drivers: display/dodge_screen/bullet_unit_2/collision_reg/Q, and display/dodge_screen/bullet_unit_3/collision_reg/Q.. ]", 20, false); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net display/FSM/bullet_2_rgb[0] has multiple drivers: display/FSM/rgb_reg[0]_i_6/O, and display/dodge_screen/rgb_reg[0]_i_5/O.. , [DRC MDRV-1] Multiple Driver Nets: Net display/dodge_screen/bullet_unit_3/collision_2 has multiple drivers: display/dodge_screen/bullet_unit_2/collision_reg/Q, and display/dodge_screen/bullet_unit_3/collision_reg/Q.. ]", 20, false); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net display/FSM/bullet_2_rgb[0] has multiple drivers: display/FSM/rgb_reg[0]_i_6/O, and display/dodge_screen/rgb_reg[0]_i_5/O.. , [DRC MDRV-1] Multiple Driver Nets: Net display/dodge_screen/bullet_unit_3/collision_2 has multiple drivers: display/dodge_screen/bullet_unit_2/collision_reg/Q, and display/dodge_screen/bullet_unit_3/collision_reg/Q.. ]", 20, false); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.. ]", 21, false); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.. ]", 21, false); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.. ]", 21, false, false, false, false, false, true); // ah (Q, cp) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "movable_bar.v", 6); // k (j, cp)
+// Elapsed time: 57 seconds
+selectCodeEditor("movable_bar.v", 671, 112); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 252, 254); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 252, 254, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 61 seconds
+selectCodeEditor("movable_bar.v", 381, 552); // cl (w, cp)
+// Elapsed time: 12 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_REPORTS, "Reports"); // ax
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net display/FSM/bullet_2_rgb[0] has multiple drivers: display/FSM/rgb_reg[0]_i_6/O, and display/dodge_screen/rgb_reg[0]_i_5/O.. ]", 7, true); // ah (Q, cp) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net display/FSM/bullet_2_rgb[0] has multiple drivers: display/FSM/rgb_reg[0]_i_6/O, and display/dodge_screen/rgb_reg[0]_i_5/O.. ]", 7, true); // ah (Q, cp) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net display/FSM/bullet_2_rgb[0] has multiple drivers: display/FSM/rgb_reg[0]_i_6/O, and display/dodge_screen/rgb_reg[0]_i_5/O.. , [DRC MDRV-1] Multiple Driver Nets: Net display/FSM/bullet_2_rgb[5] has multiple drivers: display/FSM/rgb_reg[5]_i_6/O, and display/dodge_screen/rgb_reg[5]_i_5/O.. ]", 12, false, false, false, false, false, true); // ah (Q, cp) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fight_screen.v", 3); // k (j, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("fight_screen.v", 113, 337); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("fight_screen.v", 194, 279); // cl (w, cp)
+selectCodeEditor("fight_screen.v", 183, 281); // cl (w, cp)
+selectCodeEditor("fight_screen.v", 183, 407); // cl (w, cp)
+selectCodeEditor("fight_screen.v", 183, 407, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("fight_screen.v", 622, 526); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (cp):  Starting Design Runs : addNotify
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Jun  7 16:44:24 2020] Launched synth_1... Run output will be captured here: C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (cp)
+selectCodeEditor("fight_screen.v", 795, 246); // cl (w, cp)
+// TclEventType: RUN_COMPLETED
+// ah (cp): Synthesis Completed: addNotify
+// Elapsed time: 300 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bx (cp):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// Tcl Message: [Sun Jun  7 16:49:26 2020] Launched impl_1... Run output will be captured here: C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (cp)
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STEP_COMPLETED
+// ah (cp): Implementation Failed: addNotify
+// Elapsed time: 67 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net display/dodge_screen/bullet_unit_3/B1 has multiple drivers: display/dodge_screen/bullet_unit_2/collision_reg/Q, and display/dodge_screen/bullet_unit_3/collision_reg/Q.. ]", 7, true); // ah (Q, cp) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net display/dodge_screen/bullet_unit_3/B1 has multiple drivers: display/dodge_screen/bullet_unit_2/collision_reg/Q, and display/dodge_screen/bullet_unit_3/collision_reg/Q.. , [DRC MDRV-1] Multiple Driver Nets: Net display/dodge_screen/bullet_unit_3/bullet_2_on has multiple drivers: display/dodge_screen/bullet_unit_3/rgb_reg[11]_i_12/O, and display/dodge_screen/bullet_unit_3/rgb_reg[11]_i_13/O.. ]", 8, false, false, false, false, false, true); // ah (Q, cp) - Double Click
+// Elapsed time: 14 seconds
+selectCodeEditor("fight_screen.v", 381, 153); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game (Game.v), display : Display (Display.v), dodge_screen : dodge (dodge.v)]", 8, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game (Game.v), display : Display (Display.v), dodge_screen : dodge (dodge.v), frame_unit : frame (frame.v)]", 9, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game (Game.v), display : Display (Display.v), dodge_screen : dodge (dodge.v), bullet_unit_2 : bullet (bullet.v)]", 13, true); // B (D, cp) - Node
+// Elapsed time: 22 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game (Game.v), display : Display (Display.v), dodge_screen : dodge (dodge.v), bullet_unit_2 : bullet (bullet.v)]", 13, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game (Game.v), display : Display (Display.v), dodge_screen : dodge (dodge.v), bullet_unit_2 : bullet (bullet.v)]", 13, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("bullet.v", 307, 184); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("bullet.v", 122, 340); // cl (w, cp)
+selectCodeEditor("bullet.v", 122, 340, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 31 seconds
+selectCodeEditor("bullet.v", 168, 216); // cl (w, cp)
+selectCodeEditor("bullet.v", 168, 216, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 12 seconds
+selectCodeEditor("bullet.v", 161, 212); // cl (w, cp)
+selectCodeEditor("bullet.v", 161, 212, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "movable_bar.v", 6); // k (j, cp)
+selectCodeEditor("movable_bar.v", 163, 233); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 178, 221); // cl (w, cp)
+selectCodeEditor("movable_bar.v", 178, 221, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 12 seconds
+selectCodeEditor("movable_bar.v", 242, 396); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game (Game.v), display : Display (Display.v), dodge_screen : dodge (dodge.v), bullet_unit_2 : bullet (bullet.v)]", 13, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game (Game.v), display : Display (Display.v), dodge_screen : dodge (dodge.v), bullet_unit_2 : bullet (bullet.v)]", 13, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game (Game.v), display : Display (Display.v), dodge_screen : dodge (dodge.v), bullet_unit_2 : bullet (bullet.v)]", 13, true); // B (D, cp) - Node
+selectCodeEditor("bullet.v", 140, 286); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (cp):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// Tcl Message: [Sun Jun  7 16:53:10 2020] Launched synth_1... Run output will be captured here: C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.runs/synth_1/runme.log [Sun Jun  7 16:53:10 2020] Launched impl_1... Run output will be captured here: C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis]", 13, true); // u (Q, cp) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis]", 13, true); // u (Q, cp) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (cp):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.RunRun_TASK_ALREADY_RUNNING_WOULD_YOU_LIKE_OK", "OK"); // JButton (C, I)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bx (cp):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// Tcl Message: [Sun Jun  7 16:53:19 2020] Launched synth_1... Run output will be captured here: C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// ah (cp): Synthesis Completed: addNotify
+// Elapsed time: 211 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bx (cp):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// Tcl Message: [Sun Jun  7 16:56:51 2020] Launched impl_1... Run output will be captured here: C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (cp)
+selectCodeEditor("bullet.v", 689, 270); // cl (w, cp)
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STEP_COMPLETED
+// ah (cp): Implementation Failed: addNotify
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 29571 ms. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 41320 ms. Increasing delay to 123960 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 32949 ms. Increasing delay to 10000 ms.
+// Elapsed time: 442 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net display/dodge_screen/bullet_unit_2/UNCONN_OUT has multiple drivers: display/dodge_screen/bullet_unit_3/collision_reg/Q, and display/dodge_screen/bullet_unit_2/collision_reg/Q.. ]", 7, true); // ah (Q, cp) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net display/dodge_screen/bullet_unit_2/UNCONN_OUT has multiple drivers: display/dodge_screen/bullet_unit_3/collision_reg/Q, and display/dodge_screen/bullet_unit_2/collision_reg/Q.. , [DRC MDRV-1] Multiple Driver Nets: Net display/dodge_screen/bullet_unit_3/bullet_2_rgb[10] has multiple drivers: display/dodge_screen/bullet_unit_3/rgb_reg[10]_i_4/O, and display/dodge_screen/rgb_reg[10]_i_5/O.. ]", 9, false, false, false, false, false, true); // ah (Q, cp) - Double Click
+selectCodeEditor("bullet.v", 447, 287); // cl (w, cp)
+selectCodeEditor("bullet.v", 166, 174); // cl (w, cp)
+selectCodeEditor("bullet.v", 166, 174, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("bullet.v", 174, 174); // cl (w, cp)
+selectCodeEditor("bullet.v", 174, 174, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 15 seconds
+selectCodeEditor("bullet.v", 274, 228); // cl (w, cp)
+selectCodeEditor("bullet.v", 274, 228, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 23 seconds
+selectCodeEditor("bullet.v", 190, 210); // cl (w, cp)
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("bullet.v", 206, 197); // cl (w, cp)
+selectCodeEditor("bullet.v", 206, 197, false, false, false, false, true); // cl (w, cp) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 754 MB. GUI used memory: 55 MB. Current time: 6/7/20, 5:05:39 PM ICT
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 16 ms. Decreasing delay to 2016 ms.
+// Elapsed time: 44 seconds
+selectCodeEditor("bullet.v", 400, 191); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("bullet.v", 173, 299); // cl (w, cp)
+// Elapsed time: 29 seconds
+selectCodeEditor("bullet.v", 443, 414); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (cp):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// Tcl Message: [Sun Jun  7 17:06:53 2020] Launched synth_1... Run output will be captured here: C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// ah (cp): Synthesis Completed: addNotify
+// Elapsed time: 192 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bx (cp):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// Tcl Message: [Sun Jun  7 17:10:06 2020] Launched impl_1... Run output will be captured here: C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (cp)
+selectCodeEditor("bullet.v", 233, 113); // cl (w, cp)
+selectCodeEditor("bullet.v", 233, 113, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("bullet.v", 221, 148); // cl (w, cp)
+selectCodeEditor("bullet.v", 221, 148, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("bullet.v", 244, 133); // cl (w, cp)
+selectCodeEditor("bullet.v", 244, 133, false, false, false, false, true); // cl (w, cp) - Double Click
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STEP_COMPLETED
+// ah (cp): Implementation Failed: addNotify
+// Elapsed time: 11 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net display/dodge_screen/bullet_unit_3/B1 has multiple drivers: display/dodge_screen/bullet_unit_2/collision_reg/Q, and display/dodge_screen/bullet_unit_3/collision_reg/Q.. ]", 7, true); // ah (Q, cp) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net display/dodge_screen/bullet_unit_3/B1 has multiple drivers: display/dodge_screen/bullet_unit_2/collision_reg/Q, and display/dodge_screen/bullet_unit_3/collision_reg/Q.. , [DRC MDRV-1] Multiple Driver Nets: Net display/dodge_screen/bullet_unit_3/bullet_2_on has multiple drivers: display/dodge_screen/bullet_unit_3/rgb_reg[11]_i_13/O, and display/dodge_screen/bullet_unit_3/rgb_reg[11]_i_12/O.. ]", 8, false, false, false, false, false, true); // ah (Q, cp) - Double Click
+// Elapsed time: 20 seconds
+selectCodeEditor("bullet.v", 131, 105); // cl (w, cp)
+selectCodeEditor("bullet.v", 134, 116); // cl (w, cp)
+selectCodeEditor("bullet.v", 134, 116, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 23 seconds
+selectCodeEditor("bullet.v", 94, 222); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 221 seconds
+selectCodeEditor("bullet.v", 409, 190); // cl (w, cp)
+selectCodeEditor("bullet.v", 269, 244); // cl (w, cp)
+selectCodeEditor("bullet.v", 269, 244, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("bullet.v", 332, 260); // cl (w, cp)
+selectCodeEditor("bullet.v", 333, 253); // cl (w, cp)
+selectCodeEditor("bullet.v", 190, 287); // cl (w, cp)
+selectCodeEditor("bullet.v", 190, 287, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("bullet.v", 218, 275); // cl (w, cp)
+selectCodeEditor("bullet.v", 218, 275, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 45 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game (Game.v), display : Display (Display.v), dodge_screen : dodge (dodge.v), bullet_unit_3 : bullet (bullet.v)]", 14, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game (Game.v), display : Display (Display.v), dodge_screen : dodge (dodge.v), bullet_unit_3 : bullet (bullet.v)]", 14, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("bullet.v", 152, 133); // cl (w, cp)
+selectCodeEditor("bullet.v", 152, 133, false, false, false, false, true); // cl (w, cp) - Double Click

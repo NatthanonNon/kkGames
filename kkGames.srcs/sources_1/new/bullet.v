@@ -29,6 +29,7 @@ module bullet(
         output reg collision,         
         output reg bullet_on            // output signal asserted when vga x/y pixel is within platform location in display area
     );
+    
     reg [4:0] row;
 	reg [4:0] col;
 	

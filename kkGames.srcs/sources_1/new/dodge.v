@@ -15,6 +15,9 @@ module dodge(
     wire [9:0] heart_x,heart_y;
     wire collision_1,collision_2;
     
+    wire [11:0] bullet_3_rgb;
+    wire bullet_3_on, collision_3;
+    
     frame frame_unit 
     (
         .clk(clk), 
@@ -89,9 +92,9 @@ module dodge(
 	   .y(y),
 	   .heart_x(heart_x),
 	   .heart_y(heart_y),
-	   .rgb_out(bullet_2_rgb),
-	   .collision(collision_2),
-	   .bullet_on(bullet_2_on)
+	   .rgb_out(bullet_3_rgb),
+	   .collision(collision_3),
+	   .bullet_on(bullet_3_on)
     );
     
     defparam bullet_unit_3.t_l_x = 320;
@@ -99,7 +102,7 @@ module dodge(
 	defparam bullet_unit_3.pattern = 2;
     
             
-	wire is_collision =  collision_1 | collision_2;
+	wire is_collision =  collision_1 | collision_2 | collision_3;
 	hp_bar hp_bar_unit 
 	(
 	   .clk(clk), 
@@ -136,6 +139,10 @@ module dodge(
         else if(bullet_2_on)begin
                rgb_out = bullet_2_rgb;
                dodge_on = 1;
+        end
+          else if(bullet_3_on)begin
+            rgb_out = bullet_3_rgb;
+            dodge_on = 1;
         end
         else if(hp_on)begin
                rgb_out = hp_rgb;

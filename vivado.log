@@ -1,0 +1,77 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Jun  7 15:43:30 2020
+# Process ID: 12780
+# Current directory: C:/Users/Nack/Desktop/SynLab/project/kkGames
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15468 C:\Users\Nack\Desktop\SynLab\project\kkGames\kkGames.xpr
+# Log file: C:/Users/Nack/Desktop/SynLab/project/kkGames/vivado.log
+# Journal file: C:/Users/Nack/Desktop/SynLab/project/kkGames\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/non_s/kkGames' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 693.543 ; gain = 79.805
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Process appears to be on host 'DESKTOP-E6CPFKC' and cannot be killed from host 'DESKTOP-4Q5DVQS'
+
+launch_runs synth_1 -jobs 8
+[Sun Jun  7 16:00:03 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.runs/synth_1/runme.log
+close [ open C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.srcs/sources_1/new/movable_bar.v w ]
+add_files C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.srcs/sources_1/new/movable_bar.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Sun Jun  7 16:16:24 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Sun Jun  7 16:17:15 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Sun Jun  7 16:21:03 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Sun Jun  7 16:44:24 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Sun Jun  7 16:49:26 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+[Sun Jun  7 16:53:10 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.runs/synth_1/runme.log
+[Sun Jun  7 16:53:10 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Sun Jun  7 16:53:19 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Sun Jun  7 16:56:51 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Sun Jun  7 17:06:53 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Sun Jun  7 17:10:06 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Sun Jun  7 17:26:51 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Sun Jun  7 17:35:51 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.runs/impl_1/runme.log
