@@ -9,7 +9,7 @@ module fight(
     output reg [11:0] rgb_out,
     output reg fight_on
     );
-    wire [11:0]  heart_rgb,platforms_rgb,monster_rgb, home_rgb,spirit_rgb,bullet_1_rgb,bullet_2_rgb,hp_rgb;
+    wire [11:0]  heart_rgb,platforms_rgb,monster_rgb, home_rgb,spirit_rgb,bullet_1_rgb,bullet_2_rgb,hp_rgb,atk_frame_rgb;
     wire heart_on,platforms_on,monster_on, home_on,spirit_on,bullet_1_on,bullet_2_on,hp_on;
     
     wire [9:0] heart_x,heart_y;
@@ -29,7 +29,7 @@ module fight(
         .clk(clk), 
         .video_on(video_fight_on), 
         .x(x), .y(y), 
-        .rgb_out(platforms_rgb)
+        .rgb_out(atk_frame_rgb)
     );
 	                      
 	flame_monster flame_monster_unit 
