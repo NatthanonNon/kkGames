@@ -75,7 +75,7 @@ module bullet(
 	   end
 	
 	
-	// flag to chech the direction :   
+	// flag to check the direction :   
 	// direction = 0 : right(horizontal pattern) or down (vertical pattern), 
 	// direction = 1 : left (horizontal pattern) or up (vertical pattern) 
 	reg direction = 0;

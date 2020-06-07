@@ -73,6 +73,12 @@ module Game(
                     tx_data = 8'h64; // show d
                     tx_transmit = 1;
                 end
+                // space bar key
+                8'h20 : begin 
+                    tx_data = 8'h24; // show $
+                    tx_transmit = 1;
+                end
+                
             endcase
         end
         else tx_transmit = 0;

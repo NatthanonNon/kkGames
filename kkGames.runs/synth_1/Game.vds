@@ -2,10 +2,1108 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sun Jun  7 15:40:25 2020
-# Process ID: 5084
+# Start of session at: Sun Jun  7 15:49:38 2020
+# Process ID: 3360
 # Current directory: C:/Users/non_s/kkGames/kkGames.runs/synth_1
 # Command line: vivado.exe -log Game.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Game.tcl
 # Log file: C:/Users/non_s/kkGames/kkGames.runs/synth_1/Game.vds
 # Journal file: C:/Users/non_s/kkGames/kkGames.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
+source Game.tcl -notrace
+Command: synth_design -top Game -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10148 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 383.297 ; gain = 104.180
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Game' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/Game.v:5]
+INFO: [Synth 8-6157] synthesizing module 'uart_transmitter' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/uart_transmitter.v:23]
+	Parameter CLK_RATE bound to: 100000000 - type: integer 
+	Parameter BAUD_RATE bound to: 9600 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_transmitter' (1#1) [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/uart_transmitter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'uart_receiver' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/uart_receiver.v:23]
+	Parameter CLK_RATE bound to: 100000000 - type: integer 
+	Parameter BAUD_RATE bound to: 9600 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_receiver' (2#1) [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/uart_receiver.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/Game.v:50]
+INFO: [Synth 8-6157] synthesizing module 'Display' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/Display.v:2]
+INFO: [Synth 8-6157] synthesizing module 'vga_sync' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/vga_sync.v:1]
+	Parameter H_DISPLAY bound to: 640 - type: integer 
+	Parameter H_L_BORDER bound to: 48 - type: integer 
+	Parameter H_R_BORDER bound to: 16 - type: integer 
+	Parameter H_RETRACE bound to: 96 - type: integer 
+	Parameter H_MAX bound to: 799 - type: integer 
+	Parameter START_H_RETRACE bound to: 656 - type: integer 
+	Parameter END_H_RETRACE bound to: 751 - type: integer 
+	Parameter V_DISPLAY bound to: 480 - type: integer 
+	Parameter V_T_BORDER bound to: 10 - type: integer 
+	Parameter V_B_BORDER bound to: 33 - type: integer 
+	Parameter V_RETRACE bound to: 2 - type: integer 
+	Parameter V_MAX bound to: 524 - type: integer 
+	Parameter START_V_RETRACE bound to: 513 - type: integer 
+	Parameter END_V_RETRACE bound to: 514 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vga_sync' (3#1) [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/vga_sync.v:1]
+INFO: [Synth 8-6157] synthesizing module 'game_state_machine' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/game_state_machine.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/game_state_machine.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'game_state_machine' (4#1) [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/game_state_machine.v:3]
+INFO: [Synth 8-6157] synthesizing module 'home' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/home.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'home' (5#1) [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/home.v:3]
+INFO: [Synth 8-6157] synthesizing module 'dodge' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/dodge.v:3]
+INFO: [Synth 8-6157] synthesizing module 'frame' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/frame.v:3]
+INFO: [Synth 8-6157] synthesizing module 'white_block_rom' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/white_block_rom.v:3]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "block" *) [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/white_block_rom.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'white_block_rom' (6#1) [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/white_block_rom.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'frame' (7#1) [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/frame.v:3]
+INFO: [Synth 8-6157] synthesizing module 'flame_monster' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/flame_monster.v:3]
+	Parameter top_left_x bound to: 300 - type: integer 
+	Parameter top_left_y bound to: 160 - type: integer 
+	Parameter bot_right_x bound to: 340 - type: integer 
+	Parameter bot_right_y bound to: 223 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'flame_monster_rom' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/flame_monster_rom.v:3]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "block" *) [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/flame_monster_rom.v:11]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/flame_monster_rom.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'flame_monster_rom' (8#1) [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/flame_monster_rom.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'flame_monster' (9#1) [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/flame_monster.v:3]
+INFO: [Synth 8-6157] synthesizing module 'heart' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/heart.v:3]
+INFO: [Synth 8-6157] synthesizing module 'heart_rom' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/heart_rom.v:3]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "block" *) [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/heart_rom.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'heart_rom' (10#1) [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/heart_rom.v:3]
+WARNING: [Synth 8-689] width (6) of port connection 'row' does not match port width (5) of module 'heart_rom' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/heart.v:23]
+WARNING: [Synth 8-689] width (6) of port connection 'col' does not match port width (5) of module 'heart_rom' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/heart.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/heart.v:80]
+INFO: [Synth 8-6155] done synthesizing module 'heart' (11#1) [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/heart.v:3]
+INFO: [Synth 8-6157] synthesizing module 'bullet' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:23]
+	Parameter t_l_x bound to: 110 - type: integer 
+	Parameter t_l_y bound to: 344 - type: integer 
+	Parameter pattern bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'bullet_rom' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet_rom.v:23]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "block" *) [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet_rom.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'bullet_rom' (12#1) [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet_rom.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bullet' (13#1) [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:23]
+INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized0' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:23]
+	Parameter t_l_x bound to: 320 - type: integer 
+	Parameter t_l_y bound to: 255 - type: integer 
+	Parameter pattern bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized0' (13#1) [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:23]
+INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized1' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:23]
+	Parameter t_l_x bound to: 320 - type: integer 
+	Parameter t_l_y bound to: 344 - type: integer 
+	Parameter pattern bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized1' (13#1) [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:23]
+INFO: [Synth 8-6157] synthesizing module 'hp_bar' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/hp_bar.v:23]
+	Parameter max_hp bound to: 20 - type: integer 
+	Parameter top_left_x bound to: 90 - type: integer 
+	Parameter top_left_y bound to: 460 - type: integer 
+	Parameter bot_right_x bound to: 210 - type: integer 
+	Parameter bot_right_y bound to: 470 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'hp_bar' (14#1) [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/hp_bar.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'dodge' (15#1) [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/dodge.v:3]
+WARNING: [Synth 8-350] instance 'dodge_screen' of module 'dodge' requires 8 connections, but only 7 given [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/Display.v:69]
+INFO: [Synth 8-6157] synthesizing module 'fight' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/fight_screen.v:3]
+INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized2' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:23]
+	Parameter t_l_x bound to: 320 - type: integer 
+	Parameter t_l_y bound to: 248 - type: integer 
+	Parameter pattern bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized2' (15#1) [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:23]
+INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized3' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:23]
+	Parameter t_l_x bound to: 320 - type: integer 
+	Parameter t_l_y bound to: 248 - type: integer 
+	Parameter pattern bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized3' (15#1) [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:23]
+INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized4' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:23]
+	Parameter t_l_x bound to: 100 - type: integer 
+	Parameter t_l_y bound to: 250 - type: integer 
+	Parameter pattern bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized4' (15#1) [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'fight' (16#1) [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/fight_screen.v:3]
+WARNING: [Synth 8-350] instance 'fight_screen' of module 'fight' requires 8 connections, but only 7 given [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/Display.v:80]
+WARNING: [Synth 8-3848] Net video_fight_on in module/entity Display does not have driver. [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/Display.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'Display' (17#1) [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/Display.v:2]
+WARNING: [Synth 8-350] instance 'display' of module 'Display' requires 8 connections, but only 7 given [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/Game.v:81]
+INFO: [Synth 8-6155] done synthesizing module 'Game' (18#1) [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/Game.v:5]
+WARNING: [Synth 8-3331] design hp_bar has unconnected port clk
+WARNING: [Synth 8-3331] design white_block_rom has unconnected port clk
+WARNING: [Synth 8-3331] design white_block_rom has unconnected port row[3]
+WARNING: [Synth 8-3331] design white_block_rom has unconnected port row[2]
+WARNING: [Synth 8-3331] design white_block_rom has unconnected port row[1]
+WARNING: [Synth 8-3331] design white_block_rom has unconnected port row[0]
+WARNING: [Synth 8-3331] design white_block_rom has unconnected port col[2]
+WARNING: [Synth 8-3331] design white_block_rom has unconnected port col[1]
+WARNING: [Synth 8-3331] design white_block_rom has unconnected port col[0]
+WARNING: [Synth 8-3331] design fight has unconnected port this_state
+WARNING: [Synth 8-3331] design dodge has unconnected port this_state
+WARNING: [Synth 8-3331] design home has unconnected port clk
+WARNING: [Synth 8-3331] design home has unconnected port x[9]
+WARNING: [Synth 8-3331] design home has unconnected port x[8]
+WARNING: [Synth 8-3331] design home has unconnected port x[7]
+WARNING: [Synth 8-3331] design home has unconnected port x[6]
+WARNING: [Synth 8-3331] design home has unconnected port x[5]
+WARNING: [Synth 8-3331] design home has unconnected port x[4]
+WARNING: [Synth 8-3331] design home has unconnected port x[3]
+WARNING: [Synth 8-3331] design home has unconnected port x[2]
+WARNING: [Synth 8-3331] design home has unconnected port x[1]
+WARNING: [Synth 8-3331] design home has unconnected port x[0]
+WARNING: [Synth 8-3331] design home has unconnected port y[9]
+WARNING: [Synth 8-3331] design home has unconnected port y[8]
+WARNING: [Synth 8-3331] design home has unconnected port y[7]
+WARNING: [Synth 8-3331] design home has unconnected port y[6]
+WARNING: [Synth 8-3331] design home has unconnected port y[5]
+WARNING: [Synth 8-3331] design home has unconnected port y[4]
+WARNING: [Synth 8-3331] design home has unconnected port y[3]
+WARNING: [Synth 8-3331] design home has unconnected port y[2]
+WARNING: [Synth 8-3331] design home has unconnected port y[1]
+WARNING: [Synth 8-3331] design home has unconnected port y[0]
+WARNING: [Synth 8-3331] design game_state_machine has unconnected port home_on
+WARNING: [Synth 8-3331] design game_state_machine has unconnected port dodge_on
+WARNING: [Synth 8-3331] design Display has unconnected port sw[11]
+WARNING: [Synth 8-3331] design Display has unconnected port sw[10]
+WARNING: [Synth 8-3331] design Display has unconnected port sw[9]
+WARNING: [Synth 8-3331] design Display has unconnected port sw[8]
+WARNING: [Synth 8-3331] design Display has unconnected port sw[7]
+WARNING: [Synth 8-3331] design Display has unconnected port sw[6]
+WARNING: [Synth 8-3331] design Display has unconnected port sw[5]
+WARNING: [Synth 8-3331] design Display has unconnected port sw[4]
+WARNING: [Synth 8-3331] design Display has unconnected port sw[3]
+WARNING: [Synth 8-3331] design Display has unconnected port sw[2]
+WARNING: [Synth 8-3331] design Display has unconnected port sw[1]
+WARNING: [Synth 8-3331] design Display has unconnected port sw[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 477.906 ; gain = 198.789
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin fight_screen:video_fight_on to constant 0 [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/Display.v:80]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 477.906 ; gain = 198.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 477.906 ; gain = 198.789
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/non_s/kkGames/kkGames.srcs/constrs_1/new/Basys-3-Master.xdc]
+Finished Parsing XDC File [C:/Users/non_s/kkGames/kkGames.srcs/constrs_1/new/Basys-3-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/non_s/kkGames/kkGames.srcs/constrs_1/new/Basys-3-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Game_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Game_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 807.355 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 807.355 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 807.355 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 807.355 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 807.355 ; gain = 528.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 807.355 ; gain = 528.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 807.355 ; gain = 528.238
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "tx" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "receive" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "receive" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "video_home_on" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "form" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:115]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:122]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:127]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:115]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:122]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:127]
+INFO: [Synth 8-5546] ROM "tx_data" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'video_home_on_reg' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/game_state_machine.v:39]
+WARNING: [Synth 8-327] inferring latch for variable 'video_dodge_on_reg' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/game_state_machine.v:40]
+WARNING: [Synth 8-327] inferring latch for variable 'color_data_reg' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/flame_monster_rom.v:21]
+WARNING: [Synth 8-327] inferring latch for variable 'form_reg' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/flame_monster.v:42]
+WARNING: [Synth 8-327] inferring latch for variable 'change_reg' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/flame_monster.v:52]
+WARNING: [Synth 8-327] inferring latch for variable 'is_collision_reg' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:197]
+WARNING: [Synth 8-327] inferring latch for variable 'is_collision_reg' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:197]
+WARNING: [Synth 8-327] inferring latch for variable 'is_collision_reg' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:197]
+WARNING: [Synth 8-327] inferring latch for variable 'dodge_on_reg' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/dodge.v:121]
+WARNING: [Synth 8-327] inferring latch for variable 'is_collision_reg' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:197]
+WARNING: [Synth 8-327] inferring latch for variable 'is_collision_reg' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:197]
+WARNING: [Synth 8-327] inferring latch for variable 'is_collision_reg' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:197]
+WARNING: [Synth 8-327] inferring latch for variable 'fight_on_reg' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/fight_screen.v:121]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 807.355 ; gain = 528.238
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |dodge         |           1|     25518|
+|2     |Display__GB1  |           1|      3274|
+|3     |Display__GB2  |           1|     25879|
+|4     |Game__GC0     |           1|       493|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 49    
+	   2 Input     11 Bit       Adders := 20    
+	   3 Input     11 Bit       Adders := 4     
+	   2 Input     10 Bit       Adders := 28    
+	   2 Input      9 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 2     
+	   3 Input      6 Bit       Adders := 4     
+	   2 Input      5 Bit       Adders := 2     
+	   3 Input      5 Bit       Adders := 8     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 10    
+	               14 Bit    Registers := 2     
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 26    
+	                8 Bit    Registers := 4     
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 17    
++---Multipliers : 
+	                 3x32  Multipliers := 2     
++---ROMs : 
+	                              ROMs := 10    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 28    
+	   2 Input     12 Bit        Muxes := 50    
+	  16 Input     12 Bit        Muxes := 2     
+	   5 Input     12 Bit        Muxes := 2     
+	   5 Input     10 Bit        Muxes := 4     
+	   2 Input     10 Bit        Muxes := 8     
+	   2 Input      8 Bit        Muxes := 7     
+	   6 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 12    
+	   2 Input      5 Bit        Muxes := 24    
+	   2 Input      4 Bit        Muxes := 4     
+	   5 Input      4 Bit        Muxes := 3     
+	7561 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 2     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 45    
+	   6 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Game 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   6 Input      8 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module frame__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 8     
+	   2 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module flame_monster_rom__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               14 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
++---Muxes : 
+	  16 Input     12 Bit        Muxes := 1     
+	7561 Input      4 Bit        Muxes := 1     
+Module flame_monster__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 6     
+	   2 Input      6 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input     12 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module heart_rom__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module heart__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input     11 Bit       Adders := 4     
+	   3 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 4     
+	   2 Input      9 Bit       Adders := 2     
+	   3 Input      6 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               10 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 3     
+	   5 Input     10 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 4     
+Module bullet_rom__3 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module bullet 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 2     
+Module bullet_rom__2 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module bullet__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
+	   3 Input      5 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 2     
+Module bullet_rom__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module bullet__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 5     
+	   3 Input      5 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module hp_bar__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
++---Multipliers : 
+	                 3x32  Multipliers := 1     
++---Muxes : 
+	   5 Input     12 Bit        Muxes := 1     
+Module dodge 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+Module game_state_machine 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 6     
++---Registers : 
+	               32 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 4     
+Module frame 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 8     
+	   2 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module flame_monster_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               14 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
++---Muxes : 
+	  16 Input     12 Bit        Muxes := 1     
+	7561 Input      4 Bit        Muxes := 1     
+Module flame_monster 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 6     
+	   2 Input      6 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input     12 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module heart_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module heart 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input     11 Bit       Adders := 4     
+	   3 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 4     
+	   2 Input      9 Bit       Adders := 2     
+	   3 Input      6 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               10 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 3     
+	   5 Input     10 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 4     
+Module bullet_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module bullet__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 2     
+Module bullet_rom__5 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module bullet__parameterized3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
+	   3 Input      5 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 2     
+Module bullet_rom__4 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module bullet__parameterized4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 5     
+	   3 Input      5 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module hp_bar 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
++---Multipliers : 
+	                 3x32  Multipliers := 1     
++---Muxes : 
+	   5 Input     12 Bit        Muxes := 1     
+Module fight 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+Module vga_sync 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+Module Display 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+Module uart_transmitter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 2     
+Module uart_receiver 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "form" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "form" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "uart_receiver/receive" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "uart_receiver/receive" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "tx_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/change_reg[26]' (LD) to 'display/dodge_screen/flame_monster_unit/change_reg[30]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/change_reg[27]' (LD) to 'display/dodge_screen/flame_monster_unit/change_reg[30]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/change_reg[28]' (LD) to 'display/dodge_screen/flame_monster_unit/change_reg[30]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/change_reg[29]' (LD) to 'display/dodge_screen/flame_monster_unit/change_reg[30]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/change_reg[30]' (LD) to 'display/dodge_screen/flame_monster_unit/change_reg[31]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/change_reg[31]' (LD) to 'display/dodge_screen/flame_monster_unit/change_reg[25]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/change_reg[7]' (LD) to 'display/dodge_screen/flame_monster_unit/change_reg[25]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/change_reg[8]' (LD) to 'display/dodge_screen/flame_monster_unit/change_reg[25]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/change_reg[9]' (LD) to 'display/dodge_screen/flame_monster_unit/change_reg[25]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/change_reg[10]' (LD) to 'display/dodge_screen/flame_monster_unit/change_reg[25]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/change_reg[11]' (LD) to 'display/dodge_screen/flame_monster_unit/change_reg[25]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/change_reg[12]' (LD) to 'display/dodge_screen/flame_monster_unit/change_reg[25]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/change_reg[13]' (LD) to 'display/dodge_screen/flame_monster_unit/change_reg[25]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/change_reg[14]' (LD) to 'display/dodge_screen/flame_monster_unit/change_reg[25]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/change_reg[15]' (LD) to 'display/dodge_screen/flame_monster_unit/change_reg[25]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/change_reg[16]' (LD) to 'display/dodge_screen/flame_monster_unit/change_reg[25]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/change_reg[17]' (LD) to 'display/dodge_screen/flame_monster_unit/change_reg[25]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/change_reg[18]' (LD) to 'display/dodge_screen/flame_monster_unit/change_reg[25]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/change_reg[19]' (LD) to 'display/dodge_screen/flame_monster_unit/change_reg[25]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/change_reg[20]' (LD) to 'display/dodge_screen/flame_monster_unit/change_reg[25]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/change_reg[21]' (LD) to 'display/dodge_screen/flame_monster_unit/change_reg[25]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/change_reg[22]' (LD) to 'display/dodge_screen/flame_monster_unit/change_reg[25]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/change_reg[23]' (LD) to 'display/dodge_screen/flame_monster_unit/change_reg[25]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/change_reg[24]' (LD) to 'display/dodge_screen/flame_monster_unit/change_reg[25]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/form_reg[19]' (LD) to 'display/dodge_screen/flame_monster_unit/form_reg[20]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/form_reg[20]' (LD) to 'display/dodge_screen/flame_monster_unit/form_reg[21]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/form_reg[21]' (LD) to 'display/dodge_screen/flame_monster_unit/form_reg[22]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/form_reg[22]' (LD) to 'display/dodge_screen/flame_monster_unit/form_reg[23]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/form_reg[23]' (LD) to 'display/dodge_screen/flame_monster_unit/form_reg[24]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/form_reg[24]' (LD) to 'display/dodge_screen/flame_monster_unit/form_reg[25]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/form_reg[25]' (LD) to 'display/dodge_screen/flame_monster_unit/form_reg[26]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/form_reg[26]' (LD) to 'display/dodge_screen/flame_monster_unit/form_reg[27]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/form_reg[27]' (LD) to 'display/dodge_screen/flame_monster_unit/form_reg[28]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/form_reg[28]' (LD) to 'display/dodge_screen/flame_monster_unit/form_reg[29]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/form_reg[29]' (LD) to 'display/dodge_screen/flame_monster_unit/form_reg[30]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/form_reg[30]' (LD) to 'display/dodge_screen/flame_monster_unit/form_reg[31]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/form_reg[31]' (LD) to 'display/dodge_screen/flame_monster_unit/form_reg[8]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/form_reg[8]' (LD) to 'display/dodge_screen/flame_monster_unit/form_reg[9]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/form_reg[9]' (LD) to 'display/dodge_screen/flame_monster_unit/form_reg[10]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/form_reg[10]' (LD) to 'display/dodge_screen/flame_monster_unit/form_reg[11]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/form_reg[11]' (LD) to 'display/dodge_screen/flame_monster_unit/form_reg[12]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/form_reg[12]' (LD) to 'display/dodge_screen/flame_monster_unit/form_reg[13]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/form_reg[13]' (LD) to 'display/dodge_screen/flame_monster_unit/form_reg[14]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/form_reg[14]' (LD) to 'display/dodge_screen/flame_monster_unit/form_reg[15]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/form_reg[15]' (LD) to 'display/dodge_screen/flame_monster_unit/form_reg[16]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/form_reg[16]' (LD) to 'display/dodge_screen/flame_monster_unit/form_reg[17]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/form_reg[17]' (LD) to 'display/dodge_screen/flame_monster_unit/form_reg[18]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/form_reg[18]' (LD) to 'display/dodge_screen/flame_monster_unit/form_reg[5]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/form_reg[5]' (LD) to 'display/dodge_screen/flame_monster_unit/form_reg[6]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/form_reg[6]' (LD) to 'display/dodge_screen/flame_monster_unit/form_reg[7]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/form_reg[7]' (LD) to 'display/dodge_screen/flame_monster_unit/form_reg[3]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/form_reg[3]' (LD) to 'display/dodge_screen/flame_monster_unit/form_reg[4]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/flame_monster_unit/form_reg[4]' (LD) to 'display/dodge_screen/flame_monster_unit/form_reg[2]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/bullet_unit_2/move_reg[24]' (FD) to 'display/dodge_screen/bullet_unit_2/move_reg[25]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/bullet_unit_2/move_reg[25]' (FD) to 'display/dodge_screen/bullet_unit_2/move_reg[26]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/bullet_unit_2/move_reg[26]' (FD) to 'display/dodge_screen/bullet_unit_2/move_reg[27]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/bullet_unit_2/move_reg[27]' (FD) to 'display/dodge_screen/bullet_unit_2/move_reg[28]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/bullet_unit_2/move_reg[28]' (FD) to 'display/dodge_screen/bullet_unit_2/move_reg[29]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/bullet_unit_2/move_reg[29]' (FD) to 'display/dodge_screen/bullet_unit_2/move_reg[30]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/bullet_unit_2/move_reg[30]' (FD) to 'display/dodge_screen/bullet_unit_2/move_reg[31]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/bullet_unit_2/move_reg[31]' (FD) to 'display/dodge_screen/bullet_unit_2/move_reg[23]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/bullet_unit_3/move_reg[24]' (FD) to 'display/dodge_screen/bullet_unit_3/move_reg[25]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/bullet_unit_3/move_reg[25]' (FD) to 'display/dodge_screen/bullet_unit_3/move_reg[26]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/bullet_unit_3/move_reg[26]' (FD) to 'display/dodge_screen/bullet_unit_3/move_reg[27]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/bullet_unit_3/move_reg[27]' (FD) to 'display/dodge_screen/bullet_unit_3/move_reg[28]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/bullet_unit_3/move_reg[28]' (FD) to 'display/dodge_screen/bullet_unit_3/move_reg[29]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/bullet_unit_3/move_reg[29]' (FD) to 'display/dodge_screen/bullet_unit_3/move_reg[30]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/bullet_unit_3/move_reg[30]' (FD) to 'display/dodge_screen/bullet_unit_3/move_reg[31]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/bullet_unit_3/move_reg[31]' (FD) to 'display/dodge_screen/bullet_unit_3/move_reg[23]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/bullet_unit_1/move_reg[24]' (FD) to 'display/dodge_screen/bullet_unit_1/move_reg[25]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/bullet_unit_1/move_reg[25]' (FD) to 'display/dodge_screen/bullet_unit_1/move_reg[26]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/bullet_unit_1/move_reg[26]' (FD) to 'display/dodge_screen/bullet_unit_1/move_reg[27]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/bullet_unit_1/move_reg[27]' (FD) to 'display/dodge_screen/bullet_unit_1/move_reg[28]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/bullet_unit_1/move_reg[28]' (FD) to 'display/dodge_screen/bullet_unit_1/move_reg[29]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/bullet_unit_1/move_reg[29]' (FD) to 'display/dodge_screen/bullet_unit_1/move_reg[30]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/bullet_unit_1/move_reg[30]' (FD) to 'display/dodge_screen/bullet_unit_1/move_reg[31]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/bullet_unit_1/move_reg[31]' (FD) to 'display/dodge_screen/bullet_unit_1/move_reg[23]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/heart_unit/move_reg[24]' (FD) to 'display/dodge_screen/heart_unit/move_reg[25]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/heart_unit/move_reg[25]' (FD) to 'display/dodge_screen/heart_unit/move_reg[26]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/heart_unit/move_reg[26]' (FD) to 'display/dodge_screen/heart_unit/move_reg[27]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/heart_unit/move_reg[27]' (FD) to 'display/dodge_screen/heart_unit/move_reg[28]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/heart_unit/move_reg[28]' (FD) to 'display/dodge_screen/heart_unit/move_reg[29]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/heart_unit/move_reg[29]' (FD) to 'display/dodge_screen/heart_unit/move_reg[30]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/heart_unit/move_reg[30]' (FD) to 'display/dodge_screen/heart_unit/move_reg[31]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/heart_unit/move_reg[31]' (FD) to 'display/dodge_screen/heart_unit/move_reg[22]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/heart_unit/move_reg[22]' (FD) to 'display/dodge_screen/heart_unit/move_reg[23]'
+INFO: [Synth 8-3886] merging instance 'display/dodge_screen/bullet_unit_2/is_collision_reg' (LD) to 'display/dodge_screen/bullet_unit_3/is_collision_reg'
+INFO: [Synth 8-3886] merging instance 'displayi_1/FSM/state_divider_reg[22]' (FD) to 'displayi_1/FSM/state_divider_reg[23]'
+INFO: [Synth 8-3886] merging instance 'displayi_1/FSM/state_divider_reg[23]' (FD) to 'displayi_1/FSM/state_divider_reg[24]'
+INFO: [Synth 8-3886] merging instance 'displayi_1/FSM/state_divider_reg[24]' (FD) to 'displayi_1/FSM/state_divider_reg[25]'
+INFO: [Synth 8-3886] merging instance 'displayi_1/FSM/state_divider_reg[25]' (FD) to 'displayi_1/FSM/state_divider_reg[26]'
+INFO: [Synth 8-3886] merging instance 'displayi_1/FSM/state_divider_reg[26]' (FD) to 'displayi_1/FSM/state_divider_reg[27]'
+INFO: [Synth 8-3886] merging instance 'displayi_1/FSM/state_divider_reg[27]' (FD) to 'displayi_1/FSM/state_divider_reg[28]'
+INFO: [Synth 8-3886] merging instance 'displayi_1/FSM/state_divider_reg[28]' (FD) to 'displayi_1/FSM/state_divider_reg[29]'
+INFO: [Synth 8-3886] merging instance 'displayi_1/FSM/state_divider_reg[29]' (FD) to 'displayi_1/FSM/state_divider_reg[30]'
+INFO: [Synth 8-3886] merging instance 'displayi_1/FSM/state_divider_reg[30]' (FD) to 'displayi_1/FSM/state_divider_reg[31]'
+INFO: [Synth 8-3886] merging instance 'displayi_1/FSM/state_reg[31]' (FDE) to 'displayi_1/FSM/state_reg[2]'
+INFO: [Synth 8-3886] merging instance 'displayi_1/FSM/state_reg[30]' (FDE) to 'displayi_1/FSM/state_reg[2]'
+INFO: [Synth 8-3886] merging instance 'displayi_1/FSM/state_reg[29]' (FDE) to 'displayi_1/FSM/state_reg[2]'
+INFO: [Synth 8-3886] merging instance 'displayi_1/FSM/state_reg[28]' (FDE) to 'displayi_1/FSM/state_reg[2]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (flame_monster/color_data_reg[11]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (flame_monster/color_data_reg[10]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (flame_monster/color_data_reg[9]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (flame_monster/color_data_reg[8]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (flame_monster/color_data_reg[7]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (flame_monster/color_data_reg[6]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (flame_monster/color_data_reg[5]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (flame_monster/color_data_reg[4]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (flame_monster/color_data_reg[3]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (flame_monster/color_data_reg[2]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (flame_monster/color_data_reg[1]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (flame_monster/color_data_reg[0]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (form_reg[31]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (form_reg[30]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (form_reg[29]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (form_reg[28]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (form_reg[27]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (form_reg[26]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (form_reg[25]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (form_reg[24]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (form_reg[23]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (form_reg[22]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (form_reg[21]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (form_reg[20]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (form_reg[19]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (form_reg[18]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (form_reg[17]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (form_reg[16]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (form_reg[15]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (form_reg[14]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (form_reg[13]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (form_reg[12]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (form_reg[11]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (form_reg[10]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (form_reg[9]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (form_reg[8]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (form_reg[7]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (form_reg[6]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (form_reg[5]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (form_reg[4]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (form_reg[3]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (form_reg[2]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (form_reg[1]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (form_reg[0]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (change_reg[31]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (change_reg[30]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (change_reg[29]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (change_reg[28]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (change_reg[27]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (change_reg[26]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (change_reg[25]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (change_reg[24]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (change_reg[23]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (change_reg[22]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (change_reg[21]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (change_reg[20]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (change_reg[19]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (change_reg[18]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (change_reg[17]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (change_reg[16]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (change_reg[15]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (change_reg[14]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (change_reg[13]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (change_reg[12]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (change_reg[11]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (change_reg[10]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (change_reg[9]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (change_reg[8]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (change_reg[7]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (change_reg[6]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (change_reg[5]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (change_reg[4]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (change_reg[3]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (change_reg[2]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (change_reg[1]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (change_reg[0]) is unused and will be removed from module flame_monster.
+WARNING: [Synth 8-3332] Sequential element (bullet_unit_1/is_collision_reg) is unused and will be removed from module fight.
+WARNING: [Synth 8-3332] Sequential element (bullet_unit_2/is_collision_reg) is unused and will be removed from module fight.
+WARNING: [Synth 8-3332] Sequential element (bullet_unit_3/is_collision_reg) is unused and will be removed from module fight.
+WARNING: [Synth 8-3332] Sequential element (fight_on_reg) is unused and will be removed from module fight.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/\tx_data_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\tx_data_reg[3] )
+WARNING: [Synth 8-3332] Sequential element (dodge_on_reg) is unused and will be removed from module dodge.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:24 ; elapsed = 00:03:34 . Memory (MB): peak = 879.523 ; gain = 600.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++--------------+------------+---------------+----------------+
+|Module Name   | RTL Object | Depth x Width | Implemented As | 
++--------------+------------+---------------+----------------+
+|flame_monster | sel        | 16384x1       | Block RAM      | 
+|heart         | sel        | 1024x11       | Block RAM      | 
+|dodge         | sel        | 1024x12       | Block RAM      | 
+|dodge         | sel        | 1024x12       | Block RAM      | 
+|dodge         | sel        | 1024x12       | Block RAM      | 
+|flame_monster | sel        | 16384x1       | Block RAM      | 
+|heart         | sel        | 1024x11       | Block RAM      | 
+|fight         | sel        | 1024x12       | Block RAM      | 
+|fight         | sel        | 1024x12       | Block RAM      | 
+|fight         | sel        | 1024x12       | Block RAM      | 
++--------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance display/dodge_screen/flame_monster_unit/i_0/sel (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance display/dodge_screen/heart_unit/rgb_out10/sel (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance display/dodge_screen/i_0/sel (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance display/dodge_screen/i_1/sel (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance display/dodge_screen/i_2/sel (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |dodge         |           1|     13005|
+|2     |Display__GB1  |           1|      1298|
+|3     |Display__GB2  |           1|       159|
+|4     |Game__GC0     |           1|       227|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:37 ; elapsed = 00:03:48 . Memory (MB): peak = 879.523 ; gain = 600.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:03:40 ; elapsed = 00:03:51 . Memory (MB): peak = 883.453 ; gain = 604.336
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |dodge         |           1|     13005|
+|2     |Display__GB1  |           1|      1298|
+|3     |Display__GB2  |           1|       159|
+|4     |Game__GC0     |           1|       227|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance display/dodge_screen/flame_monster_unit/sel (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance sel (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance display/dodge_screen/sel (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance display/dodge_screen/sel (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance display/dodge_screen/sel__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:03:47 ; elapsed = 00:03:58 . Memory (MB): peak = 998.199 ; gain = 719.082
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:03:49 ; elapsed = 00:04:00 . Memory (MB): peak = 998.199 ; gain = 719.082
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin display/dodge_screen/collision_2 with 1st driver pin 'display/dodge_screen/bullet_unit_3/collision_reg/Q' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:138]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin display/dodge_screen/collision_2 with 2nd driver pin 'display/dodge_screen/bullet_unit_2/collision_reg/Q' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:138]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin display/dodge_screen/bullet_2_rgb[11] with 1st driver pin 'i_4246/O' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:200]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin display/dodge_screen/bullet_2_rgb[11] with 2nd driver pin 'i_3037/O' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:200]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin display/dodge_screen/bullet_2_on with 1st driver pin 'i_4245/O' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:66]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin display/dodge_screen/bullet_2_on with 2nd driver pin 'i_4244/O' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:66]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin display/dodge_screen/bullet_2_rgb[10] with 1st driver pin 'i_4247/O' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:200]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin display/dodge_screen/bullet_2_rgb[10] with 2nd driver pin 'i_3036/O' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:200]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin display/dodge_screen/bullet_2_rgb[9] with 1st driver pin 'i_4248/O' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:200]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin display/dodge_screen/bullet_2_rgb[9] with 2nd driver pin 'i_3035/O' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:200]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin display/dodge_screen/bullet_2_rgb[8] with 1st driver pin 'i_4249/O' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:200]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin display/dodge_screen/bullet_2_rgb[8] with 2nd driver pin 'i_3034/O' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:200]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin display/dodge_screen/bullet_2_rgb[7] with 1st driver pin 'i_4250/O' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:200]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin display/dodge_screen/bullet_2_rgb[7] with 2nd driver pin 'i_3033/O' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:200]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin display/dodge_screen/bullet_2_rgb[6] with 1st driver pin 'i_4251/O' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:200]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin display/dodge_screen/bullet_2_rgb[6] with 2nd driver pin 'i_3032/O' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:200]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin display/dodge_screen/bullet_2_rgb[5] with 1st driver pin 'i_4252/O' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:200]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin display/dodge_screen/bullet_2_rgb[5] with 2nd driver pin 'i_3031/O' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:200]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin display/dodge_screen/bullet_2_rgb[4] with 1st driver pin 'i_4253/O' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:200]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin display/dodge_screen/bullet_2_rgb[4] with 2nd driver pin 'i_3030/O' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:200]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin display/dodge_screen/bullet_2_rgb[0] with 1st driver pin 'i_4257/O' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:200]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin display/dodge_screen/bullet_2_rgb[0] with 2nd driver pin 'i_3026/O' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:200]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin display/dodge_screen/bullet_2_rgb[1] with 1st driver pin 'i_4256/O' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:200]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin display/dodge_screen/bullet_2_rgb[1] with 2nd driver pin 'i_3027/O' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:200]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin display/dodge_screen/bullet_2_rgb[2] with 1st driver pin 'i_4255/O' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:200]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin display/dodge_screen/bullet_2_rgb[2] with 2nd driver pin 'i_3028/O' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:200]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin display/dodge_screen/bullet_2_rgb[3] with 1st driver pin 'i_4254/O' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:200]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin display/dodge_screen/bullet_2_rgb[3] with 2nd driver pin 'i_3029/O' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:200]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|       14|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:49 ; elapsed = 00:04:00 . Memory (MB): peak = 998.199 ; gain = 719.082
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:50 ; elapsed = 00:04:02 . Memory (MB): peak = 998.199 ; gain = 719.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:50 ; elapsed = 00:04:02 . Memory (MB): peak = 998.199 ; gain = 719.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:50 ; elapsed = 00:04:02 . Memory (MB): peak = 998.199 ; gain = 719.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:50 ; elapsed = 00:04:02 . Memory (MB): peak = 998.199 ; gain = 719.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     2|
+|2     |CARRY4     |   595|
+|3     |LUT1       |   454|
+|4     |LUT2       |   368|
+|5     |LUT3       |   627|
+|6     |LUT4       |   527|
+|7     |LUT5       |   630|
+|8     |LUT6       |  1837|
+|9     |MUXF7      |   209|
+|10    |MUXF8      |    57|
+|11    |RAMB18E1   |     1|
+|12    |RAMB18E1_1 |     1|
+|13    |RAMB18E1_2 |     2|
+|14    |FDRE       |   372|
+|15    |LD         |    27|
+|16    |IBUF       |     2|
+|17    |OBUF       |    23|
++------+-----------+------+
+
+Report Instance Areas: 
++------+-------------------------+-----------------------+------+
+|      |Instance                 |Module                 |Cells |
++------+-------------------------+-----------------------+------+
+|1     |top                      |                       |  5734|
+|2     |  display                |Display                |  5389|
+|3     |    FSM                  |game_state_machine     |   561|
+|4     |    dodge_screen         |dodge                  |  4587|
+|5     |      bullet_unit_1      |bullet                 |   486|
+|6     |      bullet_unit_2      |bullet__parameterized0 |   467|
+|7     |      bullet_unit_3      |bullet__parameterized1 |   565|
+|8     |      flame_monster_unit |flame_monster          |  1888|
+|9     |        flame_monster    |flame_monster_rom      |  1154|
+|10    |      frame_unit         |frame                  |     6|
+|11    |      heart_unit         |heart                  |   624|
+|12    |      hp_bar_unit        |hp_bar                 |   276|
+|13    |    vsync_unit           |vga_sync               |   225|
+|14    |  uart_receiver          |uart_receiver          |    78|
+|15    |  uart_transmitter       |uart_transmitter       |    40|
++------+-------------------------+-----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:50 ; elapsed = 00:04:02 . Memory (MB): peak = 998.199 ; gain = 719.082
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 28 critical warnings and 94 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:40 ; elapsed = 00:03:56 . Memory (MB): peak = 998.199 ; gain = 389.633
+Synthesis Optimization Complete : Time (s): cpu = 00:03:50 ; elapsed = 00:04:02 . Memory (MB): peak = 998.199 ; gain = 719.082
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 892 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 998.199 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 27 instances were transformed.
+  LD => LDCE: 27 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+196 Infos, 147 Warnings, 28 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:03:54 ; elapsed = 00:04:07 . Memory (MB): peak = 998.199 ; gain = 731.203
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.003 . Memory (MB): peak = 998.199 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/non_s/kkGames/kkGames.runs/synth_1/Game.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Game_utilization_synth.rpt -pb Game_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jun  7 15:53:51 2020...
