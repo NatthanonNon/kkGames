@@ -38,3 +38,6 @@ Run output will be captured here: C:/Users/Nack/Desktop/SynLab/project/kkGames/k
 launch_runs impl_1 -jobs 8
 [Sun Jun  7 20:44:46 2020] Launched impl_1...
 Run output will be captured here: C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun Jun  7 20:47:48 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Nack/Desktop/SynLab/project/kkGames/kkGames.runs/impl_1/runme.log
