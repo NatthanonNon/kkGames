@@ -19,7 +19,7 @@ module attack_state_machine(
             if (state_divider==0) 
                 begin
                     // space key
-                    if (keyboard  == 8'h20) 
+                    if (keyboard  == 8'h20 && video_fight_on == 1) 
                         begin
                             state = 1;
                         end  

@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sun Jun  7 19:48:53 2020
-# Process ID: 3032
+# Start of session at: Sun Jun  7 21:22:18 2020
+# Process ID: 3056
 # Current directory: C:/Users/non_s/kkGames/kkGames.runs/synth_1
 # Command line: vivado.exe -log Game.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Game.tcl
 # Log file: C:/Users/non_s/kkGames/kkGames.runs/synth_1/Game.vds
@@ -15,9 +15,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 5084 
+INFO: Helper process launched with PID 10348 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 383.961 ; gain = 105.023
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 383.516 ; gain = 104.730
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'Game' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/Game.v:5]
 INFO: [Synth 8-6157] synthesizing module 'uart_transmitter' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/uart_transmitter.v:23]
@@ -118,8 +118,8 @@ INFO: [Synth 8-6155] done synthesizing module 'dodge' (16#1) [C:/Users/non_s/kkG
 INFO: [Synth 8-6157] synthesizing module 'fight' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/fight_screen.v:3]
 WARNING: [Synth 8-3848] Net fight_on in module/entity fight does not have driver. [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/fight_screen.v:9]
 INFO: [Synth 8-6155] done synthesizing module 'fight' (17#1) [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/fight_screen.v:3]
-WARNING: [Synth 8-3848] Net damage_taken_hero in module/entity Attack does not have driver. [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/Attack.v:54]
-WARNING: [Synth 8-3848] Net damage_taken_monster in module/entity Attack does not have driver. [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/Attack.v:54]
+WARNING: [Synth 8-3848] Net damage_taken_hero in module/entity Attack does not have driver. [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/Attack.v:55]
+WARNING: [Synth 8-3848] Net damage_taken_monster in module/entity Attack does not have driver. [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/Attack.v:55]
 INFO: [Synth 8-6155] done synthesizing module 'Attack' (18#1) [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/Attack.v:3]
 INFO: [Synth 8-6155] done synthesizing module 'Display' (19#1) [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/Display.v:2]
 INFO: [Synth 8-6155] done synthesizing module 'Game' (20#1) [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/Game.v:5]
@@ -190,7 +190,7 @@ WARNING: [Synth 8-3331] design home has unconnected port y[0]
 WARNING: [Synth 8-3331] design game_state_machine has unconnected port home_on
 WARNING: [Synth 8-3331] design game_state_machine has unconnected port attack_on
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 476.559 ; gain = 197.621
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 476.172 ; gain = 197.387
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -199,16 +199,16 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin hp_bar_unit_hero:collision to constant 0 [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/Attack.v:56]
-WARNING: [Synth 8-3295] tying undriven pin hp_bar_unit_monster:collision to constant 0 [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/Attack.v:70]
+WARNING: [Synth 8-3295] tying undriven pin hp_bar_unit_hero:collision to constant 0 [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/Attack.v:57]
+WARNING: [Synth 8-3295] tying undriven pin hp_bar_unit_monster:collision to constant 0 [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/Attack.v:71]
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 476.559 ; gain = 197.621
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 476.172 ; gain = 197.387
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 476.559 ; gain = 197.621
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 476.172 ; gain = 197.387
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -219,36 +219,35 @@ Parsing XDC File [C:/Users/non_s/kkGames/kkGames.srcs/constrs_1/new/Basys-3-Mast
 Finished Parsing XDC File [C:/Users/non_s/kkGames/kkGames.srcs/constrs_1/new/Basys-3-Master.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/non_s/kkGames/kkGames.srcs/constrs_1/new/Basys-3-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Game_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Game_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 803.129 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 802.477 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 803.129 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 802.477 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 803.129 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 803.129 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 802.477 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 802.477 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 803.129 ; gain = 524.191
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 802.477 ; gain = 523.691
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 803.129 ; gain = 524.191
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 802.477 ; gain = 523.691
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 803.129 ; gain = 524.191
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 802.477 ; gain = 523.691
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "tx" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "receive" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "receive" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5545] ROM "video_home_on" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5545] ROM "video_fight_on" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "form" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:115]
@@ -266,9 +265,9 @@ WARNING: [Synth 8-327] inferring latch for variable 'is_collision_reg' [C:/Users
 WARNING: [Synth 8-327] inferring latch for variable 'is_collision_reg' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:197]
 WARNING: [Synth 8-327] inferring latch for variable 'is_collision_reg' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v:197]
 WARNING: [Synth 8-327] inferring latch for variable 'dodge_on_reg' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/dodge.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'attack_on_reg' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/Attack.v:129]
+WARNING: [Synth 8-327] inferring latch for variable 'attack_on_reg' [C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/Attack.v:130]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 803.129 ; gain = 524.191
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 802.477 ; gain = 523.691
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -324,7 +323,7 @@ Detailed RTL Component Info :
 	   2 Input      3 Bit        Muxes := 1     
 	   5 Input      3 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 39    
+	   2 Input      1 Bit        Muxes := 38    
 	   4 Input      1 Bit        Muxes := 2     
 	   6 Input      1 Bit        Muxes := 1     
 	   7 Input      1 Bit        Muxes := 1     
@@ -395,7 +394,7 @@ Detailed RTL Component Info :
 	               32 Bit    Registers := 2     
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 4     
 Module flame_monster_rom 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -556,7 +555,6 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5545] ROM "form" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5544] ROM "uart_receiver/receive" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "uart_receiver/receive" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
@@ -564,30 +562,30 @@ INFO: [Synth 8-5546] ROM "tx_data" won't be mapped to RAM because it is too spar
 WARNING: [Synth 8-3331] design frame has unconnected port clk
 WARNING: [Synth 8-3331] design attack_state_machine has unconnected port fight_on
 WARNING: [Synth 8-3331] design attack_state_machine has unconnected port dodge_on
+INFO: [Synth 8-3886] merging instance 'display/attack_screen/flame_monster_unit/change_reg[25]' (LD) to 'display/attack_screen/flame_monster_unit/change_reg[30]'
 INFO: [Synth 8-3886] merging instance 'display/attack_screen/flame_monster_unit/change_reg[26]' (LD) to 'display/attack_screen/flame_monster_unit/change_reg[30]'
 INFO: [Synth 8-3886] merging instance 'display/attack_screen/flame_monster_unit/change_reg[27]' (LD) to 'display/attack_screen/flame_monster_unit/change_reg[30]'
 INFO: [Synth 8-3886] merging instance 'display/attack_screen/flame_monster_unit/change_reg[28]' (LD) to 'display/attack_screen/flame_monster_unit/change_reg[30]'
 INFO: [Synth 8-3886] merging instance 'display/attack_screen/flame_monster_unit/change_reg[29]' (LD) to 'display/attack_screen/flame_monster_unit/change_reg[30]'
 INFO: [Synth 8-3886] merging instance 'display/attack_screen/flame_monster_unit/change_reg[30]' (LD) to 'display/attack_screen/flame_monster_unit/change_reg[31]'
-INFO: [Synth 8-3886] merging instance 'display/attack_screen/flame_monster_unit/change_reg[31]' (LD) to 'display/attack_screen/flame_monster_unit/change_reg[25]'
-INFO: [Synth 8-3886] merging instance 'display/attack_screen/flame_monster_unit/change_reg[7]' (LD) to 'display/attack_screen/flame_monster_unit/change_reg[25]'
-INFO: [Synth 8-3886] merging instance 'display/attack_screen/flame_monster_unit/change_reg[8]' (LD) to 'display/attack_screen/flame_monster_unit/change_reg[25]'
-INFO: [Synth 8-3886] merging instance 'display/attack_screen/flame_monster_unit/change_reg[9]' (LD) to 'display/attack_screen/flame_monster_unit/change_reg[25]'
-INFO: [Synth 8-3886] merging instance 'display/attack_screen/flame_monster_unit/change_reg[10]' (LD) to 'display/attack_screen/flame_monster_unit/change_reg[25]'
-INFO: [Synth 8-3886] merging instance 'display/attack_screen/flame_monster_unit/change_reg[11]' (LD) to 'display/attack_screen/flame_monster_unit/change_reg[25]'
-INFO: [Synth 8-3886] merging instance 'display/attack_screen/flame_monster_unit/change_reg[12]' (LD) to 'display/attack_screen/flame_monster_unit/change_reg[25]'
-INFO: [Synth 8-3886] merging instance 'display/attack_screen/flame_monster_unit/change_reg[13]' (LD) to 'display/attack_screen/flame_monster_unit/change_reg[25]'
-INFO: [Synth 8-3886] merging instance 'display/attack_screen/flame_monster_unit/change_reg[14]' (LD) to 'display/attack_screen/flame_monster_unit/change_reg[25]'
-INFO: [Synth 8-3886] merging instance 'display/attack_screen/flame_monster_unit/change_reg[15]' (LD) to 'display/attack_screen/flame_monster_unit/change_reg[25]'
-INFO: [Synth 8-3886] merging instance 'display/attack_screen/flame_monster_unit/change_reg[16]' (LD) to 'display/attack_screen/flame_monster_unit/change_reg[25]'
-INFO: [Synth 8-3886] merging instance 'display/attack_screen/flame_monster_unit/change_reg[17]' (LD) to 'display/attack_screen/flame_monster_unit/change_reg[25]'
-INFO: [Synth 8-3886] merging instance 'display/attack_screen/flame_monster_unit/change_reg[18]' (LD) to 'display/attack_screen/flame_monster_unit/change_reg[25]'
-INFO: [Synth 8-3886] merging instance 'display/attack_screen/flame_monster_unit/change_reg[19]' (LD) to 'display/attack_screen/flame_monster_unit/change_reg[25]'
-INFO: [Synth 8-3886] merging instance 'display/attack_screen/flame_monster_unit/change_reg[20]' (LD) to 'display/attack_screen/flame_monster_unit/change_reg[25]'
-INFO: [Synth 8-3886] merging instance 'display/attack_screen/flame_monster_unit/change_reg[21]' (LD) to 'display/attack_screen/flame_monster_unit/change_reg[25]'
-INFO: [Synth 8-3886] merging instance 'display/attack_screen/flame_monster_unit/change_reg[22]' (LD) to 'display/attack_screen/flame_monster_unit/change_reg[25]'
-INFO: [Synth 8-3886] merging instance 'display/attack_screen/flame_monster_unit/change_reg[23]' (LD) to 'display/attack_screen/flame_monster_unit/change_reg[25]'
-INFO: [Synth 8-3886] merging instance 'display/attack_screen/flame_monster_unit/change_reg[24]' (LD) to 'display/attack_screen/flame_monster_unit/change_reg[25]'
+INFO: [Synth 8-3886] merging instance 'display/attack_screen/flame_monster_unit/change_reg[31]' (LD) to 'display/attack_screen/flame_monster_unit/change_reg[24]'
+INFO: [Synth 8-3886] merging instance 'display/attack_screen/flame_monster_unit/change_reg[7]' (LD) to 'display/attack_screen/flame_monster_unit/change_reg[24]'
+INFO: [Synth 8-3886] merging instance 'display/attack_screen/flame_monster_unit/change_reg[8]' (LD) to 'display/attack_screen/flame_monster_unit/change_reg[24]'
+INFO: [Synth 8-3886] merging instance 'display/attack_screen/flame_monster_unit/change_reg[9]' (LD) to 'display/attack_screen/flame_monster_unit/change_reg[24]'
+INFO: [Synth 8-3886] merging instance 'display/attack_screen/flame_monster_unit/change_reg[10]' (LD) to 'display/attack_screen/flame_monster_unit/change_reg[24]'
+INFO: [Synth 8-3886] merging instance 'display/attack_screen/flame_monster_unit/change_reg[11]' (LD) to 'display/attack_screen/flame_monster_unit/change_reg[24]'
+INFO: [Synth 8-3886] merging instance 'display/attack_screen/flame_monster_unit/change_reg[12]' (LD) to 'display/attack_screen/flame_monster_unit/change_reg[24]'
+INFO: [Synth 8-3886] merging instance 'display/attack_screen/flame_monster_unit/change_reg[13]' (LD) to 'display/attack_screen/flame_monster_unit/change_reg[24]'
+INFO: [Synth 8-3886] merging instance 'display/attack_screen/flame_monster_unit/change_reg[14]' (LD) to 'display/attack_screen/flame_monster_unit/change_reg[24]'
+INFO: [Synth 8-3886] merging instance 'display/attack_screen/flame_monster_unit/change_reg[15]' (LD) to 'display/attack_screen/flame_monster_unit/change_reg[24]'
+INFO: [Synth 8-3886] merging instance 'display/attack_screen/flame_monster_unit/change_reg[16]' (LD) to 'display/attack_screen/flame_monster_unit/change_reg[24]'
+INFO: [Synth 8-3886] merging instance 'display/attack_screen/flame_monster_unit/change_reg[17]' (LD) to 'display/attack_screen/flame_monster_unit/change_reg[24]'
+INFO: [Synth 8-3886] merging instance 'display/attack_screen/flame_monster_unit/change_reg[18]' (LD) to 'display/attack_screen/flame_monster_unit/change_reg[24]'
+INFO: [Synth 8-3886] merging instance 'display/attack_screen/flame_monster_unit/change_reg[19]' (LD) to 'display/attack_screen/flame_monster_unit/change_reg[24]'
+INFO: [Synth 8-3886] merging instance 'display/attack_screen/flame_monster_unit/change_reg[20]' (LD) to 'display/attack_screen/flame_monster_unit/change_reg[24]'
+INFO: [Synth 8-3886] merging instance 'display/attack_screen/flame_monster_unit/change_reg[21]' (LD) to 'display/attack_screen/flame_monster_unit/change_reg[24]'
+INFO: [Synth 8-3886] merging instance 'display/attack_screen/flame_monster_unit/change_reg[22]' (LD) to 'display/attack_screen/flame_monster_unit/change_reg[24]'
+INFO: [Synth 8-3886] merging instance 'display/attack_screen/flame_monster_unit/change_reg[23]' (LD) to 'display/attack_screen/flame_monster_unit/change_reg[24]'
 INFO: [Synth 8-3886] merging instance 'display/attack_screen/flame_monster_unit/form_reg[19]' (LD) to 'display/attack_screen/flame_monster_unit/form_reg[20]'
 INFO: [Synth 8-3886] merging instance 'display/attack_screen/flame_monster_unit/form_reg[20]' (LD) to 'display/attack_screen/flame_monster_unit/form_reg[21]'
 INFO: [Synth 8-3886] merging instance 'display/attack_screen/flame_monster_unit/form_reg[21]' (LD) to 'display/attack_screen/flame_monster_unit/form_reg[22]'
@@ -659,11 +657,11 @@ INFO: [Synth 8-3886] merging instance 'display/attack_screen/dodge_screen/bullet
 INFO: [Synth 8-3886] merging instance 'display/attack_screen/dodge_screen/bullet_unit_1/move_reg[29]' (FD) to 'display/attack_screen/dodge_screen/bullet_unit_1/move_reg[30]'
 INFO: [Synth 8-3886] merging instance 'display/attack_screen/dodge_screen/bullet_unit_1/move_reg[30]' (FD) to 'display/attack_screen/dodge_screen/bullet_unit_1/move_reg[31]'
 INFO: [Synth 8-3886] merging instance 'display/attack_screen/dodge_screen/bullet_unit_1/move_reg[31]' (FD) to 'display/attack_screen/dodge_screen/bullet_unit_1/move_reg[23]'
-INFO: [Synth 8-3886] merging instance 'display/attack_screen/atk_FSM/state_reg[31]' (FDRE) to 'display/attack_screen/atk_FSM/state_reg[30]'
-INFO: [Synth 8-3886] merging instance 'display/attack_screen/atk_FSM/state_reg[30]' (FDRE) to 'display/attack_screen/atk_FSM/state_reg[29]'
-INFO: [Synth 8-3886] merging instance 'display/attack_screen/atk_FSM/state_reg[29]' (FDRE) to 'display/attack_screen/atk_FSM/state_reg[28]'
-INFO: [Synth 8-3886] merging instance 'display/attack_screen/atk_FSM/state_reg[28]' (FDRE) to 'display/attack_screen/atk_FSM/state_reg[27]'
-INFO: [Synth 8-3886] merging instance 'display/attack_screen/atk_FSM/state_reg[27]' (FDRE) to 'display/attack_screen/atk_FSM/state_reg[26]'
+INFO: [Synth 8-3886] merging instance 'display/attack_screen/atk_FSM/state_reg[31]' (FDRE) to 'display/attack_screen/atk_FSM/state_reg[1]'
+INFO: [Synth 8-3886] merging instance 'display/attack_screen/atk_FSM/state_reg[30]' (FDRE) to 'display/attack_screen/atk_FSM/state_reg[1]'
+INFO: [Synth 8-3886] merging instance 'display/attack_screen/atk_FSM/state_reg[29]' (FDRE) to 'display/attack_screen/atk_FSM/state_reg[1]'
+INFO: [Synth 8-3886] merging instance 'display/attack_screen/atk_FSM/state_reg[28]' (FDRE) to 'display/attack_screen/atk_FSM/state_reg[1]'
+INFO: [Synth 8-3886] merging instance 'display/attack_screen/atk_FSM/state_reg[27]' (FDRE) to 'display/attack_screen/atk_FSM/state_reg[1]'
 INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/attack_screen/atk_FSM/state_reg[1] )
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (\tx_data_reg[5] )
@@ -672,7 +670,7 @@ WARNING: [Synth 8-3332] Sequential element (display/attack_screen/atk_FSM/video_
 WARNING: [Synth 8-3332] Sequential element (display/attack_screen/atk_FSM/video_dodge_on_reg) is unused and will be removed from module Game.
 WARNING: [Synth 8-3332] Sequential element (display/attack_screen/attack_on_reg) is unused and will be removed from module Game.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:35 ; elapsed = 00:02:38 . Memory (MB): peak = 876.359 ; gain = 597.422
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:29 ; elapsed = 00:02:32 . Memory (MB): peak = 874.125 ; gain = 595.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -707,13 +705,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:45 ; elapsed = 00:02:49 . Memory (MB): peak = 876.359 ; gain = 597.422
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:37 ; elapsed = 00:02:41 . Memory (MB): peak = 874.125 ; gain = 595.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:55 ; elapsed = 00:02:58 . Memory (MB): peak = 979.203 ; gain = 700.266
+Finished Timing Optimization : Time (s): cpu = 00:02:46 ; elapsed = 00:02:50 . Memory (MB): peak = 981.488 ; gain = 702.703
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -730,7 +728,7 @@ INFO: [Synth 8-6837] The timing for the instance display/attack_screen/dodge_scr
 INFO: [Synth 8-6837] The timing for the instance display/attack_screen/dodge_screen/sel (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance display/attack_screen/dodge_screen/sel__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:58 ; elapsed = 00:03:02 . Memory (MB): peak = 979.203 ; gain = 700.266
+Finished Technology Mapping : Time (s): cpu = 00:02:49 ; elapsed = 00:02:53 . Memory (MB): peak = 981.488 ; gain = 702.703
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -754,7 +752,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:03:00 ; elapsed = 00:03:03 . Memory (MB): peak = 979.203 ; gain = 700.266
+Finished IO Insertion : Time (s): cpu = 00:02:51 ; elapsed = 00:02:55 . Memory (MB): peak = 981.488 ; gain = 702.703
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -767,7 +765,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:03:00 ; elapsed = 00:03:03 . Memory (MB): peak = 979.203 ; gain = 700.266
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:51 ; elapsed = 00:02:55 . Memory (MB): peak = 981.488 ; gain = 702.703
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -779,25 +777,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:01 ; elapsed = 00:03:04 . Memory (MB): peak = 979.203 ; gain = 700.266
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:51 ; elapsed = 00:02:56 . Memory (MB): peak = 981.488 ; gain = 702.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:03:01 ; elapsed = 00:03:04 . Memory (MB): peak = 979.203 ; gain = 700.266
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:51 ; elapsed = 00:02:56 . Memory (MB): peak = 981.488 ; gain = 702.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:03:01 ; elapsed = 00:03:05 . Memory (MB): peak = 979.203 ; gain = 700.266
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:52 ; elapsed = 00:02:56 . Memory (MB): peak = 981.488 ; gain = 702.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:03:01 ; elapsed = 00:03:05 . Memory (MB): peak = 979.203 ; gain = 700.266
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:52 ; elapsed = 00:02:56 . Memory (MB): peak = 981.488 ; gain = 702.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -814,19 +812,19 @@ Report Cell Usage:
 |      |Cell       |Count |
 +------+-----------+------+
 |1     |BUFG       |     1|
-|2     |CARRY4     |   703|
-|3     |LUT1       |   465|
-|4     |LUT2       |   460|
-|5     |LUT3       |   752|
-|6     |LUT4       |   582|
-|7     |LUT5       |   688|
-|8     |LUT6       |  1933|
+|2     |CARRY4     |   708|
+|3     |LUT1       |   468|
+|4     |LUT2       |   459|
+|5     |LUT3       |   811|
+|6     |LUT4       |   573|
+|7     |LUT5       |   750|
+|8     |LUT6       |  1873|
 |9     |MUXF7      |   218|
 |10    |MUXF8      |    56|
 |11    |RAMB18E1   |     1|
 |12    |RAMB18E1_1 |     1|
 |13    |RAMB18E1_2 |     2|
-|14    |FDRE       |   369|
+|14    |FDRE       |   372|
 |15    |LD         |    29|
 |16    |IBUF       |     2|
 |17    |OBUF       |    23|
@@ -836,47 +834,47 @@ Report Instance Areas:
 +------+--------------------------+-----------------------+------+
 |      |Instance                  |Module                 |Cells |
 +------+--------------------------+-----------------------+------+
-|1     |top                       |                       |  6285|
-|2     |  display                 |Display                |  5849|
-|3     |    FSM                   |game_state_machine     |   513|
-|4     |    attack_screen         |Attack                 |  5096|
-|5     |      atk_FSM             |attack_state_machine   |   504|
+|1     |top                       |                       |  6347|
+|2     |  display                 |Display                |  5858|
+|3     |    FSM                   |game_state_machine     |   516|
+|4     |    attack_screen         |Attack                 |  5101|
+|5     |      atk_FSM             |attack_state_machine   |   501|
 |6     |      dodge_screen        |dodge                  |  2369|
-|7     |        bullet_unit_1     |bullet                 |   543|
-|8     |        bullet_unit_2     |bullet__parameterized0 |   565|
+|7     |        bullet_unit_1     |bullet                 |   545|
+|8     |        bullet_unit_2     |bullet__parameterized0 |   563|
 |9     |        bullet_unit_3     |bullet__parameterized1 |   634|
 |10    |        heart_unit        |heart                  |   616|
-|11    |      flame_monster_unit  |flame_monster          |  1912|
-|12    |        flame_monster     |flame_monster_rom      |  1178|
+|11    |      flame_monster_unit  |flame_monster          |  1920|
+|12    |        flame_monster     |flame_monster_rom      |  1176|
 |13    |      hp_bar_unit_hero    |hp_bar                 |   152|
 |14    |      hp_bar_unit_monster |hp_bar__parameterized0 |   159|
-|15    |    vsync_unit            |vga_sync               |   228|
+|15    |    vsync_unit            |vga_sync               |   229|
 |16    |  uart_receiver           |uart_receiver          |    77|
 |17    |  uart_transmitter        |uart_transmitter       |    40|
 +------+--------------------------+-----------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:03:01 ; elapsed = 00:03:05 . Memory (MB): peak = 979.203 ; gain = 700.266
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:52 ; elapsed = 00:02:56 . Memory (MB): peak = 981.488 ; gain = 702.703
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 18 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:02:50 ; elapsed = 00:02:59 . Memory (MB): peak = 979.203 ; gain = 373.695
-Synthesis Optimization Complete : Time (s): cpu = 00:03:01 ; elapsed = 00:03:05 . Memory (MB): peak = 979.203 ; gain = 700.266
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:41 ; elapsed = 00:02:49 . Memory (MB): peak = 981.488 ; gain = 376.398
+Synthesis Optimization Complete : Time (s): cpu = 00:02:52 ; elapsed = 00:02:56 . Memory (MB): peak = 981.488 ; gain = 702.703
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 1010 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 1015 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 979.203 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 981.488 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 29 instances were transformed.
   LD => LDCE: 29 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-197 Infos, 92 Warnings, 0 Critical Warnings and 0 Errors encountered.
+195 Infos, 92 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:03:05 ; elapsed = 00:03:09 . Memory (MB): peak = 979.203 ; gain = 713.277
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 979.203 ; gain = 0.000
+synth_design: Time (s): cpu = 00:02:55 ; elapsed = 00:03:00 . Memory (MB): peak = 981.488 ; gain = 714.773
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 981.488 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/non_s/kkGames/kkGames.runs/synth_1/Game.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Game_utilization_synth.rpt -pb Game_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Jun  7 19:52:06 2020...
+INFO: [Common 17-206] Exiting Vivado at Sun Jun  7 21:25:27 2020...

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1591534130">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1591539735">
   <File Type="PA-TCL" Name="Game.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="Game_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Game_reports.tcl"/>
