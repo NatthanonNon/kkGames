@@ -24,13 +24,13 @@ module hp_bar(
         input wire clk,                    // input clock signal for synchronous ROMs
         input wire video_on,               // input from vga_sync signaling when video signal is on
         input wire [9:0] x, y,
-        input collision,            // current pixel coordinates from vga_sync circuit
+        input damage_taken,            // current pixel coordinates from vga_sync circuit
         output reg [11:0] rgb_out,         // output rgb signal for current pixel
         output reg hp_on           // output signal asserted when vga x/y pixel is within platform location in display area
     );
     /*reg [3:0] row;
 	reg [6:0] col;*/
-	parameter max_hp = 20;
+	parameter max_hp = 150;
     integer current_hp= max_hp ;
     
 	wire [11:0] hp_color_data;
@@ -39,13 +39,14 @@ module hp_bar(
 	
 	parameter top_left_x = 90;
 	parameter top_left_y = 450;
-	parameter bot_right_x = top_left_x + 6*(max_hp);
+	parameter bot_right_x = top_left_x + max_hp;
 	parameter bot_right_y = top_left_y + 7;
 	
 	// flag to check whether hero(0) or moster(1) 
 	parameter color = 0;
 	
-	always@(posedge collision) begin
+	// HP management
+	always@(posedge damage_taken) begin
 	       current_hp = (current_hp - 1 <= 0)? 0 : current_hp - 1;
 	   
 	end
@@ -61,12 +62,12 @@ module hp_bar(
 		      if ((x>=top_left_x && x<bot_right_x) && (y>=top_left_y && y<bot_right_y)) begin
 		          /*row = y-top_left_y;
 		          col = x-top_left_x;*/
-		          if( x < bot_right_x - 6*(max_hp-current_hp)) begin
+		          if( x < bot_right_x - (max_hp-current_hp)) begin
 		              hp_on = 1;
 		              //current hp
 				      rgb_out = (color == 0) ? 12'b000011110000 : 12'b111010001000;
 				    end
-				  else if( x >= bot_right_x - 6*(max_hp-current_hp)) begin
+				  else if( x >= bot_right_x - (max_hp-current_hp)) begin
 		              hp_on = 1;
 		              //dealing hp
 				      rgb_out = (color == 0) ? 12'b111100000000 : 12'b111010111100;

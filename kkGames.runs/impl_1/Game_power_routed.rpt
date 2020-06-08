@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Mon Jun  8 01:56:22 2020
+| Date             : Mon Jun  8 22:23:07 2020
 | Host             : DESKTOP-E6CPFKC running 64-bit major release  (build 9200)
 | Command          : report_power -file Game_power_routed.rpt -pb Game_power_summary_routed.pb -rpx Game_power_routed.rpx
 | Design           : Game
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.168        |
+| Total On-Chip Power (W)  | 0.180        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.096        |
+| Dynamic (W)              | 0.108        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 84.2         |
-| Junction Temperature (C) | 25.8         |
+| Max Ambient (C)          | 84.1         |
+| Junction Temperature (C) | 25.9         |
 | Confidence Level         | Medium       |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -53,17 +53,18 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.004 |        3 |       --- |             --- |
-| Slice Logic    |     0.036 |     6278 |       --- |             --- |
-|   LUT as Logic |     0.033 |     4254 |     20800 |           20.45 |
-|   CARRY4       |     0.003 |      680 |      8150 |            8.34 |
-|   Register     |    <0.001 |      395 |     41600 |            0.95 |
+| Slice Logic    |     0.041 |     6844 |       --- |             --- |
+|   LUT as Logic |     0.037 |     4642 |     20800 |           22.32 |
+|   CARRY4       |     0.004 |      740 |      8150 |            9.08 |
+|   Register     |    <0.001 |      462 |     41600 |            1.11 |
 |   F7/F8 Muxes  |    <0.001 |      274 |     32600 |            0.84 |
-|   Others       |     0.000 |       48 |       --- |             --- |
-| Signals        |     0.042 |     4853 |       --- |             --- |
+|   Others       |     0.000 |       49 |       --- |             --- |
+|   BUFG         |     0.000 |        1 |        32 |            3.13 |
+| Signals        |     0.048 |     5280 |       --- |             --- |
 | Block RAM      |     0.004 |        2 |        50 |            4.00 |
-| I/O            |     0.010 |       25 |       106 |           23.58 |
+| I/O            |     0.011 |       25 |       106 |           23.58 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.168 |          |           |                 |
+| Total          |     0.180 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.096 |       0.086 |      0.010 |
+| Vccint    |       1.000 |     0.106 |       0.097 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
 | Vcco33    |       3.300 |     0.004 |       0.003 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -142,13 +143,14 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| Game                     |     0.096 |
-|   display                |     0.081 |
+| Game                     |     0.108 |
+|   display                |     0.092 |
 |     FSM                  |     0.010 |
-|     attack_screen        |     0.070 |
+|     attack_screen        |     0.081 |
 |       atk_FSM            |     0.011 |
 |       dodge_screen       |     0.044 |
-|       flame_monster_unit |     0.015 |
+|       fight_screen       |     0.010 |
+|       flame_monster_unit |     0.016 |
 +--------------------------+-----------+
 
 

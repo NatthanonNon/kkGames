@@ -33,6 +33,7 @@ set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
   C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/Attack.v
   C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/Display.v
+  C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/attack_bar.v
   C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/attack_state_machine.v
   C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet.v
   C:/Users/non_s/kkGames/kkGames.srcs/sources_1/new/bullet_rom.v

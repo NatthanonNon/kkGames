@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Mon Jun  8 01:56:18 2020
+| Date         : Mon Jun  8 22:22:59 2020
 | Host         : DESKTOP-E6CPFKC running 64-bit major release  (build 9200)
 | Command      : report_drc -file Game_drc_routed.rpt -pb Game_drc_routed.pb -rpx Game_drc_routed.rpx
 | Design       : Game
@@ -45,7 +45,7 @@ Related violations: <none>
 
 PDRC-153#3 Warning
 Gated clock check  
-Net display/attack_screen/atk_FSM/state_reg[0]_2 is a gated clock net sourced by a combinational pin display/attack_screen/atk_FSM/dodge_on_reg_i_2/O, cell display/attack_screen/atk_FSM/dodge_on_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net display/attack_screen/dodge_screen/bullet_unit_2/state_reg[0] is a gated clock net sourced by a combinational pin display/attack_screen/dodge_screen/bullet_unit_2/dodge_on_reg_i_2/O, cell display/attack_screen/dodge_screen/bullet_unit_2/dodge_on_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#4 Warning

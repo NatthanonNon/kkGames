@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Mon Jun  8 01:56:23 2020
+| Date         : Mon Jun  8 22:23:08 2020
 | Host         : DESKTOP-E6CPFKC running 64-bit major release  (build 9200)
 | Command      : report_clock_utilization -file Game_clock_utilization_routed.rpt
 | Design       : Game
@@ -20,8 +20,9 @@ Table of Contents
 5. Clock Regions: Key Resource Utilization
 6. Clock Regions : Global Clock Summary
 7. Device Cell Placement Summary for Global Clock g0
-8. Clock Region Cell Placement per Global Clock: Region X0Y0
-9. Clock Region Cell Placement per Global Clock: Region X1Y0
+8. Device Cell Placement Summary for Global Clock g1
+9. Clock Region Cell Placement per Global Clock: Region X0Y0
+10. Clock Region Cell Placement per Global Clock: Region X1Y0
 
 1. Clock Primitive Utilization
 ------------------------------
@@ -29,7 +30,7 @@ Table of Contents
 +----------+------+-----------+-----+--------------+--------+
 | Type     | Used | Available | LOC | Clock Region | Pblock |
 +----------+------+-----------+-----+--------------+--------+
-| BUFGCTRL |    1 |        32 |   0 |            0 |      0 |
+| BUFGCTRL |    2 |        32 |   0 |            0 |      0 |
 | BUFH     |    0 |        72 |   0 |            0 |      0 |
 | BUFIO    |    0 |        20 |   0 |            0 |      0 |
 | BUFMR    |    0 |        10 |   0 |            0 |      0 |
@@ -42,11 +43,12 @@ Table of Contents
 2. Global Clock Resources
 -------------------------
 
-+-----------+-----------+-----------------+------------+---------------+--------------+-------------------+-------------+-----------------+--------------+-------------+----------------------+---------------+
-| Global Id | Source Id | Driver Type/Pin | Constraint | Site          | Clock Region | Load Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock       | Driver Pin           | Net           |
-+-----------+-----------+-----------------+------------+---------------+--------------+-------------------+-------------+-----------------+--------------+-------------+----------------------+---------------+
-| g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y0 | n/a          |                 2 |         371 |               0 |       10.000 | sys_clk_pin | clk_IBUF_BUFG_inst/O | clk_IBUF_BUFG |
-+-----------+-----------+-----------------+------------+---------------+--------------+-------------------+-------------+-----------------+--------------+-------------+----------------------+---------------+
++-----------+-----------+-----------------+------------+---------------+--------------+-------------------+-------------+-----------------+--------------+-------------+-------------------------+---------------------------------+
+| Global Id | Source Id | Driver Type/Pin | Constraint | Site          | Clock Region | Load Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock       | Driver Pin              | Net                             |
++-----------+-----------+-----------------+------------+---------------+--------------+-------------------+-------------+-----------------+--------------+-------------+-------------------------+---------------------------------+
+| g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y0 | n/a          |                 2 |         406 |               0 |       10.000 | sys_clk_pin | clk_IBUF_BUFG_inst/O    | clk_IBUF_BUFG                   |
+| g1        | src1      | BUFG/O          | None       | BUFGCTRL_X0Y1 | n/a          |                 1 |          32 |               0 |              |             | current_hp_reg[0]_i_2/O | attack_screen/damage_taken_hero |
++-----------+-----------+-----------------+------------+---------------+--------------+-------------------+-------------+-----------------+--------------+-------------+-------------------------+---------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
 
@@ -54,11 +56,12 @@ Table of Contents
 3. Global Clock Source Details
 ------------------------------
 
-+-----------+-----------+-----------------+------------+-----------+--------------+-------------+-----------------+---------------------+--------------+-----------------+----------+
-| Source Id | Global Id | Driver Type/Pin | Constraint | Site      | Clock Region | Clock Loads | Non-Clock Loads | Source Clock Period | Source Clock | Driver Pin      | Net      |
-+-----------+-----------+-----------------+------------+-----------+--------------+-------------+-----------------+---------------------+--------------+-----------------+----------+
-| src0      | g0        | IBUF/O          | IOB_X1Y26  | IOB_X1Y26 | X1Y0         |           1 |               0 |              10.000 | sys_clk_pin  | clk_IBUF_inst/O | clk_IBUF |
-+-----------+-----------+-----------------+------------+-----------+--------------+-------------+-----------------+---------------------+--------------+-----------------+----------+
++-----------+-----------+-----------------+------------+-------------+--------------+-------------+-----------------+---------------------+--------------+------------------------------------------------------------+------------------------------------------------------------+
+| Source Id | Global Id | Driver Type/Pin | Constraint | Site        | Clock Region | Clock Loads | Non-Clock Loads | Source Clock Period | Source Clock | Driver Pin                                                 | Net                                                        |
++-----------+-----------+-----------------+------------+-------------+--------------+-------------+-----------------+---------------------+--------------+------------------------------------------------------------+------------------------------------------------------------+
+| src0      | g0        | IBUF/O          | IOB_X1Y26  | IOB_X1Y26   | X1Y0         |           1 |               0 |              10.000 | sys_clk_pin  | clk_IBUF_inst/O                                            | clk_IBUF                                                   |
+| src1      | g1        | FDRE/Q          | None       | SLICE_X15Y7 | X0Y0         |           1 |               0 |                     |              | display/attack_screen/dodge_screen/damage_taken_hero_reg/Q | display/attack_screen/dodge_screen/damage_taken_hero_reg_0 |
++-----------+-----------+-----------------+------------+-------------+--------------+-------------+-----------------+---------------------+--------------+------------------------------------------------------------+------------------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
 
@@ -66,14 +69,14 @@ Table of Contents
 4. Local Clock Details
 ----------------------
 
-+----------+-------------------+------------+-----------------------+--------------+-------------+-----------------+--------------+-------+------------------------------------------------------------------+--------------------------------------------------------------------+
-| Local Id | Driver Type/Pin   | Constraint | Site/BEL              | Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock | Driver Pin                                                       | Net                                                                |
-+----------+-------------------+------------+-----------------------+--------------+-------------+-----------------+--------------+-------+------------------------------------------------------------------+--------------------------------------------------------------------||
-| 0        | RAMB18E1/DOADO[0] | None       | RAMB18_X0Y10/RAMB18E1 | X0Y0         |          12 |               0 |              |       | display/attack_screen/flame_monster_unit/sel/DOADO[0]            | display/attack_screen/flame_monster_unit/sel_n_15                  - Static -
-| 1        | FDRE/Q            | None       | SLICE_X37Y15/AFF      | X1Y0         |           1 |               2 |              |       | display/attack_screen/dodge_screen/bullet_unit_1/collision_reg/Q | display/attack_screen/dodge_screen/bullet_unit_1/collision_reg_n_0 - Static -
-| 2        | FDRE/Q            | None       | SLICE_X38Y14/AFF      | X1Y0         |           1 |               2 |              |       | display/attack_screen/dodge_screen/bullet_unit_2/collision_reg/Q | display/attack_screen/dodge_screen/bullet_unit_2/collision_reg_n_0 - Static -
-| 3        | FDRE/Q            | None       | SLICE_X43Y14/AFF      | X1Y0         |           1 |               2 |              |       | display/attack_screen/dodge_screen/bullet_unit_3/collision_reg/Q | display/attack_screen/dodge_screen/bullet_unit_3/collision_reg_n_0 - Static -
-+----------+-------------------+------------+-----------------------+--------------+-------------+-----------------+--------------+-------+------------------------------------------------------------------+--------------------------------------------------------------------||
++----------+-------------------+------------+----------------------+--------------+-------------+-----------------+--------------+-------+------------------------------------------------------------------+--------------------------------------------------------------+
+| Local Id | Driver Type/Pin   | Constraint | Site/BEL             | Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock | Driver Pin                                                       | Net                                                          |
++----------+-------------------+------------+----------------------+--------------+-------------+-----------------+--------------+-------+------------------------------------------------------------------+--------------------------------------------------------------||
+| 0        | RAMB18E1/DOADO[0] | None       | RAMB18_X0Y6/RAMB18E1 | X0Y0         |          12 |               0 |              |       | display/attack_screen/flame_monster_unit/sel/DOADO[0]            | display/attack_screen/flame_monster_unit/sel_n_15            - Static -
+| 1        | FDRE/Q            | None       | SLICE_X12Y5/AFF      | X0Y0         |           1 |               2 |              |       | display/attack_screen/dodge_screen/bullet_unit_1/collision_reg/Q | display/attack_screen/dodge_screen/bullet_unit_1/collision_1 - Static -
+| 2        | FDRE/Q            | None       | SLICE_X15Y7/AFF      | X0Y0         |           1 |               2 |              |       | display/attack_screen/dodge_screen/bullet_unit_2/collision_reg/Q | display/attack_screen/dodge_screen/bullet_unit_2/collision_2 - Static -
+| 3        | FDRE/Q            | None       | SLICE_X15Y8/CFF      | X0Y0         |           1 |               2 |              |       | display/attack_screen/dodge_screen/bullet_unit_3/collision_reg/Q | display/attack_screen/dodge_screen/bullet_unit_3/collision_3 - Static -
++----------+-------------------+------------+----------------------+--------------+-------------+-----------------+--------------+-------+------------------------------------------------------------------+--------------------------------------------------------------||
 * Local Clocks in this context represents only clocks driven by non-global buffers
 ** Clock Loads column represents the clock pin loads (pin count)
 *** Non-Clock Loads column represents the non-clock pin loads (pin count)
@@ -87,8 +90,8 @@ Table of Contents
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 | Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
-| X0Y0              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  236 |  1200 |  102 |   400 |    0 |    20 |    0 |    10 |    0 |    20 |
-| X1Y0              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  130 |  1500 |   30 |   450 |    1 |    40 |    0 |    20 |    0 |    20 |
+| X0Y0              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  338 |  1200 |  106 |   400 |    2 |    20 |    0 |    10 |    0 |    20 |
+| X1Y0              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |   95 |  1500 |   19 |   450 |    0 |    40 |    0 |    20 |    0 |    20 |
 | X0Y1              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  1200 |    0 |   400 |    0 |    20 |    0 |    10 |    0 |    20 |
 | X1Y1              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  1500 |    0 |   450 |    0 |    40 |    0 |    20 |    0 |    20 |
 | X0Y2              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  1800 |    0 |   400 |    0 |    20 |    0 |    10 |    0 |    20 |
@@ -106,7 +109,7 @@ All Modules
 +----+----+----+
 | Y2 |  0 |  0 |
 | Y1 |  0 |  0 |
-| Y0 |  1 |  1 |
+| Y0 |  2 |  1 |
 +----+----+----+
 
 
@@ -116,7 +119,7 @@ All Modules
 +-----------+-----------------+-------------------+-------------+-------------+---------------+-------------+----------+----------------+----------+---------------+
 | Global Id | Driver Type/Pin | Driver Region (D) | Clock       | Period (ns) | Waveform (ns) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net           |
 +-----------+-----------------+-------------------+-------------+-------------+---------------+-------------+----------+----------------+----------+---------------+
-| g0        | BUFG/O          | n/a               | sys_clk_pin |      10.000 | {0.000 5.000} |         370 |        0 |              0 |        0 | clk_IBUF_BUFG |
+| g0        | BUFG/O          | n/a               | sys_clk_pin |      10.000 | {0.000 5.000} |         405 |        0 |              0 |        0 | clk_IBUF_BUFG |
 +-----------+-----------------+-------------------+-------------+-------------+---------------+-------------+----------+----------------+----------+---------------+
 * Logic Loads column represents load cell count of all cell types other than IO, GT and clock resources
 ** IO Loads column represents load cell count of IO types
@@ -124,36 +127,60 @@ All Modules
 **** GT Loads column represents load cell count of GT types
 
 
-+----+------+------+
-|    | X0   | X1   |
-+----+------+------+
-| Y2 |    0 |    0 |
-| Y1 |    0 |    0 |
-| Y0 |  237 |  133 |
-+----+------+------+
++----+------+-----+
+|    | X0   | X1  |
++----+------+-----+
+| Y2 |    0 |   0 |
+| Y1 |    0 |   0 |
+| Y0 |  310 |  95 |
++----+------+-----+
 
 
-8. Clock Region Cell Placement per Global Clock: Region X0Y0
+8. Device Cell Placement Summary for Global Clock g1
+----------------------------------------------------
+
++-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+---------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                             |
++-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+---------------------------------+
+| g1        | BUFG/O          | n/a               |       |             |               |          32 |        0 |              0 |        0 | attack_screen/damage_taken_hero |
++-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+---------------------------------+
+* Logic Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+-----+----+
+|    | X0  | X1 |
++----+-----+----+
+| Y2 |   0 |  0 |
+| Y1 |   0 |  0 |
+| Y0 |  32 |  0 |
++----+-----+----+
+
+
+9. Clock Region Cell Placement per Global Clock: Region X0Y0
 ------------------------------------------------------------
 
-+-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+---------------+
-| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net           |
-+-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+---------------+
-| g0        | n/a   | BUFG/O          | None       |         237 |               0 | 236 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | clk_IBUF_BUFG |
-+-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+---------------+
++-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+---------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                             |
++-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+---------------------------------+
+| g0        | n/a   | BUFG/O          | None       |         310 |               0 | 306 |      0 |    2 |   0 |  0 |    0 |   0 |       0 | clk_IBUF_BUFG                   |
+| g1        | n/a   | BUFG/O          | None       |          32 |               0 |  32 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | attack_screen/damage_taken_hero |
++-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+---------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
 *** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
 
 
-9. Clock Region Cell Placement per Global Clock: Region X1Y0
-------------------------------------------------------------
+10. Clock Region Cell Placement per Global Clock: Region X1Y0
+-------------------------------------------------------------
 
-+-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+---------------+
-| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net           |
-+-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+---------------+
-| g0        | n/a   | BUFG/O          | None       |         133 |               0 | 130 |      0 |    1 |   0 |  0 |    0 |   0 |       0 | clk_IBUF_BUFG |
-+-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+---------------+
++-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+---------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net           |
++-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+---------------+
+| g0        | n/a   | BUFG/O          | None       |          95 |               0 | 95 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | clk_IBUF_BUFG |
++-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+---------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
 *** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
@@ -162,6 +189,7 @@ All Modules
 
 # Location of BUFG Primitives 
 set_property LOC BUFGCTRL_X0Y0 [get_cells clk_IBUF_BUFG_inst]
+set_property LOC BUFGCTRL_X0Y1 [get_cells current_hp_reg[0]_i_2]
 
 # Location of IO Primitives which is load of clock spine
 
@@ -173,4 +201,11 @@ set_property LOC IOB_X1Y26 [get_ports clk]
 create_pblock {CLKAG_clk_IBUF_BUFG}
 add_cells_to_pblock [get_pblocks  {CLKAG_clk_IBUF_BUFG}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="clk_IBUF_BUFG"}]]]
 resize_pblock [get_pblocks {CLKAG_clk_IBUF_BUFG}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "attack_screen/damage_taken_hero" driven by instance "current_hp_reg[0]_i_2" located at site "BUFGCTRL_X0Y1"
+#startgroup
+create_pblock {CLKAG_attack_screen/damage_taken_hero}
+add_cells_to_pblock [get_pblocks  {CLKAG_attack_screen/damage_taken_hero}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="attack_screen/damage_taken_hero"}]]]
+resize_pblock [get_pblocks {CLKAG_attack_screen/damage_taken_hero}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
 #endgroup

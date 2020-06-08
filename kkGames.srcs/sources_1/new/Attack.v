@@ -60,7 +60,7 @@ module Attack(
 	   .video_on(video_attack_on), 
 	   .x(x), 
 	   .y(y),
-	   .collision(damage_taken_hero),
+	   .damage_taken(damage_taken_hero),
 	   .rgb_out(hp_hero_rgb),
 	   .hp_on(hp_hero_on)
     );
@@ -74,12 +74,12 @@ module Attack(
 	   .video_on(video_attack_on), 
 	   .x(x), 
 	   .y(y),
-	   .collision(damage_taken_monster),
+	   .damage_taken(damage_taken_monster),
 	   .rgb_out(hp_monster_rgb),
 	   .hp_on(hp_monster_on)
     );
     
-    defparam hp_bar_unit_monster.max_hp = 60;
+    defparam hp_bar_unit_monster.max_hp = 250;
 	
 	defparam hp_bar_unit_monster.color = 1;
 	
@@ -96,6 +96,7 @@ module Attack(
 //	       damage_taken_monster = 0;
 //	end
 	
+	
 	dodge dodge_screen 
 	(
 	   .clk(clk),
@@ -103,6 +104,7 @@ module Attack(
 	   .keyboard(keyboard),
 	   .x(x), 
 	   .y(y), 
+	   .damage_taken_hero(damage_taken_hero),
 	   .rgb_out(dodge_rgb),
 	   .dodge_on(dodge_on)
     );
@@ -114,6 +116,7 @@ module Attack(
 	   .keyboard(keyboard),
 	   .x(x), 
 	   .y(y), 
+	   .damage_taken_monster(damage_taken_monster),
 	   .rgb_out(fight_rgb),
 	   .fight_on(fight_on)
     );

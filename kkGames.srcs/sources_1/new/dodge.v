@@ -5,6 +5,7 @@ module dodge(
     input wire video_dodge_on,
     input [7:0] keyboard,
     input wire [9:0] x, y,
+    output reg damage_taken_hero,
     output reg [11:0] rgb_out,
     output reg dodge_on
     );
@@ -77,15 +78,14 @@ module dodge(
 	   .bullet_on(bullet_3_on)
     );
     
-    defparam bullet_unit_3.t_l_x = 320;
-	defparam bullet_unit_3.t_l_y = 344;
+    defparam bullet_unit_3.t_l_x = 110;
+	defparam bullet_unit_3.t_l_y = 260;
 	defparam bullet_unit_3.pattern = 2;
     
             
-	reg damage_taken =  0;
 	always @(posedge clk)
 	   begin
-	       damage_taken =  collision_1 | collision_2 | collision_3;
+	       damage_taken_hero <=  collision_1 | collision_2 | collision_3;
 	   end
 	
 	always @*

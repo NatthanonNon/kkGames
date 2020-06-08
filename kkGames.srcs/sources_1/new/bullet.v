@@ -86,14 +86,14 @@ module bullet(
 	       case (pattern)
 	               // horizontal pattern
 	               0 : begin
-	                   direction <= (bot_right_x >= 544) ? 1 :
-	                               (top_left_x <= 95) ? 0 : 
+	                   direction <= (bot_right_x >= 535) ? 1 :
+	                               (top_left_x <= 103) ? 0 : 
 	                               direction;
 	               end
 	               // vertical pattern
 	               1 : begin
-	                   direction <= (bot_right_y >= 252) ? 1 :
-	                               (top_left_y <= 243) ? 0 : 
+	                   direction <= (bot_right_y >= 436) ? 1 :
+	                               (top_left_y <= 251) ? 0 : 
 	                               direction;
 	               end
 	       endcase
@@ -101,10 +101,11 @@ module bullet(
 	
 	
 	// flag to check is the bullet collided ?
-	reg is_collision = 0; 
+	integer is_collision = 0;
+	 
 	always@(posedge clk)
 	   begin
-	       if (move == 0 && video_on && !is_collision) 
+	       if (move == 0 && video_on && (is_collision == 0)) 
 	       begin
 	           // pattern
 	           case (pattern)
@@ -191,11 +192,10 @@ module bullet(
 		  row = 0;
 		  col = 0;
 		  rgb_out = 12'h000;
-		
 		  if (collision) 
-		  begin
-		      is_collision = 1;
-		  end
+		      begin
+		          is_collision = 1;
+		      end
 		
 		  if(video_on)
 		  begin
@@ -205,7 +205,7 @@ module bullet(
 		          col = x-top_left_x;
 		          if (bullet_color_data != green_screen) 
 		          begin
-		              bullet_on = !is_collision;
+		              bullet_on = (is_collision == 0) ? 1:0;
 				      rgb_out = bullet_color_data;
 				  end
 			  end

@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Mon Jun  8 01:53:23 2020
+| Date         : Mon Jun  8 22:19:35 2020
 | Host         : DESKTOP-E6CPFKC running 64-bit major release  (build 9200)
 | Command      : report_utilization -file Game_utilization_synth.rpt -pb Game_utilization_synth.pb
 | Design       : Game
@@ -30,11 +30,11 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             | 4315 |     0 |     20800 | 20.75 |
-|   LUT as Logic          | 4315 |     0 |     20800 | 20.75 |
+| Slice LUTs*             | 4688 |     0 |     20800 | 22.54 |
+|   LUT as Logic          | 4688 |     0 |     20800 | 22.54 |
 |   LUT as Memory         |    0 |     0 |      9600 |  0.00 |
-| Slice Registers         |  401 |     0 |     41600 |  0.96 |
-|   Register as Flip Flop |  372 |     0 |     41600 |  0.89 |
+| Slice Registers         |  468 |     0 |     41600 |  1.13 |
+|   Register as Flip Flop |  439 |     0 |     41600 |  1.06 |
 |   Register as Latch     |   29 |     0 |     41600 |  0.07 |
 | F7 Muxes                |  218 |     0 |     16300 |  1.34 |
 | F8 Muxes                |   56 |     0 |      8150 |  0.69 |
@@ -57,7 +57,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 29    |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 372   |          Yes |       Reset |            - |
+| 439   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -116,7 +116,7 @@ Table of Contents
 +------------+------+-------+-----------+-------+
 |  Site Type | Used | Fixed | Available | Util% |
 +------------+------+-------+-----------+-------+
-| BUFGCTRL   |    1 |     0 |        32 |  3.13 |
+| BUFGCTRL   |    2 |     0 |        32 |  6.25 |
 | BUFIO      |    0 |     0 |        20 |  0.00 |
 | MMCME2_ADV |    0 |     0 |         5 |  0.00 |
 | PLLE2_ADV  |    0 |     0 |         5 |  0.00 |
@@ -150,21 +150,21 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT6     | 1873 |                 LUT |
-| LUT3     |  811 |                 LUT |
-| LUT5     |  750 |                 LUT |
-| CARRY4   |  708 |          CarryLogic |
-| LUT4     |  573 |                 LUT |
-| LUT1     |  468 |                 LUT |
-| LUT2     |  459 |                 LUT |
-| FDRE     |  372 |        Flop & Latch |
+| LUT6     | 2015 |                 LUT |
+| LUT3     |  907 |                 LUT |
+| LUT5     |  858 |                 LUT |
+| CARRY4   |  755 |          CarryLogic |
+| LUT4     |  634 |                 LUT |
+| LUT1     |  519 |                 LUT |
+| FDRE     |  439 |        Flop & Latch |
+| LUT2     |  419 |                 LUT |
 | MUXF7    |  218 |               MuxFx |
 | MUXF8    |   56 |               MuxFx |
 | LDCE     |   29 |        Flop & Latch |
 | OBUF     |   23 |                  IO |
 | RAMB18E1 |    4 |        Block Memory |
 | IBUF     |    2 |                  IO |
-| BUFG     |    1 |               Clock |
+| BUFG     |    2 |               Clock |
 +----------+------+---------------------+
 
 
