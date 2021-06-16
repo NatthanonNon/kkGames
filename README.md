@@ -3,6 +3,8 @@
 
 ![Demo](demo/demo.gif)
 
+Project Description VDO in Thai: [Youtube](https://www.youtube.com/playlist?list=PLegpEypc2-JNJdZa3oJGvshh3nUPRhBiQ)
+
 ## Demo
 
 ### First Page
@@ -13,3 +15,4 @@
 
 ### Last Boss
 ![Second_Boss](demo/boss_2.png)
+
